@@ -1,0 +1,28 @@
+{
+  "jadwal": [
+    {
+      "hari": "Senin",
+      "jam": "08.00 - 10.00",
+      "kegiatan": "Opening Ceremony",
+      "tempat": "Aula Utama"
+    },
+    {
+      "hari": "Senin",
+      "jam": "10.30 - 12.00",
+      "kegiatan": "Seminar Pendidikan",
+      "tempat": "Ruang Seminar 1"
+    },
+    {
+      "hari": "Selasa",
+      "jam": "09.00 - 15.00",
+      "kegiatan": "Pameran Budaya",
+      "tempat": "Lapangan PGMI"
+    },
+    {
+      "hari": "Rabu",
+      "jam": "13.00 - 16.00",
+      "kegiatan": "Lomba Karya Inovatif",
+      "tempat": "Gedung C"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #70c1b3, #247ba0);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+#btnScroll {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #fff;
+  color: #247ba0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btnScroll:hover {
+  background: #f1f1f1;
+}
+
+.highlight {
+  padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}

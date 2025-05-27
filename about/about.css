@@ -1,0 +1,37 @@
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.tentang h1 {
+  font-size: 2.5rem;
+  color: #247ba0;
+  margin-bottom: 15px;
+}
+
+.tentang p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.visi-misi h2 {
+  margin-top: 30px;
+  color: #1d3557;
+}
+
+.visi-misi p, .visi-misi ul {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#visi {
+  margin-bottom: 10px;
+}
+
+#misiList li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  list-style-type: square;
+}
