@@ -1,0 +1,22 @@
+{
+  "gallery": {
+    "title": "Galeri Pagelaran PGMI 2025",
+    "updated_at": "2025-05-27T10:00:00Z",
+    "media": [
+      {
+        "id": "vid001",
+        "type": "video",
+        "src": "../../assets/vidio/comingsoon1.mp4",
+        "caption": "Coming Soon Video",
+        "category": "announcement",
+        "tags": ["teaser", "video", "promo", "coming soon", "announcement"],
+        "metadata": {
+          "duration": "00:01:30",
+          "resolution": "1920x1080",
+          "date_uploaded": "2025-05-27",
+          "author": "Tim Kreatif PGMI"
+        }
+      }
+    ]
+  }
+}

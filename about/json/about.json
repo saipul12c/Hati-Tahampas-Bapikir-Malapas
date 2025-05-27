@@ -1,0 +1,42 @@
+{
+  "judul": "Tentang Pagelaran PGMI 2025",
+  "deskripsi": "Pagelaran PGMI (Pendidikan Guru Madrasah Ibtidaiyah) merupakan ajang tahunan berskala nasional yang mempertemukan mahasiswa PGMI dari berbagai perguruan tinggi di Indonesia. Kegiatan ini menjadi ruang ekspresi dan kolaborasi dalam bidang seni, budaya, pendidikan, teknologi, serta pengabdian masyarakat. Pada tahun 2025, pagelaran akan digelar di kota budaya Yogyakarta dengan mengusung tema besar: 'Menjunjung Budaya, Merangkai Inovasi'. Acara ini terbuka untuk umum dan mengedepankan semangat inklusivitas, keberagaman, serta semangat kebersamaan antar generasi muda calon pendidik bangsa.",
+  
+  "tema": "Menjunjung Budaya, Merangkai Inovasi",
+  "lokasi": "Universitas Negeri Yogyakarta, Indonesia",
+  "tanggal": "18 – 22 Agustus 2025",
+
+  "visi": "Menjadi wadah pengembangan potensi mahasiswa PGMI yang berjiwa edukatif, kreatif, berbudaya, dan berkontribusi nyata bagi masyarakat.",
+
+  "misi": [
+    "Menggali potensi, minat, dan bakat mahasiswa PGMI di bidang seni, budaya, dan inovasi pendidikan.",
+    "Menyelenggarakan kegiatan edukatif yang menggabungkan nilai-nilai budaya lokal dan tantangan global.",
+    "Mendorong lahirnya kolaborasi lintas kampus untuk membangun jejaring profesional mahasiswa PGMI se-Indonesia.",
+    "Meningkatkan kesadaran sosial dan peran aktif mahasiswa dalam pengabdian kepada masyarakat.",
+    "Memberikan pengalaman organisasi, kepemimpinan, dan kerja tim melalui rangkaian kegiatan kompetitif dan inspiratif."
+  ],
+
+  "nilai": [
+    "Kreativitas",
+    "Kolaborasi",
+    "Kebhinekaan",
+    "Integritas",
+    "Kebermanfaatan sosial"
+  ],
+
+  "panitia": {
+    "ketua_pelaksana": "Aulia Rahman, M.Pd.",
+    "wakil_ketua": "Nurul Hidayati, M.Pd.I",
+    "koordinator_acara": "Dewi Lestari",
+    "koordinator_logistik": "Rizky Maulana",
+    "koordinator_media": "Fajar Sidik",
+    "koordinator_humas": "Intan Nurfadilah"
+  },
+
+  "kontak": {
+    "email": "pgmi2025@event.ac.id",
+    "telepon": "+62 812-3456-7890",
+    "instagram": "@pgmi2025",
+    "website": "https://pgmi2025.ac.id"
+  }
+}

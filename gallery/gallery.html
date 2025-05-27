@@ -4,22 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Galeri | Pagelaran PGMI 2025</title>
-  <link rel="stylesheet" href="gallery.css" />
-  <link rel="stylesheet" href="../shared/global.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div id="navbar"></div>
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Navigasi utama">
+    <div class="navbar-container">
+      <a href="/home/home.html" class="logo" aria-label="Beranda PGMI 2025">PGMI 2025</a>
+      <ul class="nav-links">
+        <li><a href="/index.html">Beranda</a></li>
+        <li><a href="/about/about.html" aria-current="page">Tentang</a></li>
+        <li><a href="/gallery/gallery.html" class="active">Galeri</a></li>
+        <li><a href="/schedule/schedule.html">Jadwal</a></li>
+        <li><a href="/contact/contact.html">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <main class="gallery-container">
-    <h1>Galeri Pagelaran</h1>
-    <div id="galleryGrid" class="gallery-grid">
-      <!-- Isi dari JSON -->
+    <h1 class="page-title">Galeri Pagelaran</h1>
+    <div id="galleryGrid" class="gallery-grid" aria-live="polite" aria-label="Galeri media Pagelaran PGMI 2025">
+      <!-- Isi dari JSON akan dimuat di sini -->
     </div>
   </main>
 
-  <div id="footer"></div>
+  <footer class="footer">
+    <p>&copy; 2025 Pagelaran PGMI. Dibuat dengan ☕ dan semangat mahasiswa.</p>
+  </footer>
 
-  <script src="../shared/utils.js"></script>
-  <script src="gallery.js"></script>
+  <script src="js/gallery.js"></script>
 </body>
 </html>

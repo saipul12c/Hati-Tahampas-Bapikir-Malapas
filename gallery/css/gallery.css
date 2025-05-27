@@ -1,0 +1,261 @@
+/* Reset dan dasar */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === NAVBAR (SAMA DENGAN home.css) === */
+.navbar {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2b6cb0;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: #2b6cb0;
+}
+
+/* Main container */
+.gallery-container {
+  flex: 1 0 auto;
+  max-width: 1100px;
+  margin: 2rem auto 3rem auto;
+  padding: 0 1rem;
+}
+
+.page-title {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #004080;
+}
+
+/* Grid gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Gallery card */
+.gallery-card {
+  overflow: visible; 
+  height: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.15s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-card:hover {
+  box-shadow: 0 8px 15px rgb(0 0 0 / 0.15);
+  transform: translateY(-4px);
+}
+
+/* Media inside card */
+.gallery-card img,
+.gallery-card video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Text content */
+.gallery-card h3 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0.75rem 1rem 0.25rem 1rem;
+  color: #003366;
+}
+
+.gallery-card p {
+  margin: 0 1rem 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.gallery-card .tags {
+  margin: 0 1rem 0.75rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.gallery-card .tags span {
+  background-color: #cce4ff;
+  color: #004080;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Modal popup */
+#modalPopup {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+#modalPopup.hidden {
+  display: none;
+}
+
+#modalPopup > div {
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.3);
+  padding: 1.5rem 2rem 2rem 2rem;
+}
+
+#modalPopup img,
+#modalPopup video {
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Modal close button */
+#modalCloseBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #444;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+
+#modalCloseBtn:hover {
+  color: #000;
+}
+
+/* Modal text */
+#modalPopup h2 {
+  margin-top: 1rem;
+  font-weight: 700;
+  color: #003366;
+}
+
+#modalPopup p {
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+#modalPopup span.tag {
+  display: inline-block;
+  background-color: #cce4ff;
+  color: #004080;
+  padding: 0.3rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* === FOOTER === */
+.footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background-color: #edf2f7;
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .navbar-container {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .gallery-container {
+    margin: 1rem auto 2rem auto;
+    padding: 0 0.5rem;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "judul": "🎉 Selamat Datang di Pagelaran Nasional PGMI 2025! 🎉",
+  "deskripsi": "Ayo rayakan semangat kreativitas, warisan budaya, dan prestasi luar biasa mahasiswa PGMI dari seluruh penjuru Indonesia dalam satu perhelatan akbar yang tak terlupakan!",
+  "tanggal": "28 Juni 2025",
+  "lokasi": "Kampus UIN Antasari Banjarmasin",
+  "kutipan": "“Pendidikan bukan hanya di kelas, tapi juga di setiap langkah kita menginspirasi dan berbudaya.”",
+  "highlight": [
+    {
+      "judul": "🎭 Lomba Kreativitas Mahasiswa",
+      "konten": "Saksikan karya seni rupa, tari daerah, drama edukatif, dan berbagai inovasi teknologi pendidikan yang mencerminkan keunikan tiap daerah. Siap-siap terpesona!"
+    },
+    {
+      "judul": "🎓 Seminar Nasional Pendidikan",
+      "konten": "Dapatkan wawasan dan inspirasi dari para akademisi terkemuka, praktisi hebat, dan alumni PGMI yang telah mengukir prestasi di berbagai bidang. Siapa tahu, kamu yang selanjutnya!"
+    },
+    {
+      "judul": "🌏 Pameran Budaya Nusantara",
+      "konten": "Nikmati kekayaan budaya lokal melalui stand interaktif yang menyajikan pakaian adat, kerajinan tangan, bazar kuliner khas, dan pertunjukan musik tradisional."
+    }
+  ],
+  "call_to_action": {
+    "judul": "Gabung dan Jadilah Bagian dari Sejarah!",
+    "konten": "Daftarkan dirimu sekarang dan rasakan euforianya. Info lengkap dan pendaftaran ada di website resmi kami.",
+    "tautan": "https://pgmi2025.ac.id"
+  }
+}

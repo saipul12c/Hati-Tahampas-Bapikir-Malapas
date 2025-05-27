@@ -4,32 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tentang | Pagelaran PGMI 2025</title>
-  <link rel="stylesheet" href="about.css" />
-  <link rel="stylesheet" href="../shared/global.css" />
+  <link rel="stylesheet" href="/about/css/about.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div id="navbar"></div>
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Navigasi utama">
+    <div class="navbar-container">
+      <a href="/home/home.html" class="logo" aria-label="Beranda PGMI 2025">PGMI 2025</a>
+      <ul class="nav-links">
+        <li><a href="/index.html">Beranda</a></li>
+        <li><a href="/about/about.html" aria-current="page">Tentang</a></li>
+        <li><a href="/gallery/gallery.html">Galeri</a></li>
+        <li><a href="/schedule/schedule.html">Jadwal</a></li>
+        <li><a href="/contact/contact.html">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <main class="about-container">
-    <section class="tentang">
+    <!-- Informasi Umum -->
+    <section class="tentang" aria-labelledby="judul">
       <h1 id="judul">Memuat judul...</h1>
       <p id="deskripsi">Memuat deskripsi...</p>
+      <ul class="info-lain">
+        <li><strong>Tema:</strong> <span id="tema">...</span></li>
+        <li><strong>Lokasi:</strong> <span id="lokasi">...</span></li>
+        <li><strong>Tanggal:</strong> <span id="tanggal">...</span></li>
+      </ul>
     </section>
 
-    <section class="visi-misi">
+    <!-- Visi dan Misi -->
+    <section class="visi-misi" aria-label="Visi dan Misi">
       <h2>Visi</h2>
       <p id="visi">Memuat visi...</p>
 
       <h2>Misi</h2>
-      <ul id="misiList">
-        <!-- List misi dimuat dari JSON -->
+      <ul id="misiList" aria-label="Daftar Misi">
+        <!-- Misi dimuat dari JSON -->
+      </ul>
+    </section>
+
+    <!-- Nilai-nilai -->
+    <section class="nilai-nilai" aria-label="Nilai Inti">
+      <h2>Nilai Inti</h2>
+      <ul id="nilaiList">
+        <!-- Nilai-nilai akan dimuat dari JSON -->
+      </ul>
+    </section>
+
+    <!-- Struktur Panitia -->
+    <section class="panitia" aria-label="Struktur Panitia">
+      <h2>Struktur Panitia</h2>
+      <ul id="panitiaList">
+        <!-- Panitia dimuat dari JSON -->
+      </ul>
+    </section>
+
+    <!-- Kontak -->
+    <section class="kontak" aria-label="Informasi Kontak">
+      <h2>Kontak Kami</h2>
+      <ul>
+        <li><strong>Email:</strong> <span id="email">...</span></li>
+        <li><strong>Telepon:</strong> <span id="telepon">...</span></li>
+        <li><strong>Instagram:</strong> <a href="#" id="instagram" target="_blank" rel="noopener">@pgmi2025</a></li>
+        <li><strong>Website:</strong> <a href="#" id="website" target="_blank" rel="noopener">pgmi2025.ac.id</a></li>
       </ul>
     </section>
   </main>
 
-  <div id="footer"></div>
+  <footer class="footer">
+    <p>&copy; 2025 Pagelaran PGMI. Dibuat dengan ☕ dan semangat mahasiswa.</p>
+  </footer>
 
-  <script src="../shared/utils.js"></script>
-  <script src="about.js"></script>
+  <script src="/about/js/about.js"></script>
 </body>
 </html>

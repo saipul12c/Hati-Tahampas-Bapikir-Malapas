@@ -1,0 +1,237 @@
+/* RESET DAN FONTS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fdfcfb;
+  color: #1a202c;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* === NAVBAR (SAMA DENGAN home.css) === */
+.navbar {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2b6cb0;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: #2b6cb0;
+}
+
+/* === KONTEN UTAMA === */
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Informasi Umum */
+.tentang {
+  background: linear-gradient(to right, #edf2f7, #e2e8f0);
+  padding: 2rem;
+  border-radius: 14px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.tentang h1 {
+  font-size: 2.3rem;
+  color: #2b6cb0;
+  margin-bottom: 1rem;
+}
+
+.tentang p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.info-lain li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  list-style: none;
+}
+
+/* Visi Misi */
+.visi-misi {
+  margin-bottom: 2.5rem;
+}
+
+.visi-misi h2 {
+  font-size: 1.7rem;
+  color: #2b6cb0;
+  margin-bottom: 0.5rem;
+}
+
+.visi-misi p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+#misiList {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Nilai Inti */
+.nilai-nilai {
+  background-color: #f7fafc;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+}
+
+.nilai-nilai h2 {
+  font-size: 1.6rem;
+  color: #2b6cb0;
+  margin-bottom: 1rem;
+}
+
+#nilaiList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none; /* Menghilangkan bullet 'o' */
+  padding-left: 0;   /* Hilangkan indentasi */
+}
+
+#nilaiList li {
+  background-color: #e2e8f0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* Struktur Panitia */
+.panitia {
+  margin-bottom: 2rem;
+}
+
+.panitia h2 {
+  font-size: 1.6rem;
+  color: #2b6cb0;
+  margin-bottom: 1rem;
+}
+
+#panitiaList {
+  list-style: none;
+  padding-left: 0;
+}
+
+#panitiaList li {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+
+/* Kontak */
+.kontak {
+  background-color: #edf2f7;
+  padding: 1.8rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.kontak h2 {
+  font-size: 1.6rem;
+  color: #2b6cb0;
+  margin-bottom: 1rem;
+}
+
+.kontak ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.kontak ul li {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+
+.kontak a {
+  color: #2b6cb0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.kontak a:hover {
+  text-decoration: underline;
+}
+
+/* === FOOTER === */
+.footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background-color: #edf2f7;
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+/* === RESPONSIF === */
+@media (max-width: 768px) {
+  .tentang h1 {
+    font-size: 1.8rem;
+  }
+
+  .visi-misi h2,
+  .nilai-nilai h2,
+  .panitia h2,
+  .kontak h2 {
+    font-size: 1.3rem;
+  }
+
+  #nilaiList {
+    flex-direction: column;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+}

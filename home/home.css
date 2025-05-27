@@ -1,0 +1,179 @@
+/* Font dan Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fdfcfb;
+  color: #1a202c;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2b6cb0;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: #2b6cb0;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #edf2f7, #cbd5e0);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c5282;
+}
+
+.hero-content p {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.quote {
+  font-style: italic;
+  margin: 1.5rem 0;
+  color: #4a5568;
+}
+
+#btnScroll {
+  margin-top: 1rem;
+  background-color: #2b6cb0;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#btnScroll:hover {
+  background-color: #2c5282;
+}
+
+/* Highlight Section */
+.highlight {
+  padding: 3rem 2rem;
+  background-color: #f7fafc;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.highlight-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+}
+
+.highlight-card h3 {
+  font-size: 1.25rem;
+  color: #2b6cb0;
+  margin-bottom: 0.5rem;
+}
+
+/* CTA Section */
+.cta {
+  background: #2b6cb0;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #2b6cb0;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e2e8f0;
+  color: #2c5282;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background-color: #edf2f7;
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+/* Responsif Tambahan */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
