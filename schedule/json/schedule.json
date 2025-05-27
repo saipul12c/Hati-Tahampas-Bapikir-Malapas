@@ -1,0 +1,15 @@
+{
+  "event": "Pagelaran",
+  "tanggal": "28 Juni 2025",
+  "tempat": "Auditorium UIN Antasari Banjarmasin",
+  "catatan": "Jadwal kegiatan belum tersedia karena event masih lama.",
+  "tiket": "Jadwal pembelian tiket akan diinformasikan segera.",
+  "jadwal": [
+    {
+      "hari": "Selasa",
+      "jam": "14.35",
+      "kegiatan": "Perilisan video coming soon Pegelaran PGMI 2025",
+      "tempat": "Sosial media"
+    }
+  ]
+}
