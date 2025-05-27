@@ -1,82 +1,138 @@
-# 🌟 Website Pagelaran PGMI 2025
+# 🌟 Pagelaran PGMI 2025 Website
 
-Website resmi untuk mendukung dan mempublikasikan kegiatan **Pagelaran PGMI 2025**. Situs ini menyajikan informasi lengkap mulai dari beranda, galeri acara, jadwal, hingga kontak panitia.
+Selamat datang di repositori resmi website **Pagelaran PGMI 2025**, acara tahunan dari Program Studi Pendidikan Guru Madrasah Ibtidaiyah (PGMI) yang menampilkan karya, inovasi, dan kreativitas mahasiswa PGMI seluruh Indonesia.
 
-## 📁 Struktur Proyek
+Website ini dirancang menggunakan teknologi sederhana namun fungsional:
 
-pgmi2025-website/
-├── home/
-├── about/
-├── gallery/
-├── schedule/
-├── contact/
-├── shared/
-└── assets/
+* `HTML` untuk struktur
+* `CSS` untuk desain
+* `JavaScript` untuk interaktivitas
+* `JSON` untuk data dinamis
 
-- `home/` — Halaman utama
-- `about/` — Informasi seputar acara & panitia
-- `gallery/` — Foto & video dokumentasi
-- `schedule/` — Jadwal kegiatan
-- `contact/` — Informasi kontak & form pesan
-- `shared/` — Navbar, footer, CSS dan JS global
-- `assets/` — Gambar, video, dan media lainnya
+---
 
 ## 🚀 Fitur Utama
 
-- ✅ Struktur folder modular
-- ✅ Data dinamis via file `.json`
-- ✅ UI konsisten via komponen `shared/`
-- ✅ Responsive design (CSS grid & media query)
-- ✅ Navigasi cepat dan ringan
-- ✅ Siap deploy ke GitHub Pages / hosting lainnya
+* **🏠 Home Page**: Informasi singkat dan CTA utama
+* **📚 About Page**: Latar belakang dan tujuan pagelaran
+* **🎨 Gallery Page**: Dokumentasi foto dan video
+* **📅 Schedule Page**: Jadwal acara interaktif dari file JSON
+* **📞 Contact Page**: Formulir tanya jawab & info media sosial
+* **🔄 Shared Components**: Navbar dan footer otomatis di semua halaman
 
-## 🔧 Teknologi yang Digunakan
+---
 
-- **HTML5**
-- **CSS3**
-- **Vanilla JavaScript**
-- **JSON** (untuk data dinamis)
-- No framework! 100% ringan dan bisa dipelajari pemula
+## 📁 Struktur Folder
 
-## 📦 Cara Menjalankan
+```
+pagelaran-pgmi-2025/
+│
+├── index.html                 # Halaman utama redirect / entry point
+│
+├── home/
+│   ├── home.html
+│   ├── home.css
+│   ├── home.js
+│   └── home.json
+│
+├── about/
+│   ├── about.html
+│   ├── about.css
+│   ├── about.js
+│   └── about.json
+│
+├── contact/
+│   ├── contact.html
+│   ├── contact.css
+│   ├── contact.js
+│   └── contact.json
+│
+├── schedule/
+│   ├── schedule.html
+│   ├── schedule.css
+│   ├── schedule.js
+│   └── schedule.json
+│
+├── gallery/
+│   ├── gallery.html
+│   ├── gallery.css
+│   ├── gallery.js
+│   └── gallery.json
+│
+├── assets/
+│   ├── img/
+│   │   └── logo.png
+│   ├── fonts/
+│   └── media/
+│       └── teaser.mp4
+│
+├── shared/
+│   ├── navbar.html           # Komponen navbar (jika mau include via JS)
+│   ├── footer.html           # Komponen footer
+│   ├── global.css            # Styling umum (warna, font, layout dasar)
+│   └── utils.js              # Fungsi JS umum (loader JSON, dll)
+│
+└── README.md                 # Dokumentasi proyek
+```
 
-1. Clone repositori:
+---
 
-   ```bash
-   git clone https://github.com/nama-anda/pgmi2025-website.git
-````
+## 🛠️ Cara Menjalankan
 
-2. Buka folder proyek:
+1. **Clone repo ini**
 
-   ```bash
-   cd pgmi2025-website
-   ```
+```bash
+git clone https://github.com/username/pgmi2025.git
+```
 
-3. Jalankan di browser lokal:
+2. **Buka file `home/home.html` di browser lokal**
 
-   * Klik dua kali `home/home.html`
-   * atau gunakan ekstensi Live Server (VSCode)
+   * Pastikan struktur folder tetap utuh agar file JSON dan CSS bisa terbaca.
 
-## 🌐 Deploy ke GitHub Pages
+3. **(Opsional) Jalankan dengan Live Server**
 
-1. Pastikan file `index.html` mengarah ke `home/home.html`
-2. Push ke GitHub repository
-3. Aktifkan GitHub Pages di setting → pilih branch `main` dan folder `/root`
-4. Akses via:
-   `https://username.github.io/pgmi2025-website/`
+   * Disarankan menggunakan ekstensi *Live Server* di VSCode agar `fetch()` JSON berjalan sempurna.
 
-## 🙌 Kontribusi
+---
 
-Proyek ini terbuka untuk kontribusi:
+## ✨ Teknologi Digunakan
+
+* HTML5
+* CSS3
+* JavaScript DOM & Fetch API
+* JSON sebagai data layer
+* Struktur modular berbasis folder
+
+---
+
+## 🤝 Kontribusi
+
+Kontribusi sangat terbuka, terutama dari mahasiswa PGMI!
+Silakan fork repo ini, buat perubahanmu, dan ajukan pull request.
+
+**Ide kontribusi:**
 
 * Desain UI/UX
-* Dokumentasi tambahan
-* Penambahan fitur (dark mode, animasi, dll)
-* Koreksi bug atau penulisan
+* Fitur baru (Dark Mode, Gallery Filter)
+* Optimasi responsif
+* Konten acara atau jadwal
 
-Buka issue atau pull request kalau kamu punya ide keren! 🚀
+---
 
-## 🧑‍🎓 Lisensi
+## 📄 Lisensi
 
-MIT License © 2025
-Dibuat dengan cinta oleh panitia PGMI dan kontributor open-source ❤️
+Proyek ini menggunakan lisensi **MIT** — silakan digunakan, dimodifikasi, dan dikembangkan sesuai kebutuhan, tetap sertakan kredit jika bermanfaat. 🙏
+
+---
+
+## 👨‍🏫 Dibuat oleh
+
+Tim Kreatif Pagelaran PGMI 2025
+Universitas Islam Fiktif
+📧 Email: [info@pgmi2025.id](mailto:info@pgmi2025.id)
+🌐 Situs resmi: [pgmi2025.id](https://pgmi2025.id) *(contoh)*
+
+---
+
+> “Inovasi tidak lahir dari kemewahan teknologi, tapi dari semangat berbagi dan berkarya.”
+> — Panitia PGMI 2025
