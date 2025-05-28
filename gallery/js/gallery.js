@@ -4,7 +4,7 @@ fetch('/gallery/json/gallery.json')
     const gallery = document.getElementById('galleryGrid');
     const mediaItems = data.gallery.media;
 
-    // Buat elemen modal popup
+    // Modal popup
     const modal = document.createElement('div');
     modal.id = 'modalPopup';
     modal.className = 'fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden z-50';
@@ -32,22 +32,20 @@ fetch('/gallery/json/gallery.json')
         `;
       }
 
-      let metaDetails = '';
-      if (item.metadata) {
-        const metaParts = [];
-        if (item.metadata.date_taken) metaParts.push(`Tanggal: ${item.metadata.date_taken}`);
-        if (item.metadata.date_created) metaParts.push(`Tanggal: ${item.metadata.date_created}`);
-        if (item.metadata.date_uploaded) metaParts.push(`Diunggah: ${item.metadata.date_uploaded}`);
-        if (item.metadata.duration) metaParts.push(`Durasi: ${item.metadata.duration}`);
-        if (item.metadata.photographer) metaParts.push(`Foto oleh: ${item.metadata.photographer}`);
-        if (item.metadata.author) metaParts.push(`Pembuat: ${item.metadata.author}`);
-        if (item.metadata.designer) metaParts.push(`Desainer: ${item.metadata.designer}`);
-        if (metaParts.length) {
-          metaDetails = `<p class="text-sm text-gray-700 mt-2 italic">${metaParts.join(' | ')}</p>`;
-        }
-      }
+      const metaParts = [];
+      if (item.metadata?.date_taken) metaParts.push(`Tanggal: ${item.metadata.date_taken}`);
+      if (item.metadata?.date_created) metaParts.push(`Tanggal: ${item.metadata.date_created}`);
+      if (item.metadata?.date_uploaded) metaParts.push(`Diunggah: ${item.metadata.date_uploaded}`);
+      if (item.metadata?.duration) metaParts.push(`Durasi: ${item.metadata.duration}`);
+      if (item.metadata?.photographer) metaParts.push(`Foto oleh: ${item.metadata.photographer}`);
+      if (item.metadata?.author) metaParts.push(`Pembuat: ${item.metadata.author}`);
+      if (item.metadata?.designer) metaParts.push(`Desainer: ${item.metadata.designer}`);
 
-      const tagsHtml = (item.tags && item.tags.length)
+      const metaDetails = metaParts.length
+        ? `<p class="text-sm text-gray-700 mt-2 italic">${metaParts.join(' | ')}</p>`
+        : '';
+
+      const tagsHtml = item.tags?.length
         ? `<div class="tags">${item.tags.map(tag => `<span>${tag}</span>`).join('')}</div>`
         : '';
 
@@ -91,24 +89,22 @@ fetch('/gallery/json/gallery.json')
         `;
       }
 
-      const tagsHtml = (item.tags && item.tags.length)
+      const tagsHtml = item.tags?.length
         ? `<div class="tags">${item.tags.map(tag => `<span>${tag}</span>`).join('')}</div>`
         : '';
 
-      let metadataHtml = '';
-      if (item.metadata) {
-        const metaParts = [];
-        if (item.metadata.date_taken) metaParts.push(`Tanggal: ${item.metadata.date_taken}`);
-        if (item.metadata.date_created) metaParts.push(`Tanggal: ${item.metadata.date_created}`);
-        if (item.metadata.date_uploaded) metaParts.push(`Diunggah: ${item.metadata.date_uploaded}`);
-        if (item.metadata.duration) metaParts.push(`Durasi: ${item.metadata.duration}`);
-        if (item.metadata.photographer) metaParts.push(`Foto oleh: ${item.metadata.photographer}`);
-        if (item.metadata.author) metaParts.push(`Pembuat: ${item.metadata.author}`);
-        if (item.metadata.designer) metaParts.push(`Desainer: ${item.metadata.designer}`);
-        if (metaParts.length) {
-          metadataHtml = `<p class="text-xs text-gray-500 mt-1 italic">${metaParts.join(' | ')}</p>`;
-        }
-      }
+      const metaParts = [];
+      if (item.metadata?.date_taken) metaParts.push(`Tanggal: ${item.metadata.date_taken}`);
+      if (item.metadata?.date_created) metaParts.push(`Tanggal: ${item.metadata.date_created}`);
+      if (item.metadata?.date_uploaded) metaParts.push(`Diunggah: ${item.metadata.date_uploaded}`);
+      if (item.metadata?.duration) metaParts.push(`Durasi: ${item.metadata.duration}`);
+      if (item.metadata?.photographer) metaParts.push(`Foto oleh: ${item.metadata.photographer}`);
+      if (item.metadata?.author) metaParts.push(`Pembuat: ${item.metadata.author}`);
+      if (item.metadata?.designer) metaParts.push(`Desainer: ${item.metadata.designer}`);
+
+      const metadataHtml = metaParts.length
+        ? `<p class="text-xs text-gray-500 mt-1 italic">${metaParts.join(' | ')}</p>`
+        : '';
 
       card.innerHTML = `
         ${mediaHtml}
@@ -123,3 +119,12 @@ fetch('/gallery/json/gallery.json')
     });
   })
   .catch(err => console.error('Gagal load gallery.json:', err));
+
+// ✅ Toggle menu langsung aktif setelah halaman dimuat
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+if (navToggle && navLinks) {
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+}

@@ -33,11 +33,22 @@ fetch('/home/json/home.json')
       document.getElementById('cta-konten').textContent = data.call_to_action.konten;
       document.getElementById('cta-tautan').href = data.call_to_action.tautan;
     }
-
   })
   .catch(err => console.error('Gagal load JSON:', err));
 
 // Tombol scroll ke highlight
 document.getElementById('btnScroll').addEventListener('click', () => {
   document.getElementById('highlightContainer').scrollIntoView({ behavior: 'smooth' });
+});
+
+// Toggle hamburger menu untuk tampilan kecil
+document.addEventListener('DOMContentLoaded', () => {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
 });

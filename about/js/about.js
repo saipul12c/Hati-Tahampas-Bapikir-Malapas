@@ -1,3 +1,6 @@
+// about.js
+
+// Memuat konten dari about.json
 fetch('/about/json/about.json')
   .then(res => res.json())
   .then(data => {
@@ -11,7 +14,7 @@ fetch('/about/json/about.json')
     document.getElementById('tanggal').textContent = data.tanggal || '-';
 
     // Visi
-    document.getElementById('visi').textContent = data.visi;
+    document.getElementById('visi').textContent = data.visi || '-';
 
     // Misi
     const misiList = document.getElementById('misiList');
@@ -31,29 +34,42 @@ fetch('/about/json/about.json')
 
     // Struktur Panitia
     const panitiaList = document.getElementById('panitiaList');
-    for (const [jabatan, nama] of Object.entries(data.panitia)) {
+    Object.entries(data.panitia).forEach(([jabatan, nama]) => {
       const li = document.createElement('li');
       li.innerHTML = `<strong>${formatJabatan(jabatan)}:</strong> ${nama}`;
       panitiaList.appendChild(li);
-    }
+    });
 
     // Kontak
     document.getElementById('email').textContent = data.kontak.email || '-';
     document.getElementById('telepon').textContent = data.kontak.telepon || '-';
 
     const ig = document.getElementById('instagram');
-    ig.textContent = data.kontak.instagram;
-    ig.href = 'https://instagram.com/' + data.kontak.instagram.replace('@', '');
+    ig.textContent = data.kontak.instagram || '-';
+    ig.href = data.kontak.instagram
+      ? 'https://instagram.com/' + data.kontak.instagram.replace('@', '')
+      : '#';
 
     const web = document.getElementById('website');
-    web.textContent = data.kontak.website.replace(/^https?:\/\//, '');
-    web.href = data.kontak.website;
+    web.textContent = data.kontak.website
+      ? data.kontak.website.replace(/^https?:\/\//, '')
+      : '-';
+    web.href = data.kontak.website || '#';
   })
   .catch(err => console.error('Gagal memuat about.json:', err));
 
-// Fungsi bantu untuk memformat nama jabatan dari snake_case ke huruf kapital
+// Fungsi bantu: snake_case → Huruf Kapital
 function formatJabatan(jabatan) {
   return jabatan
     .replace(/_/g, ' ')
     .replace(/\b\w/g, huruf => huruf.toUpperCase());
+}
+
+// Toggle hamburger menu (langsung aktif)
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks  = document.querySelector('.nav-links');
+if (navToggle && navLinks) {
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
 }
