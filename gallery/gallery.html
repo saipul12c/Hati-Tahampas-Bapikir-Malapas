@@ -10,26 +10,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-<!-- Navbar -->
-<nav class="navbar" role="navigation" aria-label="Navigasi utama">
-  <div class="navbar-container">
-    <a href="../index.html" class="logo" aria-label="Beranda PGMI 2025">PGMI 2025</a>
-    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="index.html" aria-current="page">Beranda</a></li>
-      <li><a href="/about/about.html">Tentang</a></li>
-      <li><a href="/gallery/gallery.html">Galeri</a></li>
-      <li><a href="/schedule/schedule.html">Jadwal</a></li>
-      <li><a href="/contact/contact.html">Kontak</a></li>
-    </ul>
-  </div>
-</nav>
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Navigasi utama">
+    <div class="navbar-container">
+      <a href="../index.html" class="logo" aria-label="Beranda PGMI 2025">PGMI 2025</a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="/index.html" aria-current="page">Beranda</a></li>
+        <li><a href="/about/about.html">Tentang</a></li>
+        <li><a href="/gallery/gallery.html">Galeri</a></li>
+        <li><a href="/schedule/schedule.html">Jadwal</a></li>
+        <li><a href="/contact/contact.html">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <main class="gallery-container">
     <h1 class="page-title">Galeri Pagelaran</h1>
+
+    <!-- Grid Media Galeri -->
     <div id="galleryGrid" class="gallery-grid" aria-live="polite" aria-label="Galeri media Pagelaran PGMI 2025">
-      <!-- Isi dari JSON akan dimuat di sini -->
+      <!-- Konten dari gallery.json dimuat dengan JS -->
     </div>
+
+    <!-- Bagian Tim & Pemain akan disisipkan oleh gallery.js -->
   </main>
 
   <footer class="footer">

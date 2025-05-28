@@ -1,8 +1,35 @@
 {
-  "deskripsi": "Jika kamu memiliki pertanyaan seputar Pagelaran PGMI 2025, hubungi kami melalui formulir atau sosial media berikut.",
+  "deskripsi": "Jika kamu memiliki pertanyaan, kritik, saran, atau ingin bekerja sama dalam Pagelaran PGMI 2025, silakan hubungi kami melalui formulir atau media sosial berikut.",
   "sosial": [
-    { "nama": "Instagram", "url": "https://instagram.com/pgmi2025" },
-    { "nama": "WhatsApp", "url": "https://wa.me/6281234567890" },
-    { "nama": "Email", "url": "mailto:info@pgmi2025.id" }
+    {
+      "nama": "Instagram",
+      "url": "https://instagram.com/pgmi2025",
+      "icon": "fa-brands fa-instagram"
+    },
+    {
+      "nama": "WhatsApp",
+      "url": "https://wa.me/6281234567890",
+      "icon": "fa-brands fa-whatsapp"
+    },
+    {
+      "nama": "Email",
+      "url": "mailto:info@pgmi2025.id",
+      "icon": "fa-solid fa-envelope"
+    },
+    {
+      "nama": "YouTube",
+      "url": "https://youtube.com/@pgmi2025",
+      "icon": "fa-brands fa-youtube"
+    },
+    {
+      "nama": "TikTok",
+      "url": "https://tiktok.com/@pgmi2025",
+      "icon": "fa-brands fa-tiktok"
+    },
+    {
+      "nama": "Facebook",
+      "url": "https://facebook.com/pgmi2025",
+      "icon": "fa-brands fa-facebook"
+    }
   ]
 }

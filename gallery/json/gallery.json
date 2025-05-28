@@ -17,6 +17,106 @@
           "author": "Tim Kreatif PGMI"
         }
       }
-    ]
+    ],
+    "team_and_players": {
+      "teams": [
+        {
+          "name": "Pimpinan Produksi",
+          "person": "Rizki Ananda Putri",
+          "photo": "../../assets/img/1.png",
+          "description": "Bertanggung jawab terhadap keseluruhan produksi pagelaran."
+        },
+        {
+          "name": "Stage Manager",
+          "person": "Ahmad Fikri Ramadhan",
+          "photo": "../../assets/img/1.png",
+          "description": "Mengatur teknis panggung dan jalannya acara di belakang layar."
+        },
+        {
+          "name": "Sekretaris",
+          "person": "Larasati Dewi Puspa",
+          "photo": "../../assets/img/1.png",
+          "description": "Membantu administrasi dan dokumentasi tim produksi."
+        },
+        {
+          "name": "Bendahara",
+          "person": "Dinda Ayu Safitri",
+          "photo": "../../assets/img/1.png",
+          "description": "Mengelola anggaran dan keuangan pagelaran."
+        },
+        {
+          "name": "PDD",
+          "person": "Muhammad Azka Pratama",
+          "photo": "../../assets/img/1.png",
+          "description": "Penanggung jawab dokumentasi digital dan media sosial."
+        },
+        {
+          "name": "Konsumsi",
+          "person": "Nadira Zahwa",
+          "photo": "../../assets/img/1.png",
+          "description": "Mengatur konsumsi dan logistik makanan-minuman."
+        },
+        {
+          "name": "Perlengkapan",
+          "person": "Bima Rahmatullah",
+          "photo": "../../assets/img/1.png",
+          "description": "Menyiapkan dan memelihara perlengkapan pagelaran."
+        }
+      ],
+      "players": [
+        {
+          "name": "Pemain 1",
+          "role": "Penyanyi",
+          "photo": "../../assets/img/1.png",
+          "description": "Vokal utama dengan karakter suara khas."
+        },
+        {
+          "name": "Pemain 2",
+          "role": "Penari",
+          "photo": "../../assets/img/1.png",
+          "description": "Penari andalan dengan teknik tarian modern."
+        },
+        {
+          "name": "Pemain 3",
+          "role": "MC",
+          "photo": "../../assets/img/1.png",
+          "description": "Pembawa acara dengan gaya komunikatif dan energik."
+        },
+        {
+          "name": "Pemain 4",
+          "role": "Pemusik",
+          "photo": "../../assets/img/1.png",
+          "description": "Mengisi musik latar secara live dengan instrumen tradisional."
+        },
+        {
+          "name": "Pemain 5",
+          "role": "Penari",
+          "photo": "../../assets/img/1.png",
+          "description": "Penari kontemporer dengan gerakan dinamis."
+        },
+        {
+          "name": "Pemain 6",
+          "role": "Penyanyi",
+          "photo": "../../assets/img/1.png",
+          "description": "Mengisi vokal latar dan duet dengan penyanyi utama."
+        },
+        {
+          "name": "Pemain 7",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Memerankan tokoh utama dalam drama panggung."
+        }
+      ],
+      "summary": {
+        "total_players": 28,
+        "categories": [
+          { "name": "Penyanyi", "count": 2 },
+          { "name": "Penari", "count": 2 },
+          { "name": "MC", "count": 1 },
+          { "name": "Pemusik", "count": 1 },
+          { "name": "Aktor", "count": 1 }
+        ]
+      }
+    }
   }
 }
