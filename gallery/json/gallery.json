@@ -22,89 +22,269 @@
       "teams": [
         {
           "name": "Pimpinan Produksi",
-          "person": "Rizki Ananda Putri",
+          "person": "Muhammad Syaiful Mukmin",
           "photo": "../../assets/img/1.png",
           "description": "Bertanggung jawab terhadap keseluruhan produksi pagelaran."
         },
         {
           "name": "Stage Manager",
-          "person": "Ahmad Fikri Ramadhan",
+          "person": "M. Hasbianor",
           "photo": "../../assets/img/1.png",
           "description": "Mengatur teknis panggung dan jalannya acara di belakang layar."
         },
         {
           "name": "Sekretaris",
-          "person": "Larasati Dewi Puspa",
+          "person": "Gina",
           "photo": "../../assets/img/1.png",
           "description": "Membantu administrasi dan dokumentasi tim produksi."
         },
         {
           "name": "Bendahara",
-          "person": "Dinda Ayu Safitri",
+          "person": "Yasmin nuraziza",
           "photo": "../../assets/img/1.png",
           "description": "Mengelola anggaran dan keuangan pagelaran."
         },
         {
+        "name": "Sutradara",
+        "person": "Muhammad Wahyu Mubarak",
+        "photo": "../../assets/img/1.png",
+        "description": "Bertanggung jawaba untuk Mengatur, Menulis Naskah, dan Mengelola Pemain."
+        },
+        {
           "name": "PDD",
-          "person": "Muhammad Azka Pratama",
+          "person": "Laras Nor Salasiah",
           "photo": "../../assets/img/1.png",
           "description": "Penanggung jawab dokumentasi digital dan media sosial."
         },
         {
           "name": "Konsumsi",
-          "person": "Nadira Zahwa",
+          "person": "Risma Septiani",
           "photo": "../../assets/img/1.png",
           "description": "Mengatur konsumsi dan logistik makanan-minuman."
         },
         {
           "name": "Perlengkapan",
-          "person": "Bima Rahmatullah",
+          "person": "Arlin",
           "photo": "../../assets/img/1.png",
           "description": "Menyiapkan dan memelihara perlengkapan pagelaran."
         }
       ],
       "players": [
         {
-          "name": "Pemain 1",
-          "role": "Penyanyi",
-          "photo": "../../assets/img/1.png",
-          "description": "Vokal utama dengan karakter suara khas."
+        "name": "Laras Nor Salasiah",
+        "role": "Penyanyi",
+        "photo": "../../assets/img/1.png",
+        "description": "Vokal utama dengan karakter suara khas."
         },
         {
-          "name": "Pemain 2",
+          "name": "Nor Mahlina",
           "role": "Penari",
           "photo": "../../assets/img/1.png",
           "description": "Penari andalan dengan teknik tarian modern."
         },
         {
-          "name": "Pemain 3",
-          "role": "MC",
+          "name": "Helda Fitriani",
+          "role": "Penari",
           "photo": "../../assets/img/1.png",
-          "description": "Pembawa acara dengan gaya komunikatif dan energik."
+          "description": "Penari unggulan yang menguasai teknik tari modern maupun tradisional"
         },
         {
-          "name": "Pemain 4",
-          "role": "Pemusik",
+          "name": "Yulia Ni'mah",
+          "role": "Penari",
           "photo": "../../assets/img/1.png",
-          "description": "Mengisi musik latar secara live dengan instrumen tradisional."
+          "description": "Tarian modern dan tradisional dikuasainya dengan mahir."
         },
         {
-          "name": "Pemain 5",
+          "name": "Danti",
           "role": "Penari",
           "photo": "../../assets/img/1.png",
           "description": "Penari kontemporer dengan gerakan dinamis."
         },
         {
-          "name": "Pemain 6",
-          "role": "Penyanyi",
+          "name": "Khairun Nidha",
+          "role": "Penari",
+          "photo": "../../assets/img/1.png",
+          "description": "Seorang penari berpengalaman yang piawai menarikan gaya modern dan klasik."
+        },
+        {
+          "name": "Adawiyah",
+          "role": "Penari",
+          "photo": "../../assets/img/1.png",
+          "description": "Penampil andal dengan kemampuan memadukan gerak tari tradisional dan modern."
+        },
+        {
+          "name": "M. Aminullah",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Memerankan tokoh utama sebagai Guru yang mengabdikan dirinya seumur hidup pada pendidikan dan memiliki Penyakit Jantung."
+        },
+        {
+          "name": "Gina",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Memerankan Tokoh Sebagai Istri dari Guru Tersebut"
+        },
+        {
+          "name": "Arlin",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Memerankan peran sebagai anak guru, yang memiliki hobi bermain game dan kecanduan Judi online"
+        },
+        {
+          "name": "Ahmad Safi'i",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Berrole sebagai Teman anak guru, yang memiliki hobi yang sama, akan tetapi tidak kecanduan judi online"
+        },
+        {
+          "name": "Ahmad Baihaqi",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Berperan Sebagai seorang Penjual sayur."
+        },
+        {
+          "name": "Pemain 1",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Pembawa acara dengan gaya komunikatif dan energik."
+        },
+        {
+          "name": "Pemain 2",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Mengisi musik latar secara live dengan instrumen tradisional."
+        },
+        {
+          "name": "Pemain 3",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Penari kontemporer dengan gerakan dinamis."
+        },
+        {
+          "name": "Pemain 4",
+          "role": "Aktor",
           "photo": "../../assets/img/1.png",
           "description": "Mengisi vokal latar dan duet dengan penyanyi utama."
+        },
+        {
+          "name": "Pemain 5",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Memerankan tokoh utama dalam drama panggung."
+        },
+        {
+          "name": "Pemain 6",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Penari kontemporer dengan gerakan dinamis."
         },
         {
           "name": "Pemain 7",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
+          "description": "Mengisi vokal latar dan duet dengan penyanyi utama."
+        },
+        {
+          "name": "Pemain 8",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
           "description": "Memerankan tokoh utama dalam drama panggung."
+        },
+        {
+          "name": "Pemain 9",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Vokal utama dengan karakter suara khas."
+        },
+        {
+          "name": "Pemain 10",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Penari andalan dengan teknik tarian modern."
+        },
+        {
+          "name": "Pemain 11",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Pembawa acara dengan gaya komunikatif dan energik."
+        },
+        {
+          "name": "Pemain 12",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Mengisi musik latar secara live dengan instrumen tradisional."
+        },
+        {
+          "name": "Pemain 13",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Penari kontemporer dengan gerakan dinamis."
+        },
+        {
+          "name": "Pemain 14",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Mengisi vokal latar dan duet dengan penyanyi utama."
+        },
+        {
+          "name": "Pemain 15",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Memerankan tokoh utama dalam drama panggung."
+        },
+        {
+          "name": "Pemain 16",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Penari kontemporer dengan gerakan dinamis."
+        },
+        {
+          "name": "Pemain 17",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Mengisi vokal latar dan duet dengan penyanyi utama."
+        },
+        {
+          "name": "Pemain 18",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Memerankan tokoh utama dalam drama panggung."
+        },
+        {
+          "name": "Pemain 19",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Vokal utama dengan karakter suara khas."
+        },
+        {
+          "name": "Pemain 20",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Penari andalan dengan teknik tarian modern."
+        },
+        {
+          "name": "Pemain 21",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Pembawa acara dengan gaya komunikatif dan energik."
+        },
+        {
+          "name": "Pemain 22",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Vokal utama dengan karakter suara khas."
+        },
+        {
+          "name": "Pemain 23",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Penari andalan dengan teknik tarian modern."
+        },
+        {
+          "name": "Pemain 24",
+          "role": "Aktor",
+          "photo": "../../assets/img/1.png",
+          "description": "Pembawa acara dengan gaya komunikatif dan energik."
         }
       ],
       "summary": {
@@ -112,7 +292,6 @@
         "categories": [
           { "name": "Penyanyi", "count": 2 },
           { "name": "Penari", "count": 2 },
-          { "name": "MC", "count": 1 },
           { "name": "Pemusik", "count": 1 },
           { "name": "Aktor", "count": 1 }
         ]

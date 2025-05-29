@@ -17,6 +17,7 @@ fetch('/home/json/home.json')
 
     // Highlight acara
     const highlightContainer = document.getElementById('highlightContainer');
+    highlightContainer.innerHTML = ''; // Bersihkan konten lama jika ada
     data.highlight.forEach(item => {
       const card = document.createElement('div');
       card.className = 'highlight-card';
@@ -32,6 +33,15 @@ fetch('/home/json/home.json')
       document.getElementById('cta-judul').textContent = data.call_to_action.judul;
       document.getElementById('cta-konten').textContent = data.call_to_action.konten;
       document.getElementById('cta-tautan').href = data.call_to_action.tautan;
+    }
+
+    // Coming Soon
+    if (data.comingsoon) {
+      const comingSoonSection = document.getElementById('comingSoon');
+      comingSoonSection.innerHTML = `
+        <h3>${data.comingsoon.judul}</h3>
+        <p>${data.comingsoon.konten}</p>
+      `;
     }
   })
   .catch(err => console.error('Gagal load JSON:', err));
