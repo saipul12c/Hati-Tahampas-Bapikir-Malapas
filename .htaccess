@@ -1,0 +1,5 @@
+<FilesMatch "\.(js|css|json)$">
+  RedirectMatch 403 /error.html
+</FilesMatch>
+
+ErrorDocument 403 /error.html

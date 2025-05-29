@@ -10,8 +10,15 @@ fetch('/about/json/about.json')
 
     // Informasi dasar
     document.getElementById('tema').textContent = data.tema || '-';
+    document.getElementById('tema_lokal').textContent = data.tema_lokal || '-';
     document.getElementById('lokasi').textContent = data.lokasi || '-';
     document.getElementById('tanggal').textContent = data.tanggal || '-';
+
+    // Latar Belakang
+    const latarBelakang = document.getElementById('latarBelakang');
+    if (latarBelakang) {
+      latarBelakang.textContent = data.latar_belakang || '-';
+    }
 
     // Visi
     document.getElementById('visi').textContent = data.visi || '-';
@@ -39,6 +46,30 @@ fetch('/about/json/about.json')
       li.innerHTML = `<strong>${formatJabatan(jabatan)}:</strong> ${nama}`;
       panitiaList.appendChild(li);
     });
+
+    // Tim & Pemain
+    const timList = document.getElementById('timList');
+    const pemainList = document.getElementById('pemainList');
+
+    if (data.tim_dan_pemain) {
+      // Tim
+      if (timList && data.tim_dan_pemain.tim) {
+        data.tim_dan_pemain.tim.forEach(tim => {
+          const li = document.createElement('li');
+          li.innerHTML = `<strong>${tim.nama} (${tim.person}):</strong> ${tim.deskripsi}`;
+          timList.appendChild(li);
+        });
+      }
+
+      // Pemain
+      if (pemainList && data.tim_dan_pemain.pemain) {
+        data.tim_dan_pemain.pemain.forEach(pemain => {
+          const li = document.createElement('li');
+          li.innerHTML = `<strong>${pemain.nama} (${pemain.peran}):</strong> ${pemain.deskripsi}`;
+          pemainList.appendChild(li);
+        });
+      }
+    }
 
     // Kontak
     document.getElementById('email').textContent = data.kontak.email || '-';

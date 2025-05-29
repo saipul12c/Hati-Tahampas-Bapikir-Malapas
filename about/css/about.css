@@ -1,4 +1,4 @@
-/* RESET DAN FONTS */
+/* === RESET DAN DASAR === */
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +7,13 @@
 }
 
 body {
-  background-color: #fdfcfb;
-  color: #1a202c;
+  background-color: #f9fafa;
+  color: #1f2937;
   line-height: 1.6;
   overflow-x: hidden;
 }
 
-/* === NAVBAR === */
+/* === NAVBAR (tetap sesuai instruksi) === */
 .navbar {
   background-color: #fff;
   padding: 1rem 2rem;
@@ -90,72 +90,82 @@ body {
   }
 }
 
-
 /* === KONTEN UTAMA === */
 .about-container {
   max-width: 1100px;
   margin: auto;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-/* Informasi Umum */
-.tentang {
-  background: linear-gradient(to right, #edf2f7, #e2e8f0);
+/* === KOMONEN KARTU === */
+section {
+  background: #ffffff;
+  border-radius: 16px;
   padding: 2rem;
-  border-radius: 14px;
-  margin-bottom: 2.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
 }
 
+section:hover {
+  transform: translateY(-4px);
+}
+
+/* === TENTANG === */
 .tentang h1 {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   color: #2b6cb0;
   margin-bottom: 1rem;
 }
 
 .tentang p {
   font-size: 1.1rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #4a5568;
+}
+
+.info-lain {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
 }
 
 .info-lain li {
-  margin-bottom: 0.5rem;
   font-size: 1rem;
-  list-style: none;
+  color: #2d3748;
 }
 
-/* Visi Misi */
-.visi-misi {
-  margin-bottom: 2.5rem;
-}
-
+/* === LATAR BELAKANG, VISI, MISI === */
+.latar-belakang h2,
 .visi-misi h2 {
   font-size: 1.7rem;
   color: #2b6cb0;
-  margin-bottom: 0.5rem;
-}
-
-.visi-misi p {
-  font-size: 1.05rem;
   margin-bottom: 1rem;
 }
 
+#latarBelakang,
+.visi-misi p {
+  font-size: 1.05rem;
+  color: #4a5568;
+  margin-bottom: 1.2rem;
+}
+
 #misiList {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  line-height: 1.8;
+  padding-left: 1.25rem;
+  color: #2d3748;
 }
 
-/* Nilai Inti */
-.nilai-nilai {
-  background-color: #f7fafc;
-  padding: 2rem;
-  border-radius: 12px;
-  margin-bottom: 2.5rem;
+#misiList li {
+  margin-bottom: 0.6rem;
 }
 
+/* === NILAI INTI === */
 .nilai-nilai h2 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #2b6cb0;
   margin-bottom: 1rem;
 }
@@ -164,49 +174,51 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  list-style: none; /* Menghilangkan bullet 'o' */
-  padding-left: 0;   /* Hilangkan indentasi */
+  list-style: none;
+  padding-left: 0;
 }
 
 #nilaiList li {
-  background-color: #e2e8f0;
+  background-color: #edf2f7;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   font-weight: 500;
   font-size: 0.95rem;
-  white-space: nowrap;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 
-/* Struktur Panitia */
-.panitia {
-  margin-bottom: 2rem;
-}
-
-.panitia h2 {
+/* === PANITIA, TIM, PEMAIN === */
+.panitia h2,
+.tim-pelaksana h2,
+.pemain h2 {
   font-size: 1.6rem;
   color: #2b6cb0;
   margin-bottom: 1rem;
 }
 
-#panitiaList {
+#panitiaList,
+#timList,
+#pemainList {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
-#panitiaList li {
-  margin-bottom: 0.6rem;
+#panitiaList li,
+#timList li,
+#pemainList li {
   font-size: 1rem;
+  color: #2d3748;
+  padding-left: 0.5rem;
+  border-left: 4px solid #2b6cb0;
+  background-color: #f9fafb;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
 }
 
-/* Kontak */
-.kontak {
-  background-color: #edf2f7;
-  padding: 1.8rem;
-  border-radius: 12px;
-  margin-bottom: 2rem;
-}
-
+/* === KONTAK === */
 .kontak h2 {
   font-size: 1.6rem;
   color: #2b6cb0;
@@ -216,10 +228,11 @@ body {
 .kontak ul {
   list-style: none;
   padding-left: 0;
+  display: grid;
+  gap: 0.6rem;
 }
 
 .kontak ul li {
-  margin-bottom: 0.6rem;
   font-size: 1rem;
 }
 
@@ -233,7 +246,7 @@ body {
   text-decoration: underline;
 }
 
-/* === FOOTER === */
+/* === FOOTER (tetap sesuai instruksi) === */
 .footer {
   text-align: center;
   padding: 1.5rem 1rem;
@@ -242,26 +255,21 @@ body {
   font-size: 0.9rem;
 }
 
-/* === RESPONSIF === */
+/* === RESPONSIFITAS === */
 @media (max-width: 768px) {
   .tentang h1 {
     font-size: 1.8rem;
   }
 
-  .visi-misi h2,
-  .nilai-nilai h2,
-  .panitia h2,
-  .kontak h2 {
-    font-size: 1.3rem;
+  section {
+    padding: 1.5rem;
+  }
+
+  .info-lain {
+    grid-template-columns: 1fr;
   }
 
   #nilaiList {
     flex-direction: column;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 0.75rem;
   }
 }

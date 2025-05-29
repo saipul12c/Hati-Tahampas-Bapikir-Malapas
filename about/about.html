@@ -11,19 +11,19 @@
 </head>
 <body>
   <!-- Navbar -->
-<nav class="navbar" role="navigation" aria-label="Navigasi utama">
-  <div class="navbar-container">
-    <a href="../index.html" class="logo" aria-label="Beranda PGMI 2025">PGMI 2025</a>
-    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="/index.html" aria-current="page">Beranda</a></li>
-      <li><a href="/about/about.html">Tentang</a></li>
-      <li><a href="/gallery/gallery.html">Galeri</a></li>
-      <li><a href="/schedule/schedule.html">Jadwal</a></li>
-      <li><a href="/contact/contact.html">Kontak</a></li>
-    </ul>
-  </div>
-</nav>
+  <nav class="navbar" role="navigation" aria-label="Navigasi utama">
+    <div class="navbar-container">
+      <a href="https://pgmi.uin-antasari.ac.id/" class="logo" aria-label="Beranda PGMI 2025">PGMI 2025</a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="/index.html" aria-current="page">Beranda</a></li>
+        <li><a href="/about/about.html">Tentang</a></li>
+        <li><a href="/gallery/gallery.html">Galeri</a></li>
+        <li><a href="/schedule/schedule.html">Jadwal</a></li>
+        <li><a href="/contact/contact.html">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <main class="about-container">
     <!-- Informasi Umum -->
@@ -32,9 +32,16 @@
       <p id="deskripsi">Memuat deskripsi...</p>
       <ul class="info-lain">
         <li><strong>Tema:</strong> <span id="tema">...</span></li>
+        <li><strong>Tema Lokal:</strong> <span id="tema_lokal">...</span></li>
         <li><strong>Lokasi:</strong> <span id="lokasi">...</span></li>
         <li><strong>Tanggal:</strong> <span id="tanggal">...</span></li>
       </ul>
+    </section>
+
+    <!-- Latar Belakang -->
+    <section class="latar-belakang" aria-label="Latar Belakang">
+      <h2>Latar Belakang</h2>
+      <p id="latarBelakang">Memuat latar belakang...</p>
     </section>
 
     <!-- Visi dan Misi -->
@@ -58,9 +65,25 @@
 
     <!-- Struktur Panitia -->
     <section class="panitia" aria-label="Struktur Panitia">
-      <h2>Struktur Panitia</h2>
+      <h2>Struktur Panitia inti</h2>
       <ul id="panitiaList">
         <!-- Panitia dimuat dari JSON -->
+      </ul>
+    </section>
+
+    <!-- Tim Pelaksana -->
+    <section class="tim-pelaksana" aria-label="Tim Pelaksana">
+      <h2>Tim Pelaksana Lokal B</h2>
+      <ul id="timList">
+        <!-- Tim akan dimuat dari JSON -->
+      </ul>
+    </section>
+
+    <!-- Pemain Panggung -->
+    <section class="pemain" aria-label="Pemain Panggung">
+      <h2>Pemain Panggung dariLokal B</h2>
+      <ul id="pemainList">
+        <!-- Pemain akan dimuat dari JSON -->
       </ul>
     </section>
 

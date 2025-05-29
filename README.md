@@ -82,7 +82,7 @@ pagelaran-pgmi-2025/
 1. **Clone repo ini**
 
 ```bash
-git clone https://github.com/username/pgmi2025.git
+git clone https://github.com/saipul12c/Hati-Tahampas-Bapikir-Malapas.git
 ```
 
 2. **Buka file `home/home.html` di browser lokal**

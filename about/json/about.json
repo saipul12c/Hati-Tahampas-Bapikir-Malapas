@@ -1,10 +1,11 @@
 {
   "judul": "Tentang Pagelaran PGMI 2025",
-  "deskripsi": "Pagelaran PGMI (Pendidikan Guru Madrasah Ibtidaiyah) merupakan ajang tahunan berskala nasional yang mempertemukan mahasiswa PGMI dari berbagai perguruan tinggi di Indonesia. Kegiatan ini menjadi ruang ekspresi dan kolaborasi dalam bidang seni, budaya, pendidikan, teknologi, serta pengabdian masyarakat. Pada tahun 2025, pagelaran akan digelar di kota budaya Yogyakarta dengan mengusung tema besar: 'Menjunjung Budaya, Merangkai Inovasi'. Acara ini terbuka untuk umum dan mengedepankan semangat inklusivitas, keberagaman, serta semangat kebersamaan antar generasi muda calon pendidik bangsa.",
+  "deskripsi": "Pagelaran PGMI (Pendidikan Guru Madrasah Ibtidaiyah) 2025 merupakan sebuah ajang nasional tahunan yang mempertemukan kreativitas, edukasi, dan budaya dalam satu kesatuan. Diselenggarakan oleh mahasiswa PGMI UIN Antasari Banjarmasin, Angkatan 2022, acara ini menjadi panggung kolaboratif yang menampilkan karya seni, inovasi pendidikan, dan pengabdian kepada masyarakat. Dengan semangat keterbukaan, keberagaman, dan kreativitas, pagelaran ini terbuka bagi semua kalangan dan mengusung tema besar: 'Menjunjung Budaya, Merangkai Inovasi', dan Perwakilan Lokal B 2022 akan mengangkat Tema Teater: 'Hati Tahampas, Bapikir Malapas'.",
   
   "tema": "Menjunjung Budaya, Merangkai Inovasi",
-  "lokasi": "Universitas Negeri Yogyakarta, Indonesia",
-  "tanggal": "18 – 22 Agustus 2025",
+  "tema_lokal": "Hati Tahampas, Bapikir Malapas",
+  "lokasi": "UIN ANTASARI BANJARMASIN, Indonesia", 
+  "tanggal": "28 Juni 2025",
 
   "visi": "Menjadi wadah pengembangan potensi mahasiswa PGMI yang berjiwa edukatif, kreatif, berbudaya, dan berkontribusi nyata bagi masyarakat.",
 
@@ -24,13 +25,245 @@
     "Kebermanfaatan sosial"
   ],
 
+  "latar_belakang": "Pagelaran PGMI merupakan tradisi akademik sekaligus kebudayaan yang telah menjadi simbol semangat berkarya mahasiswa PGMI di seluruh Indonesia. Terinspirasi oleh kekayaan budaya Banjar dan nilai-nilai kearifan lokal Kalimantan Selatan, tahun 2025 menjadi momentum untuk menegaskan kembali bahwa pendidikan dan budaya dapat berjalan beriringan. Tema lokal yang akan kami angkat yaitu 'Hati Tahampas, Bapikir Malapas' menggambarkan semangat untuk tetap ikhlas, tangguh, dan bijak dalam berkarya—menjadi jiwa dalam seluruh rangkaian kegiatan yang akan dihadirkan.",
+
+  "tim_dan_pemain": {
+    "tim": [
+      {
+        "nama": "Pimpinan Produksi",
+        "person": "Muhammad Syaiful Mukmin",
+        "deskripsi": "Bertanggung jawab terhadap keseluruhan produksi pagelaran."
+      },
+      {
+        "nama": "Stage Manager",
+        "person": "M. Hasbianor",
+        "deskripsi": "Mengatur teknis panggung dan jalannya acara di belakang layar."
+      },
+      {
+        "nama": "Sekretaris",
+        "person": "Gina",
+        "deskripsi": "Membantu administrasi dan dokumentasi tim produksi."
+      },
+      {
+        "nama": "Bendahara",
+        "person": "Yasmin nuraziza",
+        "deskripsi": "Mengelola anggaran dan keuangan pagelaran."
+      },
+      {
+        "nama": "Sutradara",
+        "person": "Muhammad Wahyu Mubarak",
+        "deskripsi": "Bertanggung jawaba untuk Mengatur, Menulis Naskah, dan Mengelola Pemain."
+      },
+      {
+        "nama": "PDD",
+        "person": "Laras Nor Salasiah",
+        "deskripsi": "Penanggung jawab dokumentasi digital dan media sosial."
+      },
+      {
+        "nama": "Konsumsi",
+        "person": "Risma Septiani",
+        "deskripsi": "Mengatur konsumsi dan logistik makanan-minuman."
+      },
+      {
+        "nama": "Perlengkapan",
+        "person": "Arlin",
+        "deskripsi": "Menyiapkan dan memelihara perlengkapan pagelaran."
+      }
+    ],
+    "pemain": [
+      {
+        "nama": "Laras Nor Salasiah",
+        "peran": "Penyanyi",
+        "deskripsi": "Vokal utama dengan karakter suara khas."
+      },
+      {
+        "nama": "Nor Mahlina",
+        "peran": "Penari",
+        "deskripsi": "Penari andalan dengan teknik tarian modern."
+      },
+      {
+        "nama": "Helda Fitriani",
+        "peran": "Penari",
+        "deskripsi": "Penari unggulan yang menguasai teknik tari modern maupun tradisional"
+      },
+      {
+        "nama": "Yulia Ni'mah",
+        "peran": "Penari",
+        "deskripsi": "Tarian modern dan tradisional dikuasainya dengan mahir."
+      },
+      {
+        "nama": "Danti",
+        "peran": "Penari",
+        "deskripsi": "Penari kontemporer dengan gerakan dinamis."
+      },
+      {
+        "nama": "Khairun Nidha",
+        "peran": "Penari",
+        "deskripsi": "Seorang penari berpengalaman yang piawai menarikan gaya modern dan klasik."
+      },
+      {
+        "nama": "Adawiyah",
+        "peran": "Penari",
+        "deskripsi": "Penampil andal dengan kemampuan memadukan gerak tari tradisional dan modern."
+      },
+            {
+        "nama": "M. Aminullah",
+        "peran": "Aktor",
+        "deskripsi": "Memerankan tokoh utama sebagai Guru yang mengabdikan dirinya seumur hidup pada pendidikan dan memiliki Penyakit Jantung."
+      },
+      {
+        "nama": "Gina",
+        "peran": "Aktor",
+        "deskripsi": "Memerankan Tokoh Sebagai Istri dari Guru Tersebut"
+      },
+      {
+        "nama": "Arlin",
+        "peran": "Aktor",
+        "deskripsi": "Memerankan peran sebagai anak guru, yang memiliki hobi bermain game dan kecanduan Judi online"
+      },
+      {
+        "nama": "Ahmad Safi'i",
+        "peran": "Aktor",
+        "deskripsi": "Berperan sebagai Teman anak guru, yang memiliki hobi yang sama, akan tetapi tidak kecanduan judi online"
+      },
+      {
+        "nama": "Ahmad Baihaqi",
+        "peran": "Aktor",
+        "deskripsi": "Berperan Sebagai seorang Penjual sayur."
+      },
+      {
+        "nama": "Pemain 3",
+        "peran": "Aktor",
+        "deskripsi": "Pembawa acara dengan gaya komunikatif dan energik."
+      },
+      {
+        "nama": "Pemain 4",
+        "peran": "Aktor",
+        "deskripsi": "Mengisi musik latar secara live dengan instrumen tradisional."
+      },
+      {
+        "nama": "Pemain 5",
+        "peran": "Aktor",
+        "deskripsi": "Penari kontemporer dengan gerakan dinamis."
+      },
+      {
+        "nama": "Pemain 6",
+        "peran": "Aktor",
+        "deskripsi": "Mengisi vokal latar dan duet dengan penyanyi utama."
+      },
+      {
+        "nama": "Pemain 7",
+        "peran": "Aktor",
+        "deskripsi": "Memerankan tokoh utama dalam drama panggung."
+      },
+            {
+        "nama": "Pemain 8",
+        "peran": "Aktor",
+        "deskripsi": "Penari kontemporer dengan gerakan dinamis."
+      },
+      {
+        "nama": "Pemain 9",
+        "peran": "Aktor",
+        "deskripsi": "Mengisi vokal latar dan duet dengan penyanyi utama."
+      },
+      {
+        "nama": "Pemain 10",
+        "peran": "Aktor",
+        "deskripsi": "Memerankan tokoh utama dalam drama panggung."
+      },
+      {
+        "nama": "Laras Nor Salasiah",
+        "peran": "Penyanyi",
+        "deskripsi": "Vokal utama dengan karakter suara khas."
+      },
+      {
+        "nama": "Pemain 2",
+        "peran": "Penari",
+        "deskripsi": "Penari andalan dengan teknik tarian modern."
+      },
+      {
+        "nama": "Pemain 3",
+        "peran": "MC",
+        "deskripsi": "Pembawa acara dengan gaya komunikatif dan energik."
+      },
+      {
+        "nama": "Pemain 4",
+        "peran": "Pemusik",
+        "deskripsi": "Mengisi musik latar secara live dengan instrumen tradisional."
+      },
+      {
+        "nama": "Pemain 5",
+        "peran": "Penari",
+        "deskripsi": "Penari kontemporer dengan gerakan dinamis."
+      },
+      {
+        "nama": "Pemain 6",
+        "peran": "Penyanyi",
+        "deskripsi": "Mengisi vokal latar dan duet dengan penyanyi utama."
+      },
+      {
+        "nama": "Pemain 7",
+        "peran": "Aktor",
+        "deskripsi": "Memerankan tokoh utama dalam drama panggung."
+      },
+            {
+        "nama": "Pemain 8",
+        "peran": "Penari",
+        "deskripsi": "Penari kontemporer dengan gerakan dinamis."
+      },
+      {
+        "nama": "Pemain 9",
+        "peran": "Penyanyi",
+        "deskripsi": "Mengisi vokal latar dan duet dengan penyanyi utama."
+      },
+      {
+        "nama": "Pemain 10",
+        "peran": "Aktor",
+        "deskripsi": "Memerankan tokoh utama dalam drama panggung."
+      },
+            {
+        "nama": "Laras Nor Salasiah",
+        "peran": "Penyanyi",
+        "deskripsi": "Vokal utama dengan karakter suara khas."
+      },
+      {
+        "nama": "Pemain 2",
+        "peran": "Penari",
+        "deskripsi": "Penari andalan dengan teknik tarian modern."
+      },
+      {
+        "nama": "Pemain 3",
+        "peran": "MC",
+        "deskripsi": "Pembawa acara dengan gaya komunikatif dan energik."
+      },
+            {
+        "nama": "Laras Nor Salasiah",
+        "peran": "Penyanyi",
+        "deskripsi": "Vokal utama dengan karakter suara khas."
+      },
+      {
+        "nama": "Pemain 2",
+        "peran": "Penari",
+        "deskripsi": "Penari andalan dengan teknik tarian modern."
+      },
+      {
+        "nama": "Pemain 3",
+        "peran": "MC",
+        "deskripsi": "Pembawa acara dengan gaya komunikatif dan energik."
+      }
+    ]
+  },
+
   "panitia": {
-    "ketua_pelaksana": "Aulia Rahman, M.Pd.",
-    "wakil_ketua": "Nurul Hidayati, M.Pd.I",
-    "koordinator_acara": "Dewi Lestari",
-    "koordinator_logistik": "Rizky Maulana",
-    "koordinator_media": "Fajar Sidik",
-    "koordinator_humas": "Intan Nurfadilah"
+  "ketua_pelaksana": "Hasani.",
+  "sekretaris_pelaksana": "Danti",
+  "bendahara_pelaksana": "Ainun Jariyah",
+  "koor_acara": "M. Hasbianor",
+  "koor_perlengkapan": "Ahmad Nawawi",
+  "koor_peskom": "Siti Nafisah Akmalia",
+  "koor_kesek": "Ega Rahma Priandini",
+  "koordinator_media": "Ahmad Baihaqi",
+  "koordinator_humas": "M. Aminullah"
   },
 
   "kontak": {
