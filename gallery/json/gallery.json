@@ -28,7 +28,7 @@
         },
         {
           "name": "Stage Manager",
-          "person": "M. Hasbianor",
+          "person": "Muhammad Syaiful Mukmin",
           "photo": "../../assets/img/1.png",
           "description": "Mengatur teknis panggung dan jalannya acara di belakang layar."
         },
@@ -71,10 +71,10 @@
       ],
       "players": [
         {
-        "name": "Laras Nor Salasiah",
-        "role": "Penyanyi",
-        "photo": "../../assets/img/1.png",
-        "description": "Vokal utama dengan karakter suara khas."
+          "name": "Laras Nor Salasiah",
+          "role": "Penyanyi",
+          "photo": "../../assets/img/1.png",
+          "description": "Vokal utama dengan karakter suara khas."
         },
         {
           "name": "Nor Mahlina",
@@ -86,7 +86,7 @@
           "name": "Helda Fitriani",
           "role": "Penari",
           "photo": "../../assets/img/1.png",
-          "description": "Penari unggulan yang menguasai teknik tari modern maupun tradisional"
+          "description": "Penari unggulan yang menguasai teknik tari modern maupun tradisional."
         },
         {
           "name": "Yulia Ni'mah",
@@ -116,175 +116,157 @@
           "name": "M. Aminullah",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Memerankan tokoh utama sebagai Guru yang mengabdikan dirinya seumur hidup pada pendidikan dan memiliki Penyakit Jantung."
+          "description": "Guru tua idealis, tetap mengajar meski sakit demi cinta pada pendidikan."
         },
         {
           "name": "Gina",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Memerankan Tokoh Sebagai Istri dari Guru Tersebut"
+          "description": "Istri Pak Amin, sabar tapi mulai lelah menopang keluarga dalam keterbatasan."
         },
         {
           "name": "Arlin",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Memerankan peran sebagai anak guru, yang memiliki hobi bermain game dan kecanduan Judi online"
+          "description": "Anak Pak Amin, remaja galau yang terjerumus judi online demi uang cepat."
         },
         {
           "name": "Ahmad Safi'i",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Berrole sebagai Teman anak guru, yang memiliki hobi yang sama, akan tetapi tidak kecanduan judi online"
+          "description": "Sahabat Arlin, lebih rasional tapi ikut terjerat karena loyalitas."
         },
         {
           "name": "Ahmad Baihaqi",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Berperan Sebagai seorang Penjual sayur."
+          "description": "Penjual sayur yang bijak, suara keprihatinan akan nasib pendidikan desa."
         },
         {
-          "name": "Pemain 1",
+          "name": "Risma Septiani",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Pembawa acara dengan gaya komunikatif dan energik."
+          "description": "Mantan murid Pak Amin, sukses dan ingin membalas budi dengan membantu gurunya."
         },
         {
-          "name": "Pemain 2",
+          "name": "Ririn Dewi Arianti",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Mengisi musik latar secara live dengan instrumen tradisional."
+          "description": "Mak-mak kritis, simbol suara masyarakat yang cepat menilai dan menghakimi."
         },
         {
-          "name": "Pemain 3",
+          "name": "Amelia Fitriani",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Penari kontemporer dengan gerakan dinamis."
+          "description": "Warga biasa, suka ikut nimbrung dan cerewet tapi peduli kampung."
         },
         {
-          "name": "Pemain 4",
+          "name": "Alfatia Rizda Amanda",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Mengisi vokal latar dan duet dengan penyanyi utama."
+          "description": "Mak-mak cerewet, suka gosip, mewakili keresahan sosial warga."
         },
         {
-          "name": "Pemain 5",
+          "name": "Yasmin Nuraziza",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Memerankan tokoh utama dalam drama panggung."
+          "description": "Kritikus dadakan, sering sinis pada perubahan zaman."
         },
         {
-          "name": "Pemain 6",
+          "name": "Mukkaramah",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Penari kontemporer dengan gerakan dinamis."
+          "description": "Logis dan realistis, sering mempertanyakan peran guru dan orang tua."
         },
         {
-          "name": "Pemain 7",
+          "name": "Alfi Nur Azizah",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Mengisi vokal latar dan duet dengan penyanyi utama."
+          "description": "Content creator lokal, simbol generasi digital yang 'semua harus divideo'."
         },
         {
-          "name": "Pemain 8",
+          "name": "M. Hasbiannor",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Memerankan tokoh utama dalam drama panggung."
+          "description": "Warga tua yang masih menghormati adat dan budaya."
         },
         {
-          "name": "Pemain 9",
+          "name": "Ahmad Nor Fikri",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Vokal utama dengan karakter suara khas."
+          "description": "Suka mengomentari tapi dengan humor pedas; representasi warga skeptis."
         },
         {
-          "name": "Pemain 10",
+          "name": "Silahudin",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Penari andalan dengan teknik tarian modern."
+          "description": "Lucu dan lugu, suka melempar candaan dengan makna dalam."
         },
         {
-          "name": "Pemain 11",
+          "name": "Muhammad Syaiful Mukmin",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Pembawa acara dengan gaya komunikatif dan energik."
+          "description": "Anak muda saksi kejadian, jadi penengah saat konflik Arlin dan Isaf."
         },
         {
-          "name": "Pemain 12",
+          "name": "Nabila Rahadatul Aisyi",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Mengisi musik latar secara live dengan instrumen tradisional."
+          "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
-          "name": "Pemain 13",
+          "name": "Eliyana",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Penari kontemporer dengan gerakan dinamis."
+          "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
-          "name": "Pemain 14",
+          "name": "Hafizah",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Mengisi vokal latar dan duet dengan penyanyi utama."
+          "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
-          "name": "Pemain 15",
+          "name": "Halimatus Sa'diah",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Memerankan tokoh utama dalam drama panggung."
+          "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
-          "name": "Pemain 16",
+          "name": "Na'imah",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Penari kontemporer dengan gerakan dinamis."
+          "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
-          "name": "Pemain 17",
+          "name": "Mahriani",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Mengisi vokal latar dan duet dengan penyanyi utama."
+          "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
-          "name": "Pemain 18",
+          "name": "Majmiatus Sa'dah",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Memerankan tokoh utama dalam drama panggung."
-        },
-        {
-          "name": "Pemain 19",
-          "role": "Aktor",
-          "photo": "../../assets/img/1.png",
-          "description": "Vokal utama dengan karakter suara khas."
-        },
-        {
-          "name": "Pemain 20",
-          "role": "Aktor",
-          "photo": "../../assets/img/1.png",
-          "description": "Penari andalan dengan teknik tarian modern."
+          "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
           "name": "Pemain 21",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Pembawa acara dengan gaya komunikatif dan energik."
+          "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
           "name": "Pemain 22",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Vokal utama dengan karakter suara khas."
+          "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
           "name": "Pemain 23",
           "role": "Aktor",
           "photo": "../../assets/img/1.png",
-          "description": "Penari andalan dengan teknik tarian modern."
-        },
-        {
-          "name": "Pemain 24",
-          "role": "Aktor",
-          "photo": "../../assets/img/1.png",
-          "description": "Pembawa acara dengan gaya komunikatif dan energik."
+          "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         }
       ],
       "summary": {

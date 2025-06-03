@@ -4,7 +4,7 @@ fetch('/gallery/json/gallery.json')
     const gallery = document.getElementById('galleryGrid');
     const mediaItems = data.gallery.media;
 
-    // Modal popup for media & team/player
+    // Modal popup untuk media & tim/pemain
     const mediaModal = document.createElement('div');
     mediaModal.id = 'modalPopup';
     mediaModal.className = 'fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden z-50';
@@ -32,7 +32,9 @@ fetch('/gallery/json/gallery.json')
     }
 
     modalCloseBtn.addEventListener('click', closeModal);
-    mediaModal.addEventListener('click', (e) => { if (e.target === mediaModal) closeModal(); });
+    mediaModal.addEventListener('click', (e) => {
+      if (e.target === mediaModal) closeModal();
+    });
 
     // Render media items
     const fragmentMedia = document.createDocumentFragment();
@@ -52,8 +54,9 @@ fetch('/gallery/json/gallery.json')
         `;
       }
 
+      // Bagian tags sudah diperbaiki: tambahkan class="tag" dan pisah dengan spasi
       const tagsHtml = item.tags?.length
-        ? `<div class="tags">${item.tags.map(tag => `<span>${tag}</span>`).join('')}</div>`
+        ? `<div class="tags">${item.tags.map(tag => `<span class="tag">${tag}</span>`).join(' ')}</div>`
         : '';
 
       const metaParts = [];
@@ -78,7 +81,7 @@ fetch('/gallery/json/gallery.json')
     });
     gallery.appendChild(fragmentMedia);
 
-    // Render Team Section
+    // Render bagian Tim & Pemain
     const teamSection = document.createElement('section');
     teamSection.className = 'mt-10';
     teamSection.innerHTML = '<h2 class="text-2xl font-semibold mb-4">Tim & Pemain</h2><div id="teamGrid" class="gallery-grid"></div>';
@@ -100,7 +103,7 @@ fetch('/gallery/json/gallery.json')
     });
     teamGrid.appendChild(fragmentTeam);
 
-    // Render Players Section (with pagination if needed)
+    // Render bagian Pemain (dengan paginasi jika diperlukan)
     const playersSection = document.createElement('section');
     playersSection.className = 'mt-10';
     playersSection.innerHTML = '<div class="flex justify-between items-center mb-2"><h2 class="text-xl font-semibold">Pemain</h2><div id="playerNav"></div></div><div id="playersGrid" class="gallery-grid"></div>';
@@ -152,7 +155,7 @@ fetch('/gallery/json/gallery.json')
     renderPlayers(currentPage);
     if (totalPages > 1) renderPagination();
 
-    // Toggle menu
+    // Toggle menu (jika ada)
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
     if (navToggle && navLinks) {

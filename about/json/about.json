@@ -1,6 +1,6 @@
 {
   "judul": "Tentang Pagelaran PGMI 2025",
-  "deskripsi": "Pagelaran PGMI (Pendidikan Guru Madrasah Ibtidaiyah) 2025 merupakan sebuah ajang nasional tahunan yang mempertemukan kreativitas, edukasi, dan budaya dalam satu kesatuan. Diselenggarakan oleh mahasiswa PGMI UIN Antasari Banjarmasin, Angkatan 2022, acara ini menjadi panggung kolaboratif yang menampilkan karya seni, inovasi pendidikan, dan pengabdian kepada masyarakat. Dengan semangat keterbukaan, keberagaman, dan kreativitas, pagelaran ini terbuka bagi semua kalangan dan mengusung tema besar: 'Menjunjung Budaya, Merangkai Inovasi', dan Perwakilan Lokal B 2022 akan mengangkat Tema Teater: 'Hati Tahampas, Bapikir Malapas'.",
+  "deskripsi": "Pagelaran PGMI (Pendidikan Guru Madrasah Ibtidaiyah) 2025 merupakan sebuah ajang nasional tahunan yang mempertemukan kreativitas, edukasi, dan budaya dalam satu kesatuan. Diselenggarakan oleh mahasiswa PGMI UIN Antasari Banjarmasin, Angkatan 2022, acara ini menjadi panggung kolaboratif yang menampilkan karya seni, inovasi pendidikan, dan pengabdian kepada masyarakat. Dengan semangat keterbukaan, keberagaman, dan kreativitas, pagelaran ini terbuka bagi semua kalangan dan mengusung tema besar: 'Pagelaran seni budaya dan musik banjar PGMI', dan Perwakilan Lokal B 2022 akan mengangkat Tema Teater: 'Hati Tahampas, Bapikir Malapas'.",
   
   "tema": "Menjunjung Budaya, Merangkai Inovasi",
   "tema_lokal": "Hati Tahampas, Bapikir Malapas",
@@ -25,7 +25,7 @@
     "Kebermanfaatan sosial"
   ],
 
-  "latar_belakang": "Pagelaran PGMI merupakan tradisi akademik sekaligus kebudayaan yang telah menjadi simbol semangat berkarya mahasiswa PGMI di seluruh Indonesia. Terinspirasi oleh kekayaan budaya Banjar dan nilai-nilai kearifan lokal Kalimantan Selatan, tahun 2025 menjadi momentum untuk menegaskan kembali bahwa pendidikan dan budaya dapat berjalan beriringan. Tema lokal yang akan kami angkat yaitu 'Hati Tahampas, Bapikir Malapas' menggambarkan semangat untuk tetap ikhlas, tangguh, dan bijak dalam berkarya—menjadi jiwa dalam seluruh rangkaian kegiatan yang akan dihadirkan.",
+  "latar_belakang": "Pagelaran PGMI tahun 2025 mengusung tema besar “Pagelaran Seni Budaya dan Musik Banjar” sebagai upaya afirmatif dalam merawat dan merevitalisasi nilai-nilai budaya lokal Kalimantan Selatan melalui ekspresi seni yang edukatif. Dalam semangat tersebut, mahasiswa PGMI UIN Antasari Banjarmasin menampilkan sebuah pertunjukan teater berjudul *“Hati Tahampas, Bapikir Malapas”*, sebuah karya dramatik yang menggambarkan secara mendalam pergulatan batin seorang guru desa antara idealisme pengabdian dan tekanan hidup yang membelit. Naskah ini menghadirkan kritik sosial yang tajam namun berakar kuat pada konteks lokal, dibingkai dalam bahasa Banjar yang otentik dan nuansa kehidupan masyarakat sehari-hari yang sangat dekat dengan realitas dunia pendidikan di pelosok daerah. Melalui pertunjukan ini, panggung bukan sekadar ruang seni, melainkan menjadi laboratorium sosial tempat nilai, pengetahuan, dan budaya berkelindan secara dinamis. Sebagai bagian dari tradisi akademik yang membaurkan nalar intelektual dan kearifan lokal, karya ini mencerminkan tekad mahasiswa PGMI untuk terus berkarya, berpikir kritis, serta memperkuat identitas keilmuan dan kebudayaan secara bersamaan, sembari menegaskan bahwa seni adalah cermin masyarakat dan pendidikan adalah denyut nadinya.",
 
   "tim_dan_pemain": {
     "tim": [
@@ -36,7 +36,7 @@
       },
       {
         "nama": "Stage Manager",
-        "person": "M. Hasbianor",
+        "person": "Muhammad Syaiful Mukmin",
         "deskripsi": "Mengatur teknis panggung dan jalannya acara di belakang layar."
       },
       {
@@ -109,147 +109,147 @@
             {
         "nama": "M. Aminullah",
         "peran": "Aktor",
-        "deskripsi": "Memerankan tokoh utama sebagai Guru yang mengabdikan dirinya seumur hidup pada pendidikan dan memiliki Penyakit Jantung."
+        "deskripsi": "Guru tua idealis, tetap mengajar meski sakit demi cinta pada pendidikan."
       },
       {
         "nama": "Gina",
         "peran": "Aktor",
-        "deskripsi": "Memerankan Tokoh Sebagai Istri dari Guru Tersebut"
+        "deskripsi": "Istri Pak Amin, sabar tapi mulai lelah menopang keluarga dalam keterbatasan."
       },
       {
         "nama": "Arlin",
         "peran": "Aktor",
-        "deskripsi": "Memerankan peran sebagai anak guru, yang memiliki hobi bermain game dan kecanduan Judi online"
+        "deskripsi": "Anak Pak Amin, remaja galau yang terjerumus judi online demi uang cepat."
       },
       {
         "nama": "Ahmad Safi'i",
         "peran": "Aktor",
-        "deskripsi": "Berperan sebagai Teman anak guru, yang memiliki hobi yang sama, akan tetapi tidak kecanduan judi online"
+        "deskripsi": "Sahabat Arlin, lebih rasional tapi ikut terjerat karena loyalitas."
+      },
+      {
+        "nama": "Risma Septiani",
+        "peran": "Aktor",
+        "deskripsi": "Mantan murid Pak Amin, sukses dan ingin membalas budi dengan membantu gurunya."
+      },
+      {
+        "nama": "Ririn Dewi Arianti",
+        "peran": "Aktor",
+        "deskripsi": "Mak-mak kritis, simbol suara masyarakat yang cepat menilai dan menghakimi."
+      },
+      {
+        "nama": "Amelia fitriani",
+        "peran": "Aktor",
+        "deskripsi": "Warga biasa, suka ikut nimbrung dan cerewet tapi peduli kampung."
       },
       {
         "nama": "Ahmad Baihaqi",
         "peran": "Aktor",
-        "deskripsi": "Berperan Sebagai seorang Penjual sayur."
+        "deskripsi": "Penjual sayur yang bijak, suara keprihatinan akan nasib pendidikan desa."
       },
       {
-        "nama": "Pemain 1",
+        "nama": "Alfatia Rizda Amanda",
         "peran": "Aktor",
-        "deskripsi": "Pembawa acara dengan gaya komunikatif dan energik."
+        "deskripsi": "Mak-mak cerewet, suka gosip, mewakili keresahan sosial warga."
       },
       {
-        "nama": "Pemain 2",
+        "nama": "Yasmin Nuraziza",
         "peran": "Aktor",
-        "deskripsi": "Mengisi musik latar secara live dengan instrumen tradisional."
+        "deskripsi": "Kritikus dadakan, sering sinis pada perubahan zaman."
       },
       {
-        "nama": "Pemain 3",
+        "nama": "Mukkaramah",
         "peran": "Aktor",
-        "deskripsi": "Penari kontemporer dengan gerakan dinamis."
+        "deskripsi": "Logis dan realistis, sering mempertanyakan peran guru dan orang tua."
       },
       {
-        "nama": "Pemain 4",
+        "nama": "Alfi Nur Azizah",
         "peran": "Aktor",
-        "deskripsi": "Mengisi vokal latar dan duet dengan penyanyi utama."
+        "deskripsi": "Content creator lokal, simbol generasi digital yang “semua harus divideo”."
       },
       {
-        "nama": "Pemain 5",
+        "nama": "M. Hasbiannor",
         "peran": "Aktor",
-        "deskripsi": "Memerankan tokoh utama dalam drama panggung."
-      },
-            {
-        "nama": "Pemain 6",
-        "peran": "Aktor",
-        "deskripsi": "Penari kontemporer dengan gerakan dinamis."
+        "deskripsi": "Warga tua yang masih menghormati adat dan budaya."
       },
       {
-        "nama": "Pemain 7",
+        "nama": "Ahmad Nor Fikri",
         "peran": "Aktor",
-        "deskripsi": "Mengisi vokal latar dan duet dengan penyanyi utama."
+        "deskripsi": "Suka mengomentari tapi dengan humor pedas; representasi warga skeptis."
       },
       {
-        "nama": "Pemain 8",
+        "nama": "Silahudin",
         "peran": "Aktor",
-        "deskripsi": "Memerankan tokoh utama dalam drama panggung."
+        "deskripsi": "Lucu dan lugu, suka melempar candaan dengan makna dalam."
       },
       {
-        "nama": "Pemain 9",
+        "nama": "Muhammad Syaiful Mukmin",
         "peran": "Aktor",
-        "deskripsi": "Vokal utama dengan karakter suara khas."
+        "deskripsi": "Anak muda saksi kejadian, jadi penengah saat konflik Arlin dan Isaf."
       },
       {
-        "nama": "Pemain 10",
+        "nama": "Nabila Rahadatul Aisyi",
         "peran": "Aktor",
-        "deskripsi": "Penari andalan dengan teknik tarian modern."
+        "deskripsi": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
       },
       {
-        "nama": "Pemain 11",
+        "nama": "Eliyana",
         "peran": "Aktor",
-        "deskripsi": "Pembawa acara dengan gaya komunikatif dan energik."
+        "deskripsi": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
       },
       {
-        "nama": "Pemain 12",
+        "nama": "Hafizah",
         "peran": "Aktor",
-        "deskripsi": "Mengisi musik latar secara live dengan instrumen tradisional."
+        "deskripsi": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
       },
       {
-        "nama": "Pemain 13",
+        "nama": "Halimatus sa'diah",
         "peran": "Aktor",
-        "deskripsi": "Penari kontemporer dengan gerakan dinamis."
+        "deskripsi": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
       },
       {
-        "nama": "Pemain 14",
+        "nama": "Na'imah",
         "peran": "Aktor",
-        "deskripsi": "Mengisi vokal latar dan duet dengan penyanyi utama."
+        "deskripsi": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
       },
       {
-        "nama": "Pemain 15",
+        "nama": "Mahriani",
         "peran": "Aktor",
-        "deskripsi": "Memerankan tokoh utama dalam drama panggung."
-      },
-            {
-        "nama": "Pemain 16",
-        "peran": "Aktor",
-        "deskripsi": "Penari kontemporer dengan gerakan dinamis."
+        "deskripsi": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
       },
       {
-        "nama": "Pemain 17",
+        "nama": "Majmiatus Sa'dah",
         "peran": "Aktor",
-        "deskripsi": "Mengisi vokal latar dan duet dengan penyanyi utama."
+        "deskripsi": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
       },
       {
-        "nama": "Pemain 18",
+        "nama": "Nur Alia Fitri",
         "peran": "Aktor",
-        "deskripsi": "Memerankan tokoh utama dalam drama panggung."
-      },
-            {
-        "nama": "Pemain 19",
-        "peran": "Aktor",
-        "deskripsi": "Vokal utama dengan karakter suara khas."
+        "deskripsi": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
       },
       {
-        "nama": "Pemain 20",
+        "nama": "Nurul Hidayah",
         "peran": "Aktor",
-        "deskripsi": "Penari andalan dengan teknik tarian modern."
+        "deskripsi": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
+      },
+      {
+        "nama": "Rifa Salsabila",
+        "peran": "Aktor",
+        "deskripsi": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
       },
       {
         "nama": "Pemain 21",
         "peran": "Aktor",
-        "deskripsi": "Pembawa acara dengan gaya komunikatif dan energik."
+        "deskripsi": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
       },
       {
         "nama": "Pemain 22",
         "peran": "Aktor",
-        "deskripsi": "Vokal utama dengan karakter suara khas."
+        "deskripsi": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
       },
       {
         "nama": "Pemain 23",
         "peran": "Aktor",
-        "deskripsi": "Penari andalan dengan teknik tarian modern."
-      },
-      {
-        "nama": "Pemain 24",
-        "peran": "Aktor",
-        "deskripsi": "Pembawa acara dengan gaya komunikatif dan energik."
+        "deskripsi": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
       }
     ]
   },
