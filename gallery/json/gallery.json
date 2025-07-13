@@ -11,17 +11,17 @@
         "category": "announcement",
         "tags": ["teaser", "video", "promo", "coming soon", "announcement"],
         "metadata": {
-          "duration": "00:01:30",
+          "duration": "00:00:38",
           "resolution": "1920x1080",
           "date_uploaded": "2025-05-27",
-          "author": "Tim Kreatif PGMI"
+          "author": "Tim Kreatif Pagelaran"
         }
       },
       {
         "id": "vid002",
         "type": "video",
         "src": "../../assets/vidio/trailer.mp4",
-        "caption": "Trailer Hati Tahampas Bapikir Malapas",
+        "caption": "Hati Tahampas Bapikir Malapas",
         "category": "Trailer",
         "tags": ["teaser", "video", "Trailer", "coming soon", "announcement"],
         "metadata": {
@@ -34,127 +34,183 @@
       {
         "id": "short001",
         "type": "video",
-        "src": "../../assets/short/lokalb.mp4",
-        "caption": "Hati Tahampas Bafikir Malapas",
+        "src": "../../assets/short/rapatperdana.mp4",
+        "caption": "Rapat perdana",
         "category": "short",
-        "tags": ["short", "latihan", "tari", "behind the scenes"],
+        "tags": ["short", "rapat", "persiapan", "PGMI"],
         "metadata": {
           "duration": "00:00:45",
           "resolution": "1080x1920",
-          "date_uploaded": "2025-06-15",
-          "author": "Tim Dokumentasi"
+          "date_uploaded": "2025-04-24",
+          "author": "Tim Kreatif Pagelaran"
         }
       },
       {
         "id": "short002",
         "type": "video",
-        "src": "../../assets/short/lokalb.mp4",
-        "caption": "Kejadian Lucu di Belakang Panggung",
+        "src": "../../assets/short/rapat1.mp4",
+        "caption": "Rapat Progres 1 Pagelaran seni",
         "category": "short",
-        "tags": ["short", "komedi", "bloopers", "funny"],
+        "tags": ["Mahasiswa", "Anak UIN", "Calon Guru", "Pagelaran seni"],
         "metadata": {
           "duration": "00:00:30",
           "resolution": "1080x1920",
-          "date_uploaded": "2025-06-18",
-          "author": "Tim Dokumentasi"
+          "date_uploaded": "2025-05-14",
+          "author": "Tim Kreatif Pagelaran"
         }
       },
       {
         "id": "short003",
         "type": "video",
-        "src": "../../assets/short/lokalb.mp4",
-        "caption": "Proses Pengisian Suara Aktor",
+        "src": "../../assets/short/rapat2.mp4",
+        "caption": "Rapat Progres 1 Pagelaran seni",
         "category": "short",
-        "tags": ["short", "voiceover", "aktor", "studio"],
+        "tags": ["Mahasiswa", "Anak UIN", "Calon Guru", "Pagelaran seni"],
         "metadata": {
           "duration": "00:00:40",
           "resolution": "1080x1920",
-          "date_uploaded": "2025-06-20",
-          "author": "Tim Produksi"
+          "date_uploaded": "2025-05-22",
+          "author": "Tim Kreatif Pagelaran"
         }
       },
       {
         "id": "short004",
         "type": "video",
-        "src": "../../assets/short/lokalb.mp4",
-        "caption": "Hati Tahampas Bafikir Malapas",
+        "src": "../../assets/short/rapatpemantapan.mp4",
+        "caption": "Rapat Pemantapan Pagelaran Seni",
         "category": "short",
-        "tags": ["short", "latihan", "tari", "behind the scenes"],
+        "tags": ["Mahasiswa", "PGMI Berkarya", "Pemantapan", "Pagelaran seni"],
         "metadata": {
           "duration": "00:00:45",
           "resolution": "1080x1920",
-          "date_uploaded": "2025-06-15",
-          "author": "Tim Dokumentasi"
+          "date_uploaded": "2025-05-28",
+          "author": "Tim Kreatif Pagelaran"
         }
       },
       {
         "id": "short005",
         "type": "video",
-        "src": "../../assets/short/lokalb.mp4",
-        "caption": "Kejadian Lucu di Belakang Panggung",
+        "src": "../../assets/short/rapatgladi.mp4",
+        "caption": "Persiapan & Gladi Bersih Pagelaran seni",
         "category": "short",
-        "tags": ["short", "komedi", "bloopers", "funny"],
+        "tags": ["Mahasiswa", "PGMI Berkarya", "gladi bersih", "Pagelaran seni"],
         "metadata": {
-          "duration": "00:00:30",
+          "duration": "00:00:39",
           "resolution": "1080x1920",
-          "date_uploaded": "2025-06-18",
-          "author": "Tim Dokumentasi"
+          "date_uploaded": "2025-05-29",
+          "author": "Tim Kreatif Pagelaran"
         }
       },
-      {
+            {
         "id": "short006",
         "type": "video",
-        "src": "../../assets/short/lokalb.mp4",
-        "caption": "Hati Tahampas Bafikir Malapas",
+        "src": "../../assets/short/abcd.mp4",
+        "caption": "Saksikan Pagelaran Seni bersama anak uin",
         "category": "short",
-        "tags": ["short", "latihan", "tari", "behind the scenes"],
+        "tags": ["Mahasiswa", "PGMI Berkarya", "Pagelaran seni"],
         "metadata": {
-          "duration": "00:00:45",
+          "duration": "00:00:39",
           "resolution": "1080x1920",
-          "date_uploaded": "2025-06-15",
-          "author": "Tim Dokumentasi"
+          "date_uploaded": "2025-05-29",
+          "author": "Tim Kreatif Pagelaran"
         }
       },
       {
         "id": "short007",
         "type": "video",
-        "src": "../../assets/short/lokalb.mp4",
-        "caption": "Kejadian Lucu di Belakang Panggung",
+        "src": "../../assets/short/isuk.mp4",
+        "caption": "Pagelaran Seni Budaya dan Musik Banjar PGMI",
         "category": "short",
-        "tags": ["short", "komedi", "bloopers", "funny"],
+        "tags": ["Mahasiswa", "PGMI Berkarya", "30 Juni", "Pagelaran seni"],
         "metadata": {
-          "duration": "00:00:30",
+          "duration": "00:00:39",
           "resolution": "1080x1920",
-          "date_uploaded": "2025-06-18",
-          "author": "Tim Dokumentasi"
+          "date_uploaded": "2025-05-29",
+          "author": "Tim Kreatif Pagelaran"
         }
       },
       {
         "id": "short008",
         "type": "video",
-        "src": "../../assets/short/lokalb.mp4",
-        "caption": "Hati Tahampas Bafikir Malapas",
+        "src": "../../assets/short/akumanis.mp4",
+        "caption": "Pagelaran Seni Budaya dan Musik Banjar PGMI",
         "category": "short",
-        "tags": ["short", "latihan", "tari", "behind the scenes"],
+        "tags": ["Mahasiswa", "PGMI Berkarya", "30 Juni", "Pagelaran seni"],
         "metadata": {
-          "duration": "00:00:45",
+          "duration": "00:00:39",
           "resolution": "1080x1920",
-          "date_uploaded": "2025-06-15",
-          "author": "Tim Dokumentasi"
+          "date_uploaded": "2025-05-29",
+          "author": "Tim Kreatif Pagelaran"
         }
       },
       {
         "id": "short009",
         "type": "video",
-        "src": "../../assets/short/lokalb.mp4",
-        "caption": "Kejadian Lucu di Belakang Panggung",
+        "src": "../../assets/short/jalur.mp4",
+        "caption": "Jalan Menuju Tempat acara dan parkir",
         "category": "short",
-        "tags": ["short", "komedi", "bloopers", "funny"],
+        "tags": ["Mahasiswa", "PGMI Berkarya", "Auditorium", "tempat parkir"],
+        "metadata": {
+          "duration": "00:00:39",
+          "resolution": "1080x1920",
+          "date_uploaded": "2025-05-30",
+          "author": "Tim Kreatif Pagelaran"
+        }
+      },
+      {
+        "id": "short010",
+        "type": "video",
+        "src": "../../assets/short/lokala.mp4",
+        "caption": "Bayang Jabuk",
+        "category": "short",
+        "tags": ["short", "penampilan", "tari", "musik","behind the scenes"],
+        "metadata": {
+          "duration": "00:00:45",
+          "resolution": "1080x1920",
+          "date_uploaded": "2025-05-30",
+          "author": "Tim Kreatif Pagelaran"
+        }
+      },
+      {
+        "id": "short011",
+        "type": "video",
+        "src": "../../assets/short/lokalb.mp4",
+        "caption": "Hati Tahampas Bafikir Malapas",
+        "category": "short",
+        "tags": ["short", "penampilan", "tari", "musik","behind the scenes"],
+        "metadata": {
+          "duration": "00:00:45",
+          "resolution": "1080x1920",
+          "date_uploaded": "2025-05-30",
+          "author": "Tim Kreatif Pagelaran"
+        }
+      },
+      {
+        "id": "short012",
+        "type": "video",
+        "src": "../../assets/short/lokalC.mp4",
+        "caption": "Penambaian Dimajelis",
+        "category": "short",
+        "tags": ["short", "penampilan", "tari", "musik","behind the scenes"],
         "metadata": {
           "duration": "00:00:30",
           "resolution": "1080x1920",
-          "date_uploaded": "2025-06-18",
-          "author": "Tim Dokumentasi"
+          "date_uploaded": "2025-05-30",
+          "author": "Tim Kreatif Pagelaran"
+        }
+      },
+      {
+        "id": "short013",
+        "type": "video",
+        "src": "../../assets/short/lokald.mp4",
+        "caption": "Balabuh",
+        "category": "short",
+        "tags": ["short", "penampilan", "tari", "musik","behind the scenes"],
+        "metadata": {
+          "duration": "00:00:45",
+          "resolution": "1080x1920",
+          "date_uploaded": "2025-05-30",
+          "author": "Tim Kreatif Pagelaran"
         }
       }
     ],
