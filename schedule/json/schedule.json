@@ -1,15 +1,138 @@
 {
-  "event": "Pagelaran",
-  "tanggal": "28 Juni 2025",
-  "tempat": "Auditorium UIN Antasari Banjarmasin",
-  "catatan": "Jadwal kegiatan belum tersedia karena event masih lama.",
-  "tiket": "Jadwal pembelian tiket akan diinformasikan segera.",
+  "event": "Pagelaran Seni PGMI 2025",
+  "tema": "Karasmin Dimulai Adat Budaya Kada Talingkah",
+  "tanggal": "30 Juni 2025",
+  "tempat": "",
+  "catatan": "Jadwal bisa berubah sewaktu-waktu.",
+  "tiket": "",
   "jadwal": [
     {
-      "hari": "Selasa",
-      "jam": "14.35",
-      "kegiatan": "Perilisan video coming soon Pegelaran PGMI 2025",
-      "tempat": "Sosial media"
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "07.00-07.30",
+      "kegiatan": "Registrasi Panitia dan Lokal",
+      "keterangan": ["Panitia"]
+    },
+    {
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "08.00-08.30",
+      "kegiatan": "Registrasi Tamu Undangan dan Penonton sesi 1",
+      "keterangan": ["Panitia"]
+    },
+    {
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "08.30-09.20",
+      "kegiatan": [
+        "Pembukaan (Formal):",
+        "• Pembukaan oleh MC",
+        "• Pembacaan ayat suci Alqur’an",
+        "• Menyanyikan lagu Indonesia Raya & Mars MI",
+        "• Laporan Panitia Pelaksana",
+        "• Sambutan Dosen Pengampu Mata Kuliah Pendidikan Kesenian dan Budaya",
+        "• Sambutan Ketua Program Studi PGMI",
+        "• Sambutan Wakil Dekan III Bidang Kemahasiswaan dan Kerjasama FTK",
+        "• Pembukaan Secara Simbolis oleh Wakil Dekan III Bidang Kemahasiswaan dan Kerjasama FTK",
+        "• Doa/Penutup",
+        "• Foto Bersama"
+      ],
+      "keterangan": [
+        "Panitia",
+        "Miftahul Ghani dan Alifah",
+        "Ahmad Nor Fikri",
+        "Seluruh Panitia dan peserta",
+        "Hasani",
+        "Bp. Sulisno",
+        "Dr. Noor Alfulaila, S.Pd.I, M.Pd",
+        "Dr. Hj. Tarwilah, M.Ag",
+        "Nazwa Saputra",
+        "Seluruh Tamu Undangan"
+      ]
+    },
+    {
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "09.20-09.30",
+      "kegiatan": "MC Nonformal",
+      "keterangan": ["Alfi Ansharul Rizki", "Ismi Afifah"]
+    },
+    {
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "09.30-09.40",
+      "kegiatan": "Penampilan Persembahan Mahasiswa PGMI",
+      "keterangan": ["HMJ PGMI (Annisa Sabila)"]
+    },
+    {
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "09.50-10.50",
+      "kegiatan": "Penampilan 1 “Bayang Jabuk”",
+      "keterangan": ["PGMI 22 A"]
+    },
+    {
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "11.00-12.00",
+      "kegiatan": "Penampilan 2 “Hati Tahampas, Bafikir Malapas”",
+      "keterangan": ["PGMI 22 B"]
+    },
+    {
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "12.00-12.10",
+      "kegiatan": "Doorprize",
+      "keterangan": ["Panitia"]
+    },
+    {
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "12.10-13.00",
+      "kegiatan": "ISHOMA",
+      "keterangan": ["Konsumsi", "Perlengkapan"]
+    },
+    {
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "13.00-13.30",
+      "kegiatan": "Registrasi Tamu Undangan dan Penonton sesi 2",
+      "keterangan": ["Panitia"]
+    },
+    {
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "13.40-14.40",
+      "kegiatan": "Penampilan 3 “Penambaian Dimajelis”",
+      "keterangan": ["PGMI 22 C"]
+    },
+    {
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "14.50-15.50",
+      "kegiatan": "Penampilan 4 “Balabuh”",
+      "keterangan": ["PGMI 22 D"]
+    },
+    {
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "15.50-16.00",
+      "kegiatan": "Doorprize",
+      "keterangan": ["Panitia"]
+    },
+    {
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "16.00-16.10",
+      "kegiatan": "Penutup",
+      "keterangan": ["MC Nonformal"]
+    },
+    {
+      "hari": "Senin",
+      "tanggal": "30 Juni 2025",
+      "waktu": "16.10-16.15",
+      "kegiatan": "Foto bersama dan flash mob",
+      "keterangan": ["Panitia"]
     }
   ]
 }

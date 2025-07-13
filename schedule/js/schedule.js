@@ -1,6 +1,6 @@
 // schedule.js
 
-// Memuat data jadwal
+// Memuat data jadwal dari schedule.json
 fetch('/schedule/json/schedule.json')
   .then(res => res.json())
   .then(data => {
@@ -8,17 +8,28 @@ fetch('/schedule/json/schedule.json')
     if (data.jadwal && Array.isArray(data.jadwal)) {
       data.jadwal.forEach(item => {
         const row = document.createElement('tr');
+
+        // Ubah kegiatan jadi list jika array
+        const kegiatan = Array.isArray(item.kegiatan)
+          ? `<ul>${item.kegiatan.map(k => `<li>${k}</li>`).join('')}</ul>`
+          : item.kegiatan || '-';
+
+        // Ubah keterangan/penanggung jawab jadi list jika array
+        const keterangan = Array.isArray(item.keterangan)
+          ? `<ul>${item.keterangan.map(k => `<li>${k}</li>`).join('')}</ul>`
+          : item.keterangan || '-';
+
         row.innerHTML = `
-          <td>${item.hari}</td>
-          <td>${item.jam}</td>
-          <td>${item.kegiatan}</td>
-          <td>${item.tempat}</td>
+          <td>${item.hari || '-'}</td>
+          <td>${item.waktu || '-'}</td>
+          <td>${kegiatan}</td>
+          <td>${keterangan}</td>
         `;
         tbody.appendChild(row);
       });
     }
   })
-  .catch(err => console.error('Gagal load jadwal:', err));
+  .catch(err => console.error('Gagal memuat jadwal:', err));
 
 // Hitung mundur ke 28 Juni 2025
 function mulaiHitungMundur() {
@@ -29,22 +40,22 @@ function mulaiHitungMundur() {
     const now = new Date();
     const selisih = targetDate - now;
 
-    // Tampilkan waktu sekarang
+    // Format waktu sekarang
     const hariIni    = now.toLocaleDateString('id-ID', { weekday: 'long' });
     const tanggalIni = now.toLocaleDateString('id-ID');
-    const jam        = String(now.getHours()).padStart(2,'0');
-    const menit      = String(now.getMinutes()).padStart(2,'0');
-    const detik      = String(now.getSeconds()).padStart(2,'0');
+    const jam        = String(now.getHours()).padStart(2, '0');
+    const menit      = String(now.getMinutes()).padStart(2, '0');
+    const detik      = String(now.getSeconds()).padStart(2, '0');
 
     if (selisih <= 0) {
       countdownEl.innerHTML = "🎉 Acara telah dimulai!";
       return;
     }
 
-    const days    = Math.floor(selisih / (1000*60*60*24));
-    const hours   = Math.floor((selisih % (1000*60*60*24)) / (1000*60*60));
-    const minutes = Math.floor((selisih % (1000*60*60)) / (1000*60));
-    const seconds = Math.floor((selisih % (1000*60)) / 1000);
+    const days    = Math.floor(selisih / (1000 * 60 * 60 * 24));
+    const hours   = Math.floor((selisih % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((selisih % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((selisih % (1000 * 60)) / 1000);
 
     countdownEl.innerHTML = `
       Hari ini: ${hariIni}, ${tanggalIni} – ${jam}:${menit}:${detik}<br>
@@ -52,9 +63,10 @@ function mulaiHitungMundur() {
     `;
   }, 1000);
 }
+
 mulaiHitungMundur();
 
-// Toggle hamburger menu (langsung aktif)
+// Toggle hamburger menu untuk mobile
 const navToggle2 = document.querySelector('.nav-toggle');
 const navLinks2  = document.querySelector('.nav-links');
 if (navToggle2 && navLinks2) {
