@@ -16,6 +16,146 @@
           "date_uploaded": "2025-05-27",
           "author": "Tim Kreatif PGMI"
         }
+      },
+      {
+        "id": "vid002",
+        "type": "video",
+        "src": "../../assets/vidio/trailer.mp4",
+        "caption": "Trailer Hati Tahampas Bapikir Malapas",
+        "category": "Trailer",
+        "tags": ["teaser", "video", "Trailer", "coming soon", "announcement"],
+        "metadata": {
+          "duration": "00:01:30",
+          "resolution": "1920x1080",
+          "date_uploaded": "2025-05-27",
+          "author": "PDD LOKAL B ANGKATAN 2022"
+        }
+      },
+      {
+        "id": "short001",
+        "type": "video",
+        "src": "../../assets/short/lokalb.mp4",
+        "caption": "Hati Tahampas Bafikir Malapas",
+        "category": "short",
+        "tags": ["short", "latihan", "tari", "behind the scenes"],
+        "metadata": {
+          "duration": "00:00:45",
+          "resolution": "1080x1920",
+          "date_uploaded": "2025-06-15",
+          "author": "Tim Dokumentasi"
+        }
+      },
+      {
+        "id": "short002",
+        "type": "video",
+        "src": "../../assets/short/lokalb.mp4",
+        "caption": "Kejadian Lucu di Belakang Panggung",
+        "category": "short",
+        "tags": ["short", "komedi", "bloopers", "funny"],
+        "metadata": {
+          "duration": "00:00:30",
+          "resolution": "1080x1920",
+          "date_uploaded": "2025-06-18",
+          "author": "Tim Dokumentasi"
+        }
+      },
+      {
+        "id": "short003",
+        "type": "video",
+        "src": "../../assets/short/lokalb.mp4",
+        "caption": "Proses Pengisian Suara Aktor",
+        "category": "short",
+        "tags": ["short", "voiceover", "aktor", "studio"],
+        "metadata": {
+          "duration": "00:00:40",
+          "resolution": "1080x1920",
+          "date_uploaded": "2025-06-20",
+          "author": "Tim Produksi"
+        }
+      },
+      {
+        "id": "short004",
+        "type": "video",
+        "src": "../../assets/short/lokalb.mp4",
+        "caption": "Hati Tahampas Bafikir Malapas",
+        "category": "short",
+        "tags": ["short", "latihan", "tari", "behind the scenes"],
+        "metadata": {
+          "duration": "00:00:45",
+          "resolution": "1080x1920",
+          "date_uploaded": "2025-06-15",
+          "author": "Tim Dokumentasi"
+        }
+      },
+      {
+        "id": "short005",
+        "type": "video",
+        "src": "../../assets/short/lokalb.mp4",
+        "caption": "Kejadian Lucu di Belakang Panggung",
+        "category": "short",
+        "tags": ["short", "komedi", "bloopers", "funny"],
+        "metadata": {
+          "duration": "00:00:30",
+          "resolution": "1080x1920",
+          "date_uploaded": "2025-06-18",
+          "author": "Tim Dokumentasi"
+        }
+      },
+      {
+        "id": "short006",
+        "type": "video",
+        "src": "../../assets/short/lokalb.mp4",
+        "caption": "Hati Tahampas Bafikir Malapas",
+        "category": "short",
+        "tags": ["short", "latihan", "tari", "behind the scenes"],
+        "metadata": {
+          "duration": "00:00:45",
+          "resolution": "1080x1920",
+          "date_uploaded": "2025-06-15",
+          "author": "Tim Dokumentasi"
+        }
+      },
+      {
+        "id": "short007",
+        "type": "video",
+        "src": "../../assets/short/lokalb.mp4",
+        "caption": "Kejadian Lucu di Belakang Panggung",
+        "category": "short",
+        "tags": ["short", "komedi", "bloopers", "funny"],
+        "metadata": {
+          "duration": "00:00:30",
+          "resolution": "1080x1920",
+          "date_uploaded": "2025-06-18",
+          "author": "Tim Dokumentasi"
+        }
+      },
+      {
+        "id": "short008",
+        "type": "video",
+        "src": "../../assets/short/lokalb.mp4",
+        "caption": "Hati Tahampas Bafikir Malapas",
+        "category": "short",
+        "tags": ["short", "latihan", "tari", "behind the scenes"],
+        "metadata": {
+          "duration": "00:00:45",
+          "resolution": "1080x1920",
+          "date_uploaded": "2025-06-15",
+          "author": "Tim Dokumentasi"
+        }
+      },
+      {
+        "id": "short009",
+        "type": "video",
+        "src": "../../assets/short/lokalb.mp4",
+        "caption": "Kejadian Lucu di Belakang Panggung",
+        "category": "short",
+        "tags": ["short", "komedi", "bloopers", "funny"],
+        "metadata": {
+          "duration": "00:00:30",
+          "resolution": "1080x1920",
+          "date_uploaded": "2025-06-18",
+          "author": "Tim Dokumentasi"
+        }
       }
     ],
     "team_and_players": {
@@ -35,13 +175,13 @@
         {
           "name": "Sekretaris",
           "person": "Gina",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/Gina.jpg",
           "description": "Membantu administrasi dan dokumentasi tim produksi."
         },
         {
           "name": "Bendahara",
           "person": "Yasmin nuraziza",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/yasmin.jpg",
           "description": "Mengelola anggaran dan keuangan pagelaran."
         },
         {
@@ -59,13 +199,13 @@
         {
           "name": "Konsumsi",
           "person": "Risma Septiani",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/risma.jpg",
           "description": "Mengatur konsumsi dan logistik makanan-minuman."
         },
         {
           "name": "Perlengkapan",
           "person": "Arlin",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/arlin.jpg",
           "description": "Menyiapkan dan memelihara perlengkapan pagelaran."
         }
       ],
@@ -79,73 +219,73 @@
         {
           "name": "Nor Mahlina",
           "role": "Penari",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/penari.jpg",
           "description": "Penari andalan dengan teknik tarian modern."
         },
         {
           "name": "Helda Fitriani",
           "role": "Penari",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/penari.jpg",
           "description": "Penari unggulan yang menguasai teknik tari modern maupun tradisional."
         },
         {
           "name": "Yulia Ni'mah",
           "role": "Penari",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/penari.jpg",
           "description": "Tarian modern dan tradisional dikuasainya dengan mahir."
         },
         {
           "name": "Danti",
           "role": "Penari",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/penari.jpg",
           "description": "Penari kontemporer dengan gerakan dinamis."
         },
         {
           "name": "Khairun Nidha",
           "role": "Penari",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/penari.jpg",
           "description": "Seorang penari berpengalaman yang piawai menarikan gaya modern dan klasik."
         },
         {
           "name": "Adawiyah",
           "role": "Penari",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/penari.jpg",
           "description": "Penampil andal dengan kemampuan memadukan gerak tari tradisional dan modern."
         },
         {
           "name": "M. Aminullah",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/amin.jpg",
           "description": "Guru tua idealis, tetap mengajar meski sakit demi cinta pada pendidikan."
         },
         {
           "name": "Gina",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/gina.jpg",
           "description": "Istri Pak Amin, sabar tapi mulai lelah menopang keluarga dalam keterbatasan."
         },
         {
           "name": "Arlin",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/arlin.jpg",
           "description": "Anak Pak Amin, remaja galau yang terjerumus judi online demi uang cepat."
         },
         {
           "name": "Ahmad Safi'i",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/safii.jpg",
           "description": "Sahabat Arlin, lebih rasional tapi ikut terjerat karena loyalitas."
         },
         {
           "name": "Ahmad Baihaqi",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/baihaqi.jpg",
           "description": "Penjual sayur yang bijak, suara keprihatinan akan nasib pendidikan desa."
         },
         {
           "name": "Risma Septiani",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/risma.jpg",
           "description": "Mantan murid Pak Amin, sukses dan ingin membalas budi dengan membantu gurunya."
         },
         {
@@ -187,37 +327,31 @@
         {
           "name": "M. Hasbiannor",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
-          "description": "Warga tua yang masih menghormati adat dan budaya."
+          "photo": "../../assets/img/pemain/hasbi.jpg",
+          "description": "masyarakat biasa yang mana hobinya suka mancing di sawah"
         },
         {
           "name": "Ahmad Nor Fikri",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/fikri.jpg",
           "description": "Suka mengomentari tapi dengan humor pedas; representasi warga skeptis."
         },
         {
           "name": "Silahudin",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/silahudin.jpg",
           "description": "Lucu dan lugu, suka melempar candaan dengan makna dalam."
-        },
-        {
-          "name": "Muhammad Syaiful Mukmin",
-          "role": "Aktor",
-          "photo": "../../assets/img/1.png",
-          "description": "Anak muda saksi kejadian, jadi penengah saat konflik Arlin dan Isaf."
         },
         {
           "name": "Nabila Rahadatul Aisyi",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/nabila.jpg",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
           "name": "Eliyana",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/eliyana.jpg",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
@@ -229,8 +363,8 @@
         {
           "name": "Halimatus Sa'diah",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
-          "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
+          "photo": "../../assets/img/pemain/halimatus.jpg",
+          "description": "sebagai ibu ubu, yang suka julit pada orang "
         },
         {
           "name": "Na'imah",

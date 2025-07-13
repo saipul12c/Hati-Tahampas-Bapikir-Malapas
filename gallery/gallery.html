@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Galeri | Pagelaran PGMI 2025</title>
   <link rel="stylesheet" href="css/gallery.css" />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
@@ -16,30 +18,33 @@
       <a href="https://pgmi.uin-antasari.ac.id/" class="logo" aria-label="Beranda PGMI 2025">PGMI 2025</a>
       <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
       <ul class="nav-links">
-        <li><a href="/index.html" aria-current="page">Beranda</a></li>
+        <li><a href="/index.html">Beranda</a></li>
         <li><a href="/about/about.html">Tentang</a></li>
-        <li><a href="/gallery/gallery.html">Galeri</a></li>
+        <li><a href="/gallery/gallery.html" aria-current="page">Galeri</a></li>
         <li><a href="/schedule/schedule.html">Jadwal</a></li>
         <li><a href="/contact/contact.html">Kontak</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- Galeri Konten -->
   <main class="gallery-container">
     <h1 class="page-title">Galeri Pagelaran</h1>
 
-    <!-- Grid Media Galeri -->
+    <!-- Grid utama yang akan diisi oleh JS -->
     <div id="galleryGrid" class="gallery-grid" aria-live="polite" aria-label="Galeri media Pagelaran PGMI 2025">
-      <!-- Konten dari gallery.json dimuat dengan JS -->
+      <!-- Konten dinamis dimuat dari gallery.json oleh gallery.js -->
     </div>
 
-    <!-- Bagian Tim & Pemain akan disisipkan oleh gallery.js -->
+    <!-- Section Shorts, Team, Players akan ditambahkan oleh JS -->
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2025 Pagelaran PGMI. Dibuat dengan ☕ dan semangat mahasiswa.</p>
   </footer>
 
-  <script src="js/gallery.js"></script>
+  <!-- Script JS -->
+  <script src="js/gallery.js" defer></script>
 </body>
 </html>
