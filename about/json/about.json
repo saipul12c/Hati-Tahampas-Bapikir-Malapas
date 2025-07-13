@@ -1,11 +1,11 @@
 {
   "judul": "Tentang Pagelaran PGMI 2025",
-  "deskripsi": "Pagelaran PGMI (Pendidikan Guru Madrasah Ibtidaiyah) 2025 merupakan sebuah ajang nasional tahunan yang mempertemukan kreativitas, edukasi, dan budaya dalam satu kesatuan. Diselenggarakan oleh mahasiswa PGMI UIN Antasari Banjarmasin, Angkatan 2022, acara ini menjadi panggung kolaboratif yang menampilkan karya seni, inovasi pendidikan, dan pengabdian kepada masyarakat. Dengan semangat keterbukaan, keberagaman, dan kreativitas, pagelaran ini terbuka bagi semua kalangan dan mengusung tema besar: 'Pagelaran seni budaya dan musik banjar PGMI', dan Perwakilan Lokal B 2022 akan mengangkat Tema Teater: 'Hati Tahampas, Bapikir Malapas'.",
+  "deskripsi": "Pagelaran PGMI (Pendidikan Guru Madrasah Ibtidaiyah) 2025 merupakan sebuah ajang nasional tahunan yang mempertemukan kreativitas, edukasi, dan budaya dalam satu kesatuan. Diselenggarakan oleh mahasiswa PGMI UIN Antasari Banjarmasin Angkatan 2022, acara ini menjadi panggung kolaboratif yang menampilkan karya seni, inovasi pendidikan, dan pengabdian kepada masyarakat. Dengan semangat keterbukaan, keberagaman, dan kreativitas, pagelaran ini terbuka bagi semua kalangan dan mengusung tema besar: 'Pagelaran seni PGMI 2025' serta akan mengangkap tema lokal 'KARASMIN DIMULAI ADAT BUDAYA KADA TALINGKAH', dan Perwakilan Lokal B 2022 akan mengangkat Tema Teater: 'Hati Tahampas, Bapikir Malapas'.",
   
-  "tema": "Menjunjung Budaya, Merangkai Inovasi",
-  "tema_lokal": "Hati Tahampas, Bapikir Malapas",
+  "tema": "Pagelaran seni PGMI 2025",
+  "tema_lokal": "KARASMIN DIMULAI ADAT BUDAYA KADA TALINGKAH",
   "lokasi": "UIN ANTASARI BANJARMASIN, Kalimantan Selatan, Indonesia", 
-  "tanggal": "28 Juni 2025",
+  "tanggal": "30 Juni 2025",
 
   "visi": "Menjadi wadah pengembangan potensi mahasiswa PGMI yang berjiwa edukatif, kreatif, berbudaya, dan berkontribusi nyata bagi masyarakat.",
 
@@ -25,7 +25,7 @@
     "Kebermanfaatan sosial"
   ],
 
-  "latar_belakang": "Pagelaran PGMI tahun 2025 mengusung tema besar “Pagelaran Seni Budaya dan Musik Banjar” sebagai upaya afirmatif dalam merawat dan merevitalisasi nilai-nilai budaya lokal Kalimantan Selatan melalui ekspresi seni yang edukatif. Dalam semangat tersebut, mahasiswa PGMI UIN Antasari Banjarmasin menampilkan sebuah pertunjukan teater berjudul *“Hati Tahampas, Bapikir Malapas”*, sebuah karya dramatik yang menggambarkan secara mendalam pergulatan batin seorang guru desa antara idealisme pengabdian dan tekanan hidup yang membelit. Naskah ini menghadirkan kritik sosial yang tajam namun berakar kuat pada konteks lokal, dibingkai dalam bahasa Banjar yang otentik dan nuansa kehidupan masyarakat sehari-hari yang sangat dekat dengan realitas dunia pendidikan di pelosok daerah. Melalui pertunjukan ini, panggung bukan sekadar ruang seni, melainkan menjadi laboratorium sosial tempat nilai, pengetahuan, dan budaya berkelindan secara dinamis. Sebagai bagian dari tradisi akademik yang membaurkan nalar intelektual dan kearifan lokal, karya ini mencerminkan tekad mahasiswa PGMI untuk terus berkarya, berpikir kritis, serta memperkuat identitas keilmuan dan kebudayaan secara bersamaan, sembari menegaskan bahwa seni adalah cermin masyarakat dan pendidikan adalah denyut nadinya.",
+  "latar_belakang": "Pagelaran PGMI tahun 2025 mengusung tema besar “Pagelaran seni PGMI 2025” dengan tema lokal “KARASMIN DIMULAI ADAT BUDAYA KADA TALINGKAH” sebagai upaya afirmatif dalam merawat dan merevitalisasi nilai-nilai budaya lokal Kalimantan Selatan melalui ekspresi seni yang edukatif. Dalam semangat tersebut, mahasiswa PGMI UIN Antasari Banjarmasin menampilkan sebuah pertunjukan salah satu teater berjudul *“Hati Tahampas, Bapikir Malapas”*, sebuah karya dramatik yang menggambarkan secara mendalam pergulatan batin seorang guru desa antara idealisme pengabdian dan tekanan hidup yang membelit. Naskah ini menghadirkan kritik sosial yang tajam namun berakar kuat pada konteks lokal, dibingkai dalam bahasa Banjar yang otentik dan nuansa kehidupan masyarakat sehari-hari yang sangat dekat dengan realitas dunia pendidikan di pelosok daerah. Melalui pertunjukan ini, panggung bukan sekadar ruang seni, melainkan menjadi laboratorium sosial tempat nilai, pengetahuan, dan budaya berkelindan secara dinamis. Sebagai bagian dari tradisi akademik yang membaurkan nalar intelektual dan kearifan lokal, karya ini mencerminkan tekad mahasiswa PGMI untuk terus berkarya, berpikir kritis, serta memperkuat identitas keilmuan dan kebudayaan secara bersamaan, sembari menegaskan bahwa seni adalah cermin masyarakat dan pendidikan adalah denyut nadinya.",
 
   "tim_dan_pemain": {
     "tim": [
@@ -182,14 +182,9 @@
         "deskripsi": "Lucu dan lugu, suka melempar candaan dengan makna dalam."
       },
       {
-        "nama": "Muhammad Syaiful Mukmin",
-        "peran": "Aktor",
-        "deskripsi": "Anak muda saksi kejadian, jadi penengah saat konflik Arlin dan Isaf."
-      },
-      {
         "nama": "Nabila Rahadatul Aisyi",
         "peran": "Aktor",
-        "deskripsi": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
+        "deskripsi": "Simbol ibu guru."
       },
       {
         "nama": "Eliyana",
@@ -269,7 +264,7 @@
   "kontak": {
     "email": "pgmi2025@event.ac.id",
     "telepon": "+62 812-3456-7890",
-    "instagram": "@pgmi2025",
-    "website": "https://pgmi2025.ac.id"
+    "instagram": "@pagelara.seni.pgmi",
+    "website": "https://pgmi.uin-antasari.ac.id/"
   }
 }
