@@ -315,6 +315,12 @@
           "description": "Penampil andal dengan kemampuan memadukan gerak tari tradisional dan modern."
         },
         {
+          "name": "Arlin",
+          "role": "Aktor",
+          "photo": "../../assets/img/pemain/arlin.jpg",
+          "description": "Anak Pak Amin, remaja galau yang terjerumus judi online demi uang cepat."
+        },
+        {
           "name": "M. Aminullah",
           "role": "Aktor",
           "photo": "../../assets/img/pemain/amin.jpg",
@@ -325,12 +331,6 @@
           "role": "Aktor",
           "photo": "../../assets/img/pemain/gina.jpg",
           "description": "Istri Pak Amin, sabar tapi mulai lelah menopang keluarga dalam keterbatasan."
-        },
-        {
-          "name": "Arlin",
-          "role": "Aktor",
-          "photo": "../../assets/img/pemain/arlin.jpg",
-          "description": "Anak Pak Amin, remaja galau yang terjerumus judi online demi uang cepat."
         },
         {
           "name": "Ahmad Safi'i",
@@ -353,37 +353,37 @@
         {
           "name": "Ririn Dewi Arianti",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/ririn.jpg",
           "description": "Mak-mak kritis, simbol suara masyarakat yang cepat menilai dan menghakimi."
         },
         {
           "name": "Amelia Fitriani",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/amel.jpg",
           "description": "Warga biasa, suka ikut nimbrung dan cerewet tapi peduli kampung."
         },
         {
           "name": "Alfatia Rizda Amanda",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/alfatia.jpg",
           "description": "Mak-mak cerewet, suka gosip, mewakili keresahan sosial warga."
         },
         {
           "name": "Yasmin Nuraziza",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/yasmin.jpg",
           "description": "Kritikus dadakan, sering sinis pada perubahan zaman."
         },
         {
           "name": "Mukkaramah",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
-          "description": "Logis dan realistis, sering mempertanyakan peran guru dan orang tua."
+          "photo": "../../assets/img/pemain/mukaramah.jpg",
+          "description": "menggambarkan seorang anak sd."
         },
         {
           "name": "Alfi Nur Azizah",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/alfi.jpg",
           "description": "Content creator lokal, simbol generasi digital yang 'semua harus divideo'."
         },
         {
@@ -419,14 +419,14 @@
         {
           "name": "Hafizah",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/hafizah.jpg",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
           "name": "Halimatus Sa'diah",
           "role": "Aktor",
           "photo": "../../assets/img/pemain/halimatus.jpg",
-          "description": "sebagai ibu ubu, yang suka julit pada orang "
+          "description": "sebagai ibu ubu, yang suka julit pada orang akan tettapi orang yang kritis"
         },
         {
           "name": "Na'imah",
@@ -437,19 +437,19 @@
         {
           "name": "Mahriani",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/mahriani.jpg",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
           "name": "Majmiatus Sa'dah",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/najmiatus.jpg",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
-          "name": "Pemain 21",
+          "name": "Lu'Lu'i Nazwa",
           "role": "Aktor",
-          "photo": "../../assets/img/1.png",
+          "photo": "../../assets/img/pemain/lulu.jpg",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
