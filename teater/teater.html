@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri Video</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="light-mode">
+  <header>
+    <h1>Galeri Video</h1>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Cari video..." />
+      <button id="toggle-mode">🌙</button>
+    </div>
+  </header>
+
+  <main class="video-gallery">
+    <div class="video-list" id="videoList">
+      <!-- Video cards dimuat dari JS -->
+    </div>
+  </main>
+
+  <!-- Popup Player -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span id="closePopup">&times;</span>
+      <iframe id="popupVideo" src="" allowfullscreen></iframe>
+      <div class="video-info" id="popupInfo"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

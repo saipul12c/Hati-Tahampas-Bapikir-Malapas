@@ -48,7 +48,7 @@ function mulaiHitungMundur() {
     const detik      = String(now.getSeconds()).padStart(2, '0');
 
     if (selisih <= 0) {
-      countdownEl.innerHTML = "🎉 Acara telah dimulai!";
+      countdownEl.innerHTML = `<a href="../../teater/teater.html" class="started-link">🎉 Acara telah dimulai! Klik di sini untuk masuk ke teater</a>`;
       return;
     }
 

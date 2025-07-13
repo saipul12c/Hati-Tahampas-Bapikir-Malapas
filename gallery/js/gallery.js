@@ -70,12 +70,42 @@ fetch('/gallery/json/gallery.json')
     });
     gallery.appendChild(fragmentMedia);
 
+    // === Poster Section ===
+    if (data.gallery.posters && data.gallery.posters.length) {
+      const posterSection = document.createElement('section');
+      posterSection.className = 'poster-section';
+
+      const sectionTitle = document.createElement('h2');
+      sectionTitle.className = 'section-title';
+      sectionTitle.textContent = 'Poster Pagelaran';
+      posterSection.appendChild(sectionTitle);
+
+      const posterWrapper = document.createElement('div');
+      posterWrapper.className = 'poster-wrapper';
+
+      const posters = data.gallery.posters.slice(0, 4); // Maksimal 4
+      posters.forEach(poster => {
+        const posterCard = document.createElement('div');
+        posterCard.className = 'poster-card';
+        posterCard.innerHTML = `
+          <div class="poster-blur"></div>
+          <img src="..${poster.src}" alt="${poster.alt || 'Poster'}" class="poster-img" />
+        `;
+        posterWrapper.appendChild(posterCard);
+      });
+
+      posterSection.appendChild(posterWrapper);
+
+      // Tambahkan setelah #galleryGrid
+      gallery.after(posterSection);
+    }
+
     // === Video Shorts ===
     const shorts = mediaItems.filter(item => item.type === 'video' && item.category?.toLowerCase() === 'short');
     const shortSection = document.createElement('section');
     shortSection.className = 'mt-10';
     shortSection.innerHTML = `<h2 class="section-title">Video Shorts</h2><div id="shortsGrid" class="shorts-grid"></div>`;
-    gallery.after(shortSection);
+    gallery.parentElement.appendChild(shortSection);
 
     const shortsGrid = shortSection.querySelector('#shortsGrid');
     const shortPagination = document.createElement('div');
