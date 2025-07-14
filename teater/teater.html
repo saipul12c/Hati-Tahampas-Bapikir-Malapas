@@ -3,29 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Galeri Video</title>
+  <title>Galeri | Pagelaran PGMI 2025</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="light-mode">
   <header>
-    <h1>Galeri Video</h1>
+    <h1>Galeri Pagelaran PGMI 2025</h1>
     <div class="controls">
       <input type="text" id="search" placeholder="Cari video..." />
       <button id="toggle-mode">🌙</button>
     </div>
   </header>
 
-  <main class="video-gallery">
-    <div class="video-list" id="videoList">
-      <!-- Video cards dimuat dari JS -->
-    </div>
-  </main>
+  <main>
+    <!-- Galeri Video -->
+    <section class="video-gallery">
+      <div class="video-list" id="videoList">
+        <!-- Video cards dimuat dari JS -->
+      </div>
+    </section>
 
-  <!-- Popup Player -->
+    <!-- Dokumentasi Pagelaran -->
+<section class="dokumentasi-gallery">
+  <h2>Dokumentasi Pagelaran</h2>
+  <div class="dokumentasi-scroll-wrapper">
+    <div class="dokumentasi-list" id="dokumentasiList">
+      <!-- Diisi dari script.js -->
+    </div>
+  </div>
+</section>
+
+
+  <!-- Popup Player / Lightbox -->
   <div class="popup" id="popup">
     <div class="popup-content">
-      <span id="closePopup">&times;</span>
-      <iframe id="popupVideo" src="" allowfullscreen></iframe>
+      <span id="closePopup" class="close-btn">&times;</span>
+      <iframe id="popupVideo" src="" allowfullscreen style="display: none;"></iframe>
       <div class="video-info" id="popupInfo"></div>
     </div>
   </div>
