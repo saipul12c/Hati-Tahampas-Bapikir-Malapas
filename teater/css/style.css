@@ -339,3 +339,25 @@ body,
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons button,
+.nav-buttons .home-button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.nav-buttons button:hover,
+.nav-buttons .home-button:hover {
+  background-color: #0056b3;
+}
