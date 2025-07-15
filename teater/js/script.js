@@ -7,57 +7,60 @@ const closePopup = document.getElementById("closePopup");
 const searchInput = document.getElementById("search");
 const toggleModeButton = document.getElementById("toggle-mode");
 
+const dokList1 = document.getElementById("dokList1");
+const dokList3 = document.getElementById("dokList3");
+
 let allMediaItems = [];
 let dokumentasiItems = [];
 const itemWidth = 240;
-const spacing = 16; // Jarak antar kartu dokumentasi
+const spacing = 16;
 const buffer = 5;
 let renderedIndexes = new Set();
 
-// Ambil data dari JSON eksternal
 fetch("./json/videos.json")
-  .then(response => response.json())
-  .then(data => {
+  .then((res) => res.json())
+  .then((data) => {
     allMediaItems = data;
     renderVideos();
 
-    dokumentasiItems = allMediaItems.filter(item => item.type === "dokumentasi");
+    dokumentasiItems = allMediaItems.filter((item) => item.type === "dokumentasi");
+
     dokumentasiList.style.width = `${dokumentasiItems.length * (itemWidth + spacing)}px`;
     renderVirtualDokumentasi();
+    renderDokumentasiRows();
   })
-  .catch(error => {
-    console.error("Gagal memuat data:", error);
-    videoList.innerHTML = "<p class='error'>Gagal memuat video.</p>";
+  .catch((err) => {
+    console.error("Gagal memuat data:", err);
+    videoList.innerHTML = `<p class="error">Gagal memuat video.</p>`;
     if (dokumentasiList) {
-      dokumentasiList.innerHTML = "<p class='error'>Gagal memuat dokumentasi.</p>";
+      dokumentasiList.innerHTML = `<p class="error">Gagal memuat dokumentasi.</p>`;
     }
   });
 
-// Render video untuk bagian "Galeri Video"
 function renderVideos(filter = "") {
   videoList.innerHTML = "";
   const filtered = allMediaItems
-    .filter(item => item.type !== "dokumentasi")
-    .filter(item => item.title.toLowerCase().includes(filter.toLowerCase()));
+    .filter((item) => item.type !== "dokumentasi")
+    .filter((item) => item.title.toLowerCase().includes(filter.toLowerCase()));
 
   if (filtered.length === 0) {
-    videoList.innerHTML = "<p class='info'>Tidak ada video ditemukan.</p>";
+    videoList.innerHTML = `<p class="info">Tidak ada video ditemukan.</p>`;
+    return;
   }
 
-  filtered.forEach(video => {
+  filtered.forEach((video) => {
     const card = createMediaCard(video);
     videoList.appendChild(card);
   });
 }
 
-// Render virtual dokumentasi (horizontal scroll)
 function renderVirtualDokumentasi() {
   const scrollLeft = dokumentasiList.parentElement.scrollLeft;
   const startIdx = Math.max(0, Math.floor(scrollLeft / (itemWidth + spacing)) - buffer);
-  const endIdx = Math.min(dokumentasiItems.length, startIdx + Math.ceil(window.innerWidth / (itemWidth + spacing)) + buffer * 2);
+  const visibleCount = Math.ceil(window.innerWidth / (itemWidth + spacing)) + buffer * 2;
+  const endIdx = Math.min(dokumentasiItems.length, startIdx + visibleCount);
 
-  // Hapus elemen yang tidak terlihat
-  [...dokumentasiList.children].forEach(child => {
+  [...dokumentasiList.children].forEach((child) => {
     const idx = parseInt(child.dataset.index);
     if (idx < startIdx - buffer || idx > endIdx + buffer) {
       dokumentasiList.removeChild(child);
@@ -65,15 +68,12 @@ function renderVirtualDokumentasi() {
     }
   });
 
-  // Tambahkan elemen yang perlu ditampilkan
   for (let i = startIdx; i < endIdx; i++) {
     if (renderedIndexes.has(i)) continue;
-
     const item = dokumentasiItems[i];
+
     const div = document.createElement("div");
     div.className = "media-card";
-    div.style.position = "absolute";
-    div.style.left = `${i * (itemWidth + spacing)}px`;
     div.dataset.index = i;
 
     div.innerHTML = `
@@ -91,12 +91,83 @@ function renderVirtualDokumentasi() {
   }
 }
 
-// Deteksi scroll untuk memicu virtual render
-dokumentasiList.parentElement.addEventListener("scroll", () => {
-  renderVirtualDokumentasi();
-});
+dokumentasiList.parentElement.addEventListener("scroll", renderVirtualDokumentasi);
 
-// Buat kartu media (untuk video dan gambar)
+function renderDokumentasiRows() {
+  if (dokumentasiItems.length < 3) return;
+
+  const total = dokumentasiItems.length;
+  const third = Math.floor(total / 3);
+
+  const baris1Items = dokumentasiItems.slice(0, third);
+  const baris2Items = dokumentasiItems.slice(third, 2 * third);
+  const baris3Items = dokumentasiItems.slice(2 * third);
+
+  // Baris 1 (auto-scroll kanan)
+  baris1Items.forEach((item) => {
+    const card = createMediaCard(item);
+    dokList1.appendChild(card);
+  });
+
+  // Baris 2 (manual scroll)
+  baris2Items.forEach((item) => {
+    const card = createMediaCard(item);
+    dokumentasiList.appendChild(card);
+  });
+
+  // Baris 3 (auto-scroll kiri)
+  baris3Items.forEach((item) => {
+    const card = createMediaCard(item);
+    dokList3.appendChild(card);
+  });
+
+  setupAutoScroll(dokList1, "right", 30); // Baris 1 scroll ke kanan
+  setupAutoScroll(dokList3, "left", 22);  // Baris 3 scroll ke kiri
+}
+
+function setupAutoScroll(container, direction, speed = 20) {
+  const scrollContainer = container.parentElement;
+  let scrollInterval;
+  let isManualScroll = false;
+
+  function startAutoScroll() {
+    if (scrollInterval) return;
+    scrollInterval = setInterval(() => {
+      if (direction === "right") {
+        if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth) {
+          scrollContainer.scrollLeft = 0;
+        } else {
+          scrollContainer.scrollLeft += 1;
+        }
+      } else {
+        if (scrollContainer.scrollLeft <= 0) {
+          scrollContainer.scrollLeft = scrollContainer.scrollWidth;
+        } else {
+          scrollContainer.scrollLeft -= 1;
+        }
+      }
+    }, speed);
+  }
+
+  function stopAutoScroll() {
+    clearInterval(scrollInterval);
+    scrollInterval = null;
+  }
+
+  scrollContainer.addEventListener("scroll", () => {
+    if (!isManualScroll) {
+      isManualScroll = true;
+      stopAutoScroll();
+      setTimeout(() => {
+        isManualScroll = false;
+        startAutoScroll();
+      }, 3000);
+    }
+  });
+
+  startAutoScroll();
+}
+
 function createMediaCard(media) {
   const card = document.createElement("div");
   card.className = "media-card";
@@ -109,7 +180,7 @@ function createMediaCard(media) {
     ${mediaElement}
     <div class="media-details">
       <h3>${media.title}</h3>
-      <p>${media.desc} ${media.duration ? `• ${media.duration}` : ""}</p>
+      <p>${media.desc}${media.duration ? ` • ${media.duration}` : ""}</p>
     </div>
   `;
 
@@ -117,7 +188,6 @@ function createMediaCard(media) {
   return card;
 }
 
-// Tampilkan popup saat klik media
 function showPopup(media) {
   popupInfo.innerHTML = "";
 
@@ -133,28 +203,25 @@ function showPopup(media) {
     popupVideo.src = `${media.url}?autoplay=1`;
     popupInfo.innerHTML = `
       <h3>${media.title}</h3>
-      <p>${media.desc} • Durasi: ${media.duration}</p>
+      <p>${media.desc}${media.duration ? ` • Durasi: ${media.duration}` : ""}</p>
     `;
   }
 
   popup.style.display = "flex";
 }
 
-// Tutup popup
 closePopup.onclick = () => {
   popupVideo.src = "";
   popup.style.display = "none";
 };
 
-// Filter video berdasarkan input pencarian
-searchInput.addEventListener("input", e => {
+searchInput.addEventListener("input", (e) => {
   renderVideos(e.target.value);
 });
 
-// Toggle mode terang/gelap
 toggleModeButton.onclick = () => {
   document.body.classList.toggle("dark-mode");
   document.body.classList.toggle("light-mode");
-  toggleModeButton.textContent =
-    document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+
+  toggleModeButton.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
 };

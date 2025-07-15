@@ -84,9 +84,11 @@ main section h2::after {
   border-radius: 2px;
 }
 
-/* Media List Container */
+/* Video List */
 .video-list,
-.dokumentasi-list {
+.dokumentasi-list,
+#dokList1,
+#dokList3 {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -97,8 +99,63 @@ main section h2::after {
 }
 
 .video-list::-webkit-scrollbar,
-.dokumentasi-list::-webkit-scrollbar {
+.dokumentasi-list::-webkit-scrollbar,
+#dokList1::-webkit-scrollbar,
+#dokList3::-webkit-scrollbar {
   display: none;
+}
+
+/* Auto-scroll Baris 1 dan 3 */
+#dokList1,
+#dokList3 {
+  scroll-behavior: smooth;
+  width: max-content;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  #dokList1,
+  #dokList3 {
+    height: 240px;
+  }
+}
+
+#dokList1 .media-card:hover,
+#dokList3 .media-card:hover {
+  transform: scale(1.03);
+}
+
+/* Dokumentasi Gallery Section */
+.dokumentasi-gallery {
+  padding: 20px;
+  position: relative;
+}
+
+/* Wrapper scroll horizontal */
+.dokumentasi-scroll-wrapper {
+  overflow-x: auto;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.dokumentasi-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.dokumentasi-scroll-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Dokumentasi Baris 2: manual scroll layout (tanpa absolute) */
+.dokumentasi-list {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 300px;
+  gap: 16px;
+  width: max-content;
+  scroll-snap-type: x mandatory;
+  position: relative;
 }
 
 /* Media Card */
@@ -137,7 +194,6 @@ body.dark-mode .media-card {
   object-fit: contain;
   background-color: #f9f9f9;
 }
-
 
 /* Card Content */
 .media-details {
@@ -272,52 +328,14 @@ body.dark-mode .error {
   }
 }
 
-/* Dokumentasi List khusus untuk virtual scroll */
-.dokumentasi-gallery {
-  padding: 20px;
-  position: relative;
-}
-
-/* Pembungkus yang bisa discroll horizontal */
-.dokumentasi-scroll-wrapper {
-  overflow-x: auto;
-  width: 100%;
-}
-
-/* Konten scroll di dalamnya */
-.dokumentasi-list {
-  display: flex;
-  flex-wrap: nowrap;
-  height: 300px;
-  position: relative;
-  gap: 16px;
-  width: max-content; /* Penting: agar lebarnya mengikuti isi */
-  scroll-snap-type: x mandatory;
-}
-
-.dokumentasi-scroll-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.dokumentasi-scroll-wrapper {
-  -ms-overflow-style: none; /* untuk IE & Edge */
-  scrollbar-width: none;    /* untuk Firefox */
-}
-
-/* Khusus agar gambar dokumentasi tampil penuh */
-.dokumentasi-list .media-card img {
-  object-fit: contain;
-  background-color: #f9f9f9;
-}
-
-/* Untuk seluruh halaman */
+/* Hilangkan scrollbar global */
 body::-webkit-scrollbar,
 *::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
 }
 
 body,
 * {
-  -ms-overflow-style: none;     /* IE & Edge */
-  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

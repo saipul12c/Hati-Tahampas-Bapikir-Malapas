@@ -24,24 +24,40 @@
     </section>
 
     <!-- Dokumentasi Pagelaran -->
-<section class="dokumentasi-gallery">
-  <h2>Dokumentasi Pagelaran</h2>
-  <div class="dokumentasi-scroll-wrapper">
-    <div class="dokumentasi-list" id="dokumentasiList">
-      <!-- Diisi dari script.js -->
-    </div>
-  </div>
-</section>
+    <section class="dokumentasi-gallery">
+      <h2>Dokumentasi Pagelaran</h2>
 
+      <!-- Baris 1: Auto scroll ke kanan -->
+      <div class="dokumentasi-scroll-wrapper">
+        <div class="dokumentasi-list" id="dokList1">
+          <!-- Diisi dari JS (baris 1 auto kanan) -->
+        </div>
+      </div>
 
-  <!-- Popup Player / Lightbox -->
-  <div class="popup" id="popup">
-    <div class="popup-content">
-      <span id="closePopup" class="close-btn">&times;</span>
-      <iframe id="popupVideo" src="" allowfullscreen style="display: none;"></iframe>
-      <div class="video-info" id="popupInfo"></div>
+      <!-- Baris 2: Manual scroll -->
+      <div class="dokumentasi-scroll-wrapper">
+        <div class="dokumentasi-list" id="dokumentasiList">
+          <!-- Diisi dari JS (baris 2 manual) -->
+        </div>
+      </div>
+
+      <!-- Baris 3: Auto scroll ke kiri -->
+      <div class="dokumentasi-scroll-wrapper">
+        <div class="dokumentasi-list" id="dokList3">
+          <!-- Diisi dari JS (baris 3 auto kiri) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Popup Player / Lightbox -->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <span id="closePopup" class="close-btn">&times;</span>
+        <iframe id="popupVideo" src="" allowfullscreen style="display: none;"></iframe>
+        <div class="video-info" id="popupInfo"></div>
+      </div>
     </div>
-  </div>
+  </main>
 
   <script src="js/script.js"></script>
 </body>
