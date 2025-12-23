@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jadwal | Pagelaran PGMI 2025</title>
-  <link rel="stylesheet" href="css/schedule.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/schedule/css/schedule.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
@@ -14,22 +15,28 @@
   <nav class="navbar" role="navigation" aria-label="Navigasi utama">
     <div class="navbar-container">
       <a href="https://pgmi.uin-antasari.ac.id/" class="logo" aria-label="Beranda PGMI 2025">PGMI 2025</a>
-      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle mode gelap/terang">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      </div>
       <ul class="nav-links">
-        <li><a href="/index.html" aria-current="page">Beranda</a></li>
+        <li><a href="/index.html">Beranda</a></li>
         <li><a href="/about/about.html">Tentang</a></li>
         <li><a href="/gallery/gallery.html">Galeri</a></li>
-        <li><a href="/schedule/schedule.html">Jadwal</a></li>
+        <li><a href="/schedule/schedule.html" aria-current="page">Jadwal</a></li>
         <li><a href="/contact/contact.html">Kontak</a></li>
       </ul>
     </div>
   </nav>
 
-  <main class="schedule-container">
-    <h1>Jadwal Acara</h1>
+  <main>
+    <h1 class="page-title">Jadwal Acara</h1>
 
     <!-- Countdown Section -->
-    <section class="countdown-section">
+    <section class="countdown-section content-card">
       <h2>Hitung Mundur Menuju Pagelaran</h2>
       <div id="countdown" class="countdown-display">
         <!-- Diisi lewat JavaScript -->
@@ -37,25 +44,28 @@
     </section>
 
     <!-- Tabel Jadwal -->
-    <table id="jadwalTable">
-      <thead>
-        <tr>
-          <th>Hari</th>
-          <th>Waktu</th>
-          <th>Kegiatan</th>
-          <th>Penanggung Jawab</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Diisi lewat JS -->
-      </tbody>
-    </table>
+    <div class="content-card">
+      <table id="jadwalTable">
+        <thead>
+          <tr>
+            <th>Hari</th>
+            <th>Waktu</th>
+            <th>Kegiatan</th>
+            <th>Penanggung Jawab</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Diisi lewat JS -->
+        </tbody>
+      </table>
+    </div>
   </main>
 
   <footer class="footer">
     <p>&copy; 2025 Pagelaran PGMI. Dibuat dengan ☕ dan semangat mahasiswa.</p>
   </footer>
 
-  <script src="js/schedule.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/schedule/js/schedule.js"></script>
 </body>
 </html>
