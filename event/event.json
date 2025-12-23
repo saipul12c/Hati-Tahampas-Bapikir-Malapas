@@ -1,0 +1,18 @@
+{
+  "eventName": "Pagelaran Seni PGMI UIN Antasari 2025",
+  "description": "Pagelaran Seni Mahasiswa PGMI UIN Antasari Banjarmasin adalah sebuah acara tahunan yang menampilkan berbagai macam pertunjukan seni dan kreativitas dari mahasiswa Program Studi Pendidikan Guru Madrasah Ibtidaiyah (PGMI). Acara ini merupakan puncak dari kegiatan perkuliahan dan praktik mahasiswa dalam bidang seni dan budaya.",
+  "history": [
+    {
+      "year": 2024,
+      "theme": "Harmoni Budaya Nusantara",
+      "description": "Pagelaran tahun 2024 mengangkat tema kekayaan budaya dari berbagai daerah di Indonesia. Acara ini dimeriahkan dengan pertunjukan tari, musik, drama, dan pameran karya seni.",
+      "imageUrl": "https://via.placeholder.com/300x200.png?text=Pagelaran+2024"
+    },
+    {
+      "year": 2023,
+      "theme": "Semangat Pemuda Berkarya",
+      "description": "Pagelaran tahun 2023 berfokus pada semangat dan kreativitas generasi muda. Acara ini menampilkan pertunjukan modern dan kontemporer, serta workshop seni bagi para pengunjung.",
+      "imageUrl": "https://via.placeholder.com/300x200.png?text=Pagelaran+2023"
+    }
+  ]
+}

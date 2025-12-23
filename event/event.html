@@ -2,10 +2,10 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jadwal | Pagelaran PGMI 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event | Pagelaran PGMI 2025</title>
   <link rel="stylesheet" href="/assets/css/style.css" />
-  <link rel="stylesheet" href="/schedule/css/schedule.css" />
+  <link rel="stylesheet" href="/event/css/event.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
@@ -27,41 +27,23 @@
       <ul class="nav-links">
         <li><a href="/index.html">Beranda</a></li>
         <li><a href="/about/about.html">Tentang</a></li>
-        <li><a href="/event/event.html">Event</a></li>
+        <li><a href="/event/event.html" aria-current="page">Event</a></li>
         <li><a href="/gallery/gallery.html">Galeri</a></li>
-        <li><a href="/schedule/schedule.html" aria-current="page">Jadwal</a></li>
+        <li><a href="/schedule/schedule.html">Jadwal</a></li>
         <li><a href="/contact/contact.html">Kontak</a></li>
       </ul>
     </div>
   </nav>
 
   <main>
-    <h1 class="page-title">Jadwal Acara</h1>
-
-    <!-- Countdown Section -->
-    <section class="countdown-section content-card">
-      <h2>Hitung Mundur Menuju Pagelaran</h2>
-      <div id="countdown" class="countdown-display">
-        <!-- Diisi lewat JavaScript -->
-      </div>
+    <h1 class="page-title">Informasi Event</h1>
+    <section id="event-info" class="content-card">
+      <!-- Event content will be loaded here -->
     </section>
-
-    <!-- Tabel Jadwal -->
-    <div class="content-card">
-      <table id="jadwalTable">
-        <thead>
-          <tr>
-            <th>Hari</th>
-            <th>Waktu</th>
-            <th>Kegiatan</th>
-            <th>Penanggung Jawab</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Diisi lewat JS -->
-        </tbody>
-      </table>
-    </div>
+     <section id="event-history" class="content-card">
+      <h2>Pagelaran Seni Sebelumnya</h2>
+      <div id="history-container"></div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -69,6 +51,6 @@
   </footer>
 
   <script src="/assets/js/main.js"></script>
-  <script src="/schedule/js/schedule.js"></script>
+  <script src="/event/js/event.js"></script>
 </body>
 </html>
