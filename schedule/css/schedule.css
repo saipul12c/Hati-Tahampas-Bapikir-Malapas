@@ -1,27 +1,15 @@
-/* === Gaya Halaman Jadwal === */
-
-/* Kontainer Utama */
-main {
-  max-width: 1100px;
-  margin: auto;
-  padding: 2.5rem 1.5rem;
-}
-
-.page-title {
-  font-size: 2.5rem;
-  text-align: center;
-  color: var(--logo-color);
-  margin-bottom: 2rem;
-}
-
-/* Bagian Hitung Mundur */
+/* Countdown Section */
 .countdown-section {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin: 3rem auto;
   padding: 2rem;
-  background-color: var(--card-bg);
-  border: 1px solid var(--card-border);
   border-radius: 16px;
+  max-width: 800px;
+  transition: transform 0.3s ease;
+}
+
+.countdown-section:hover {
+  transform: translateY(-4px);
 }
 
 .countdown-section h2 {
@@ -31,40 +19,36 @@ main {
 }
 
 .countdown-display {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-color);
   background-color: var(--bg-color);
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
-  display: inline-block;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.04);
-}
-
-.started-link {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.7rem 1.5rem;
-  background-color: var(--logo-color);
-  color: white;
+  padding: 1rem;
   border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.2s;
+  display: inline-block;
 }
 
-.started-link:hover { background-color: #2c5282; }
-
-/* Tabel Jadwal untuk Layar Lebar */
-.content-card {
-  background-color: var(--card-bg);
-  border-radius: 16px;
-  overflow: hidden; /* Penting untuk border-radius tabel */
-  border: 1px solid var(--card-border);
+/* Container Umum */
+.schedule-container {
+  padding: 2rem 1rem 4rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
+.schedule-container h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: var(--logo-color);
+}
+
+/* Tabel Jadwal Sinkron dengan Array Data */
 #jadwalTable {
   width: 100%;
-  border-collapse: collapse;
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 #jadwalTable thead {
@@ -72,63 +56,116 @@ main {
   color: white;
 }
 
-#jadwalTable th, #jadwalTable td {
-  padding: 1.25rem;
+#jadwalTable th,
+#jadwalTable td {
+  padding: 1.2rem;
   text-align: left;
+  vertical-align: top;
   border-bottom: 1px solid var(--card-border);
 }
 
-#jadwalTable tbody tr:last-child td {
-  border-bottom: none;
+#jadwalTable th {
+  font-weight: 600;
+  font-size: 1rem;
 }
 
-#jadwalTable tbody tr:hover {
-  background-color: var(--footer-bg);
+#jadwalTable td {
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 #jadwalTable td ul {
   padding-left: 1.2rem;
-  margin-top: 0.5rem;
+  margin: 0.3rem 0;
 }
 
-/* === Penyesuaian Responsif untuk Tabel === */
-@media (max-width: 800px) {
-  /* Sembunyikan header tabel */
-  #jadwalTable thead {
-    display: none;
+#jadwalTable td ul li {
+  margin-bottom: 0.3rem;
+  list-style-type: disc;
+}
+
+#jadwalTable td ul li::marker {
+  color: var(--logo-color);
+}
+
+#jadwalTable tr:last-child td {
+  border-bottom: none;
+}
+
+#jadwalTable tr:hover {
+  background-color: var(--footer-bg);
+  transition: background-color 0.3s ease;
+}
+
+
+/* Responsif */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
-  /* Ubah baris menjadi kartu */
-  #jadwalTable tr {
-    display: block;
-    border-bottom: 2px solid var(--navbar-border);
+  .schedule-container h1 {
+    font-size: 1.9rem;
   }
-  #jadwalTable tr:last-child { border-bottom: none; }
 
+  .countdown-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .countdown-display {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  #jadwalTable th,
   #jadwalTable td {
-    display: block;
-    text-align: right; /* Ratakan konten ke kanan */
-    padding-left: 50%; /* Sisakan ruang untuk label */
-    position: relative;
-    border-bottom: 1px dotted var(--card-border);
-  }
-  #jadwalTable tr td:last-child { border-bottom: none; }
-
-  /* Tambahkan label menggunakan pseudo-element ::before */
-  #jadwalTable td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 1.25rem;
-    width: calc(50% - 2.5rem);
-    text-align: left;
-    font-weight: 600;
-    color: var(--logo-color);
+    padding: 0.9rem;
+    font-size: 0.92rem;
   }
 }
 
 @media (max-width: 480px) {
-  main { padding: 1.5rem 1rem; }
-  .page-title { font-size: 2rem; }
-  .countdown-section { padding: 1.5rem; }
-  .countdown-section h2 { font-size: 1.5rem; }
+  .schedule-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .countdown-section {
+    padding: 1rem;
+  }
+
+  .countdown-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .countdown-display {
+    font-size: 0.95rem;
+  }
+
+  .schedule-container h1 {
+    font-size: 1.6rem;
+  }
+
+  #jadwalTable th,
+  #jadwalTable td {
+    font-size: 0.88rem;
+    padding: 0.75rem;
+  }
+}
+
+
+.started-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--logo-color);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.started-link:hover {
+  background-color: #2c5282;
 }

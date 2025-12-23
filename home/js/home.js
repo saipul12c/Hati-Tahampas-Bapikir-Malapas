@@ -15,18 +15,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 
-  if (navToggle) {
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  }
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
 
   // Scroll
-  if (btnScroll) {
-    btnScroll.addEventListener('click', () => {
-      highlightContainer.scrollIntoView({ behavior: 'smooth' });
-    });
-  }
+  btnScroll.addEventListener('click', () => {
+    highlightContainer.scrollIntoView({ behavior: 'smooth' });
+  });
 
   // Fetch data
   fetch('/home/json/home.json')
@@ -40,44 +36,57 @@ document.addEventListener('DOMContentLoaded', () => {
       const { hero, highlights, comingSoon, cta } = data;
 
       // Hero
-      if (judul) judul.textContent = hero.title;
-      if (deskripsi) deskripsi.textContent = hero.description;
-      if (tanggal) tanggal.textContent = hero.date;
-      if (lokasi) lokasi.textContent = hero.location;
-      if (kutipan) kutipan.textContent = `\"${hero.quote}\"`;
+      judul.textContent = hero.title;
+      deskripsi.textContent = hero.description;
+      tanggal.textContent = hero.date;
+      lokasi.textContent = hero.location;
+      kutipan.textContent = `\"${hero.quote}\"`;
 
       // Highlights
-      if (highlightContainer) {
-        highlights.forEach(item => {
-          const card = document.createElement('div');
-          card.className = 'highlight-card';
-          card.innerHTML = `
-            <img src="${item.image}" alt="${item.title}" class="highlight-image" loading="lazy">
-            <h3>${item.title}</h3>
-            <p>${item.description}</p>
-          `;
-          highlightContainer.appendChild(card);
-        });
-      }
+      highlights.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'highlight-card';
+        card.innerHTML = `
+          <h3>${item.title}</h3>
+          <p>${item.description}</p>
+        `;
+        highlightContainer.appendChild(card);
+      });
 
       // Coming Soon
-      if (comingSoonSection) {
-        const comingSoonContent = document.createElement('div');
-        comingSoonContent.innerHTML = `
-          <h3>${comingSoon.title}</h3>
-          <p>${comingSoon.description}</p>
-        `;
-        comingSoonSection.appendChild(comingSoonContent);
-      }
+      const comingSoonContent = document.createElement('div');
+      comingSoonContent.innerHTML = `
+        <h3>${comingSoon.title}</h3>
+        <p>${comingSoon.description}</p>
+      `;
+      comingSoonSection.appendChild(comingSoonContent);
 
       // CTA
-      if (ctaJudul) ctaJudul.textContent = cta.title;
-      if (ctaKonten) ctaKonten.textContent = cta.content;
-      if (ctaTautan) ctaTautan.href = cta.link;
+      ctaJudul.textContent = cta.title;
+      ctaKonten.textContent = cta.content;
+      ctaTautan.href = cta.link;
     })
     .catch(error => {
-      console.error('Error fetching home data:', error);
-      if (judul) judul.textContent = 'Gagal memuat data';
-      if (deskripsi) deskripsi.textContent = 'Silakan coba lagi nanti.';
+      console.error('Error fetching data:', error);
+      // Tampilkan pesan error di UI
+      judul.textContent = 'Gagal memuat data';
+      deskripsi.textContent = 'Silakan coba lagi nanti.';
     });
+
+  // Theme Toggle
+  const themeToggle = document.getElementById('theme-toggle');
+  const currentTheme = localStorage.getItem('theme');
+
+  if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  }
+
+  function switchTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  }
+
+  themeToggle.addEventListener('click', switchTheme);
 });

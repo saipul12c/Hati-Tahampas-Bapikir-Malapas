@@ -1,48 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('/contact/json/contact.json')
-    .then(res => {
-      if (!res.ok) {
-        throw new Error(`Gagal memuat contact.json: ${res.statusText}`);
-      }
-      return res.json();
-    })
-    .then(data => {
-      // Perbarui deskripsi halaman dari JSON
-      const descriptionEl = document.getElementById('kontakDeskripsi');
-      if (descriptionEl && data.deskripsi) {
-        descriptionEl.textContent = data.deskripsi;
-      }
+fetch('/contact/json/contact.json')
+  .then(res => res.json())
+  .then(data => {
+    // Update deskripsi
+    document.getElementById('kontakDeskripsi').textContent = data.deskripsi;
 
-      // Isi kartu sosial yang sudah ada di HTML dengan data dari JSON
-      const socialLinksContainer = document.getElementById('socialLinks');
-      if (socialLinksContainer && data.sosial) {
-        // Ambil semua elemen kartu yang ada
-        const socialCards = socialLinksContainer.querySelectorAll('.social-card');
+    // Tampilkan barcode sosial media
+    const social = document.getElementById('socialLinks');
+    data.sosial.forEach(link => {
+      const card = document.createElement('div');
+      card.className = 'social-card text-center';
 
-        // Loop melalui data JSON dan isi kartu yang sesuai
-        data.sosial.forEach((socialInfo, index) => {
-          // Pastikan ada kartu untuk diisi
-          if (socialCards[index]) {
-            const card = socialCards[index];
-            const platformSlug = socialInfo.nama.toLowerCase().replace(/\s+/g, '-');
-            const imgSrc = `/assets/qrcode/${platformSlug}.png`;
+      const platformSlug = link.nama.toLowerCase().replace(/\s+/g, '');
+      const imgSrc = `/assets/qrcode/${platformSlug}.png`; // Pastikan file QR ada
 
-            const imgEl = card.querySelector('.qrcode-img');
-            const nameEl = card.querySelector('p');
-            const linkEl = card.querySelector('a'); // Tidak digunakan lagi, tapi bisa untuk referensi
+      card.innerHTML = `
+        <img src="${imgSrc}" alt="QR ${link.nama}" class="qrcode-img" />
+        <p class="mt-2 font-semibold">${link.nama}</p>
+        <a href="${link.url}" target="_blank" class="text-sm text-blue-600 hover:underline">${link.url}</a>
+      `;
 
-            if (imgEl) {
-              imgEl.src = imgSrc;
-              imgEl.alt = `QR Code untuk ${socialInfo.nama}`;
-            }
-            if (nameEl) {
-              nameEl.textContent = socialInfo.nama;
-            }
-          }
-        });
-      }
-    })
-    .catch(err => {
-      console.error('Terjadi kesalahan saat memproses data kontak:', err);
+      social.appendChild(card);
     });
-});
+  })
+  .catch(err => {
+    console.error('Gagal memuat contact.json:', err);
+  });
+
+// Hapus form jika masih ada
+const form = document.getElementById('contactForm');
+if (form) {
+  form.remove();
+}

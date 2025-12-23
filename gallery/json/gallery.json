@@ -6,7 +6,7 @@
       {
         "id": "vid001",
         "type": "video",
-        "src": "/assets/vidio/comingsoon1.mp4",
+        "src": "../../assets/vidio/comingsoon1.mp4",
         "caption": "Coming Soon Video",
         "category": "announcement",
         "tags": ["teaser", "video", "promo", "coming soon", "announcement"],
@@ -20,7 +20,7 @@
       {
         "id": "vid002",
         "type": "video",
-        "src": "/assets/vidio/trailer.mp4",
+        "src": "../../assets/vidio/trailer.mp4",
         "caption": "Hati Tahampas Bapikir Malapas",
         "category": "Trailer",
         "tags": ["teaser", "video", "Trailer", "coming soon", "announcement"],
@@ -34,7 +34,7 @@
       {
         "id": "short001",
         "type": "video",
-        "src": "/assets/short/rapatperdana.mp4",
+        "src": "../../assets/short/rapatperdana.mp4",
         "caption": "Rapat perdana",
         "category": "short",
         "tags": ["short", "rapat", "persiapan", "PGMI"],
@@ -48,7 +48,7 @@
       {
         "id": "short002",
         "type": "video",
-        "src": "/assets/short/rapat1.mp4",
+        "src": "../../assets/short/rapat1.mp4",
         "caption": "Rapat Progres 1 Pagelaran seni",
         "category": "short",
         "tags": ["Mahasiswa", "Anak UIN", "Calon Guru", "Pagelaran seni"],
@@ -62,7 +62,7 @@
       {
         "id": "short003",
         "type": "video",
-        "src": "/assets/short/rapat2.mp4",
+        "src": "../../assets/short/rapat2.mp4",
         "caption": "Rapat Progres 1 Pagelaran seni",
         "category": "short",
         "tags": ["Mahasiswa", "Anak UIN", "Calon Guru", "Pagelaran seni"],
@@ -76,7 +76,7 @@
       {
         "id": "short004",
         "type": "video",
-        "src": "/assets/short/rapatpemantapan.mp4",
+        "src": "../../assets/short/rapatpemantapan.mp4",
         "caption": "Rapat Pemantapan Pagelaran Seni",
         "category": "short",
         "tags": ["Mahasiswa", "PGMI Berkarya", "Pemantapan", "Pagelaran seni"],
@@ -90,7 +90,7 @@
       {
         "id": "short005",
         "type": "video",
-        "src": "/assets/short/rapatgladi.mp4",
+        "src": "../../assets/short/rapatgladi.mp4",
         "caption": "Persiapan & Gladi Bersih Pagelaran seni",
         "category": "short",
         "tags": ["Mahasiswa", "PGMI Berkarya", "gladi bersih", "Pagelaran seni"],
@@ -104,7 +104,7 @@
             {
         "id": "short006",
         "type": "video",
-        "src": "/assets/short/abcd.mp4",
+        "src": "../../assets/short/abcd.mp4",
         "caption": "Saksikan Pagelaran Seni bersama anak uin",
         "category": "short",
         "tags": ["Mahasiswa", "PGMI Berkarya", "Pagelaran seni"],
@@ -118,7 +118,7 @@
       {
         "id": "short007",
         "type": "video",
-        "src": "/assets/short/isuk.mp4",
+        "src": "../../assets/short/isuk.mp4",
         "caption": "Pagelaran Seni Budaya dan Musik Banjar PGMI",
         "category": "short",
         "tags": ["Mahasiswa", "PGMI Berkarya", "30 Juni", "Pagelaran seni"],
@@ -132,7 +132,7 @@
       {
         "id": "short008",
         "type": "video",
-        "src": "/assets/short/akumanis.mp4",
+        "src": "../../assets/short/akumanis.mp4",
         "caption": "Pagelaran Seni Budaya dan Musik Banjar PGMI",
         "category": "short",
         "tags": ["Mahasiswa", "PGMI Berkarya", "30 Juni", "Pagelaran seni"],
@@ -146,7 +146,7 @@
       {
         "id": "short009",
         "type": "video",
-        "src": "/assets/short/jalur.mp4",
+        "src": "../../assets/short/jalur.mp4",
         "caption": "Jalan Menuju Tempat acara dan parkir",
         "category": "short",
         "tags": ["Mahasiswa", "PGMI Berkarya", "Auditorium", "tempat parkir"],
@@ -160,7 +160,7 @@
       {
         "id": "short010",
         "type": "video",
-        "src": "/assets/short/lokala.mp4",
+        "src": "../../assets/short/lokala.mp4",
         "caption": "Bayang Jabuk",
         "category": "short",
         "tags": ["short", "penampilan", "tari", "musik","behind the scenes"],
@@ -174,7 +174,7 @@
       {
         "id": "short011",
         "type": "video",
-        "src": "/assets/short/lokalb.mp4",
+        "src": "../../assets/short/lokalb.mp4",
         "caption": "Hati Tahampas Bafikir Malapas",
         "category": "short",
         "tags": ["short", "penampilan", "tari", "musik","behind the scenes"],
@@ -188,7 +188,7 @@
       {
         "id": "short012",
         "type": "video",
-        "src": "/assets/short/lokalC.mp4",
+        "src": "../../assets/short/lokalC.mp4",
         "caption": "Penambaian Dimajelis",
         "category": "short",
         "tags": ["short", "penampilan", "tari", "musik","behind the scenes"],
@@ -202,7 +202,7 @@
       {
         "id": "short013",
         "type": "video",
-        "src": "/assets/short/lokald.mp4",
+        "src": "../../assets/short/lokald.mp4",
         "caption": "Balabuh",
         "category": "short",
         "tags": ["short", "penampilan", "tari", "musik","behind the scenes"],
@@ -215,59 +215,59 @@
       }
     ],
     "posters": [
-      { "src": "/assets/poster/lokala.jpg", "alt": "Poster 1" },
-      { "src": "/assets/poster/lokalb.jpg", "alt": "Poster 2" },
-      { "src": "/assets/poster/lokalc.jpg", "alt": "Poster 3" },
-      { "src": "/assets/poster/lokald.jpg", "alt": "Poster 4" }
+      { "src": "../../assets/poster/lokala.jpg", "alt": "Poster 1" },
+      { "src": "../../assets/poster/lokalb.jpg", "alt": "Poster 2" },
+      { "src": "../../assets/poster/lokalc.jpg", "alt": "Poster 3" },
+      { "src": "../../assets/poster/lokald.jpg", "alt": "Poster 4" }
     ],
     "team_and_players": {
       "teams": [
         {
           "name": "Pimpinan Produksi",
           "person": "Muhammad Syaiful Mukmin",
-          "photo": "/assets/img/1.png",
+          "photo": "../../assets/img/1.png",
           "description": "Bertanggung jawab terhadap keseluruhan produksi pagelaran."
         },
         {
           "name": "Stage Manager",
           "person": "Muhammad Syaiful Mukmin",
-          "photo": "/assets/img/1.png",
+          "photo": "../../assets/img/1.png",
           "description": "Mengatur teknis panggung dan jalannya acara di belakang layar."
         },
         {
           "name": "Sekretaris",
           "person": "Gina",
-          "photo": "/assets/img/actors/gina.jpg",
+          "photo": "../../assets/img/pemain/Gina.jpg",
           "description": "Membantu administrasi dan dokumentasi tim produksi."
         },
         {
           "name": "Bendahara",
           "person": "Yasmin nuraziza",
-          "photo": "/assets/img/actors/yasmin.jpg",
+          "photo": "../../assets/img/pemain/yasmin.jpg",
           "description": "Mengelola anggaran dan keuangan pagelaran."
         },
         {
         "name": "Sutradara",
         "person": "Muhammad Wahyu Mubarak",
-        "photo": "/assets/img/1.png",
+        "photo": "../../assets/img/1.png",
         "description": "Bertanggung jawaba untuk Mengatur, Menulis Naskah, dan Mengelola Pemain."
         },
         {
           "name": "PDD",
           "person": "Laras Nor Salasiah",
-          "photo": "/assets/img/crew/51.jpg",
+          "photo": "../../assets/img/crew/51.jpg",
           "description": "Penanggung jawab dokumentasi digital dan media sosial."
         },
         {
           "name": "Konsumsi",
           "person": "Risma Septiani",
-          "photo": "/assets/img/actors/risma.jpg",
+          "photo": "../../assets/img/pemain/risma.jpg",
           "description": "Mengatur konsumsi dan logistik makanan-minuman."
         },
         {
           "name": "Perlengkapan",
           "person": "Arlin",
-          "photo": "/assets/img/actors/arlin.jpg",
+          "photo": "../../assets/img/pemain/arlin.jpg",
           "description": "Menyiapkan dan memelihara perlengkapan pagelaran."
         }
       ],
@@ -275,193 +275,193 @@
         {
           "name": "Laras Nor Salasiah",
           "role": "Penyanyi",
-          "photo": "/assets/img/crew/51.jpg",
+          "photo": "../../assets/img/crew/51.jpg",
           "description": "Vokal utama dengan karakter suara khas."
         },
         {
           "name": "Nor Mahlina",
           "role": "Penari",
-          "photo": "/assets/img/actors/penari.jpg",
+          "photo": "../../assets/img/pemain/penari.jpg",
           "description": "Penari andalan dengan teknik tarian modern."
         },
         {
           "name": "Helda Fitriani",
           "role": "Penari",
-          "photo": "/assets/penari/helda.jpg",
+          "photo": "../../assets/penari/helda.jpg",
           "description": "Penari unggulan yang menguasai teknik tari modern maupun tradisional."
         },
         {
           "name": "Yulia Ni'mah",
           "role": "Penari",
-          "photo": "/assets/penari/yulia.jpg",
+          "photo": "../../assets/penari/yulia.jpg",
           "description": "Tarian modern dan tradisional dikuasainya dengan mahir."
         },
         {
           "name": "Danti",
           "role": "Penari",
-          "photo": "/assets/penari/danti.jpg",
+          "photo": "../../assets/penari/danti.jpg",
           "description": "Penari kontemporer dengan gerakan dinamis."
         },
         {
           "name": "Khairun Nidha",
           "role": "Penari",
-          "photo": "/assets/penari/nida.jpg",
+          "photo": "../../assets/penari/nida.jpg",
           "description": "Seorang penari berpengalaman yang piawai menarikan gaya modern dan klasik."
         },
         {
           "name": "Adawiyah",
           "role": "Penari",
-          "photo": "/assets/penari/adaw.jpg",
+          "photo": "../../assets/penari/adaw.jpg",
           "description": "Penampil andal dengan kemampuan memadukan gerak tari tradisional dan modern."
         },
         {
           "name": "Arlin",
           "role": "Aktor",
-          "photo": "/assets/img/actors/arlin.jpg",
+          "photo": "../../assets/img/pemain/arlin.jpg",
           "description": "Anak Pak Amin, remaja galau yang terjerumus judi online demi uang cepat."
         },
         {
           "name": "M. Aminullah",
           "role": "Aktor",
-          "photo": "/assets/img/actors/amin.jpg",
+          "photo": "../../assets/img/pemain/amin.jpg",
           "description": "Guru tua idealis, tetap mengajar meski sakit demi cinta pada pendidikan."
         },
         {
           "name": "Gina",
           "role": "Aktor",
-          "photo": "/assets/img/actors/gina.jpg",
+          "photo": "../../assets/img/pemain/gina.jpg",
           "description": "Istri Pak Amin, sabar tapi mulai lelah menopang keluarga dalam keterbatasan."
         },
         {
           "name": "Ahmad Safi'i",
           "role": "Aktor",
-          "photo": "/assets/img/actors/safii.jpg",
+          "photo": "../../assets/img/pemain/safii.jpg",
           "description": "Sahabat Arlin, lebih rasional tapi ikut terjerat karena loyalitas."
         },
         {
           "name": "Ahmad Baihaqi",
           "role": "Aktor",
-          "photo": "/assets/img/actors/baihaqi.jpg",
+          "photo": "../../assets/img/pemain/baihaqi.jpg",
           "description": "Penjual sayur yang bijak, suara keprihatinan akan nasib pendidikan desa."
         },
         {
           "name": "Risma Septiani",
           "role": "Aktor",
-          "photo": "/assets/img/actors/risma.jpg",
+          "photo": "../../assets/img/pemain/risma.jpg",
           "description": "Mantan murid Pak Amin, sukses dan ingin membalas budi dengan membantu gurunya."
         },
         {
           "name": "Ririn Dewi Arianti",
           "role": "Aktor",
-          "photo": "/assets/img/actors/ririn.jpg",
+          "photo": "../../assets/img/pemain/ririn.jpg",
           "description": "Mak-mak kritis, simbol suara masyarakat yang cepat menilai dan menghakimi."
         },
         {
           "name": "Amelia Fitriani",
           "role": "Aktor",
-          "photo": "/assets/img/actors/amel.jpg",
+          "photo": "../../assets/img/pemain/amel.jpg",
           "description": "Warga biasa, suka ikut nimbrung dan cerewet tapi peduli kampung."
         },
         {
           "name": "Alfatia Rizda Amanda",
           "role": "Aktor",
-          "photo": "/assets/img/actors/alfatia.jpg",
+          "photo": "../../assets/img/pemain/alfatia.jpg",
           "description": "Mak-mak cerewet, suka gosip, mewakili keresahan sosial warga."
         },
         {
           "name": "Yasmin Nuraziza",
           "role": "Aktor",
-          "photo": "/assets/img/actors/yasmin.jpg",
+          "photo": "../../assets/img/pemain/yasmin.jpg",
           "description": "Kritikus dadakan, sering sinis pada perubahan zaman."
         },
         {
           "name": "Mukkaramah",
           "role": "Aktor",
-          "photo": "/assets/img/actors/mukaramah.jpg",
+          "photo": "../../assets/img/pemain/mukaramah.jpg",
           "description": "menggambarkan seorang anak sd."
         },
         {
           "name": "Alfi Nur Azizah",
           "role": "Aktor",
-          "photo": "/assets/img/actors/alfi.jpg",
+          "photo": "../../assets/img/pemain/alfi.jpg",
           "description": "Content creator lokal, simbol generasi digital yang 'semua harus divideo'."
         },
         {
           "name": "M. Hasbiannor",
           "role": "Aktor",
-          "photo": "/assets/img/actors/hasbi.jpg",
+          "photo": "../../assets/img/pemain/hasbi.jpg",
           "description": "masyarakat biasa yang mana hobinya suka mancing di sawah"
         },
         {
           "name": "Ahmad Nor Fikri",
           "role": "Aktor",
-          "photo": "/assets/img/actors/fikri.jpg",
+          "photo": "../../assets/img/pemain/fikri.jpg",
           "description": "Suka mengomentari tapi dengan humor pedas; representasi warga skeptis."
         },
         {
           "name": "Silahudin",
           "role": "Aktor",
-          "photo": "/assets/img/actors/silahudin.jpg",
+          "photo": "../../assets/img/pemain/silahudin.jpg",
           "description": "Lucu dan lugu, suka melempar candaan dengan makna dalam."
         },
         {
           "name": "Nabila Rahadatul Aisyi",
           "role": "Aktor",
-          "photo": "/assets/img/actors/nabila.jpg",
+          "photo": "../../assets/img/pemain/nabila.jpg",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
           "name": "Eliyana",
           "role": "Aktor",
-          "photo": "/assets/img/actors/eliyana.jpg",
+          "photo": "../../assets/img/pemain/eliyana.jpg",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
           "name": "Hafizah",
           "role": "Aktor",
-          "photo": "/assets/img/actors/hafizah.jpg",
+          "photo": "../../assets/img/pemain/hafizah.jpg",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
           "name": "Halimatus Sa'diah",
           "role": "Aktor",
-          "photo": "/assets/img/actors/halimatus.jpg",
+          "photo": "../../assets/img/pemain/halimatus.jpg",
           "description": "sebagai ibu ubu, yang suka julit pada orang akan tettapi orang yang kritis"
         },
         {
           "name": "Na'imah",
           "role": "Aktor",
-          "photo": "/assets/img/1.png",
+          "photo": "../../assets/img/1.png",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
           "name": "Mahriani",
           "role": "Aktor",
-          "photo": "/assets/img/actors/mahriani.jpg",
+          "photo": "../../assets/img/pemain/mahriani.jpg",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
           "name": "Majmiatus Sa'dah",
           "role": "Aktor",
-          "photo": "/assets/img/actors/najmiatus.jpg",
+          "photo": "../../assets/img/pemain/najmiatus.jpg",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
           "name": "Lu'Lu'i Nazwa",
           "role": "Aktor",
-          "photo": "/assets/img/actors/lulu.jpg",
+          "photo": "../../assets/img/pemain/lulu.jpg",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
           "name": "Pemain 22",
           "role": "Aktor",
-          "photo": "/assets/img/1.png",
+          "photo": "../../assets/img/1.png",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         },
         {
           "name": "Pemain 23",
           "role": "Aktor",
-          "photo": "/assets/img/1.png",
+          "photo": "../../assets/img/1.png",
           "description": "Simbol kepolosan dan dinamika sosial anak-anak di sekolah."
         }
       ],

@@ -1,119 +1,161 @@
-/* === Styling Halaman Tentang === */
-
-/* Kontainer Utama */
+/* === KONTEN UTAMA === */
 .about-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2.5rem 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* Jarak antar kartu konten */
+  gap: 3rem;
 }
 
-/* Gaya Umum untuk Setiap Kartu Konten */
-.content-card {
-  background-color: var(--card-bg);
-  padding: 2.5rem;
-  border-radius: 16px;
-  border: 1px solid var(--card-border);
-  box-shadow: var(--card-shadow);
-}
-
-/* Judul Halaman dan Sub-judul */
-.page-title, .content-card h2 {
+/* === TENTANG === */
+.tentang h1 {
+  font-size: 2.5rem;
   color: var(--logo-color);
   margin-bottom: 1rem;
 }
 
-.page-title {
-  font-size: 2.8rem;
-  border-bottom: 2px solid var(--navbar-border);
-  padding-bottom: 0.5rem;
+.tentang p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
 }
 
-.content-card h2 {
-  font-size: 1.8rem;
-}
-
-/* Informasi Umum */
 .info-lain {
   list-style: none;
   padding-left: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
 }
 
-/* Visi & Misi */
+.info-lain li {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* === LATAR BELAKANG, VISI, MISI === */
+.latar-belakang h2,
+.visi-misi h2 {
+  font-size: 1.7rem;
+  color: var(--logo-color);
+  margin-bottom: 1rem;
+}
+
+#latarBelakang,
+.visi-misi p {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  margin-bottom: 1.2rem;
+}
+
 #misiList {
-  padding-left: 1.5rem; /* Indentasi untuk daftar misi */
+  padding-left: 1.25rem;
+  color: var(--text-color);
 }
 
 #misiList li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
-/* Nilai-nilai Inti */
+/* === NILAI INTI === */
+.nilai-nilai h2 {
+  font-size: 1.7rem;
+  color: var(--logo-color);
+  margin-bottom: 1rem;
+}
+
 #nilaiList {
-  list-style: none;
-  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  list-style: none;
+  padding-left: 0;
 }
 
 #nilaiList li {
   background-color: var(--footer-bg);
-  padding: 0.5rem 1rem;
-  border-radius: 20px; /* Lebih bulat */
-  font-weight: 500;
-}
-
-/* Daftar Panitia, Tim, dan Pemain */
-#panitiaList, #timList, #pemainList {
-  list-style: none;
-  padding-left: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-}
-
-#panitiaList li, #timList li, #pemainList li {
-  background-color: var(--bg-color);
-  padding: 0.75rem 1rem;
-  border-left: 5px solid var(--logo-color);
+  padding: 0.6rem 1.2rem;
   border-radius: 8px;
   font-weight: 500;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 
-/* Info Kontak */
+/* === PANITIA, TIM, PEMAIN === */
+.panitia h2,
+.tim-pelaksana h2,
+.pemain h2 {
+  font-size: 1.6rem;
+  color: var(--logo-color);
+  margin-bottom: 1rem;
+}
+
+#panitiaList,
+#timList,
+#pemainList {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+#panitiaList li,
+#timList li,
+#pemainList li {
+  font-size: 1rem;
+  color: var(--text-color);
+  padding-left: 0.5rem;
+  border-left: 4px solid var(--logo-color);
+  background-color: var(--bg-color);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+}
+
+/* === KONTAK === */
+.kontak h2 {
+  font-size: 1.6rem;
+  color: var(--logo-color);
+  margin-bottom: 1rem;
+}
+
 .kontak ul {
   list-style: none;
   padding-left: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.kontak ul li {
+  font-size: 1rem;
 }
 
 .kontak a {
   color: var(--logo-color);
   text-decoration: none;
-  transition: color 0.2s;
+  font-weight: 500;
 }
 
 .kontak a:hover {
   text-decoration: underline;
 }
 
-/* === Penyesuaian Responsif === */
+/* === RESPONSIFITAS === */
 @media (max-width: 768px) {
-  .content-card {
+  .tentang h1 {
+    font-size: 1.8rem;
+  }
+
+  section {
     padding: 1.5rem;
   }
 
-  .page-title {
-    font-size: 2.2rem;
+  .info-lain {
+    grid-template-columns: 1fr;
   }
 
-  .content-card h2 {
-    font-size: 1.5rem;
-  }
-
-  #panitiaList, #timList, #pemainList {
-    grid-template-columns: 1fr; /* Satu kolom di layar kecil */
+  #nilaiList {
+    flex-direction: column;
   }
 }

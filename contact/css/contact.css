@@ -1,89 +1,86 @@
-/* === Gaya Halaman Kontak === */
-
-/* Kontainer Utama Div-pembungkus */
-main.content-card {
-  max-width: 900px;
-  margin: 2.5rem auto;
-  padding: 2.5rem;
+/* === UTAMA CONTACT === */
+main {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
   text-align: center;
-  animation: fadeIn 0.6s ease-out;
+  animation: fadeIn 0.8s ease-in;
 }
 
-.page-title {
+main h1 {
   font-size: 2.5rem;
+  font-weight: 700;
   color: var(--logo-color);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
-#kontakDeskripsi {
+main p {
   font-size: 1.1rem;
-  color: var(--text-color-secondary);
-  margin-bottom: 3rem;
-  max-width: 650px;
+  color: var(--text-color);
+  margin-bottom: 2.5rem;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* === Grid Tautan Sosial (Kode QR) === */
+/* === SOCIAL LINKS QR CODE === */
 .social-links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
   justify-items: center;
+  padding: 0 1rem;
 }
 
 .social-card {
   width: 100%;
-  padding: 1.5rem;
-  background: var(--bg-color);
-  border: 1px solid var(--card-border);
-  border-radius: 16px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 180px;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 12px;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .social-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--card-shadow);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
 .qrcode-img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .social-card p {
   font-weight: 600;
-  font-size: 1.1rem;
-  margin: 0;
+  font-size: 1.05rem;
+  margin: 0.25rem 0;
   color: var(--text-color);
 }
 
-/* === Animasi === */
+.social-card a {
+  font-size: 0.85rem;
+  color: var(--logo-color);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.social-card a:hover {
+  text-decoration: underline;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(15px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* === Penyesuaian Responsif === */
-@media (max-width: 768px) {
-  main.content-card { padding: 2rem; margin: 2rem auto; }
-  .page-title { font-size: 2.2rem; }
-  .social-links { gap: 1.5rem; }
-}
-
-@media (max-width: 576px) {
-  main.content-card { padding: 1.5rem; margin: 1.5rem auto; }
-  .page-title { font-size: 2rem; }
-  #kontakDeskripsi { font-size: 1rem; margin-bottom: 2rem; }
-  .social-links { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
-  .social-card { padding: 1rem; }
 }
