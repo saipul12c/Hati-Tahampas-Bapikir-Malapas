@@ -10,7 +10,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <!-- Navbar -->
@@ -35,24 +35,52 @@
   </nav>
 
   <!-- Galeri Konten -->
-  <main>
+  <main class="content-card">
     <h1 class="page-title">Galeri Pagelaran</h1>
 
     <!-- Grid utama yang akan diisi oleh JS -->
-    <div id="galleryGrid" class="gallery-grid content-card" aria-live="polite" aria-label="Galeri media Pagelaran PGMI 2025">
+    <div id="galleryGrid" class="gallery-grid" aria-live="polite" aria-label="Galeri media Pagelaran PGMI 2025">
       <!-- Konten dinamis dimuat dari gallery.json oleh gallery.js -->
     </div>
 
-    <!-- Section Shorts, Team, Players akan ditambahkan oleh JS -->
+    <!-- Section-section lain akan ditambahkan di sini oleh JS -->
+    <section id="posterSection" aria-labelledby="posterTitle"></section>
+    <section id="shortsGrid" aria-labelledby="shortsTitle"></section>
+    <section id="teamGrid" aria-labelledby="teamTitle"></section>
+    <section id="playersSection" aria-labelledby="playersTitle"></section>
+
   </main>
+
+  <!-- Modal untuk Tampilan Media -->
+  <div id="modalPopup" class="modal-popup hidden" aria-modal="true" role="dialog">
+    <div class="modal-content">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Tutup">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Pagelaran PGMI. Dibuat dengan ☕ dan semangat mahasiswa.</p>
-  </footer>
+  <div class="footer-container">
+    <a href="/index.html" class="footer-logo">PGMI 2025</a>
+    <ul class="footer-links">
+      <li><a href="/about/about.html">Tentang</a></li>
+      <li><a href="/gallery/gallery.html">Galeri</a></li>
+      <li><a href="/schedule/schedule.html">Jadwal</a></li>
+      <li><a href="/contact/contact.html">Kontak</a></li>
+    </ul>
+    <div class="footer-bottom">
+      <div class="footer-creator">
+        <p>Dibuat oleh <a href="https://syaiful-mukmin.netlify.app/" target="_blank" rel="noopener noreferrer">Muhammad Syaiful Mukmin</a></p>
+        <p>Mahasiswa UIN Antasari Banjarmasin</p>
+      </div>
+      <p>&copy; 2025 Pagelaran PGMI. Hak cipta dilindungi.</p>
+    </div>
+  </div>
+</footer>
 
   <!-- Script JS -->
-  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/main.js" defer></script>
   <script src="/gallery/js/gallery.js" defer></script>
 </body>
 </html>

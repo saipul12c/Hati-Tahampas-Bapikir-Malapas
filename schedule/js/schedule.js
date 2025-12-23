@@ -1,76 +1,82 @@
-// schedule.js
+document.addEventListener('DOMContentLoaded', () => {
+  // Memuat data jadwal dan data acara (untuk tanggal hitung mundur)
+  fetch('/schedule/json/schedule.json')
+    .then(res => {
+      if (!res.ok) throw new Error(`Gagal memuat schedule.json: ${res.statusText}`);
+      return res.json();
+    })
+    .then(data => {
+      if (data.jadwal) {
+        loadSchedule(data.jadwal);
+      }
+      if (data.informasiAcara && data.informasiAcara.tanggalMulai) {
+        initializeCountdown(data.informasiAcara.tanggalMulai);
+      } else {
+        // Fallback jika tanggal tidak ditemukan di JSON
+        initializeCountdown('2025-06-28T00:00:00');
+      }
+    })
+    .catch(err => console.error(err));
+});
 
-// Memuat data jadwal dari schedule.json
-fetch('/schedule/json/schedule.json')
-  .then(res => res.json())
-  .then(data => {
-    const tbody = document.querySelector('#jadwalTable tbody');
-    if (data.jadwal && Array.isArray(data.jadwal)) {
-      data.jadwal.forEach(item => {
-        const row = document.createElement('tr');
+/**
+ * Memuat dan menampilkan data jadwal ke dalam tabel.
+ * @param {Array} scheduleData - Array objek jadwal.
+ */
+function loadSchedule(scheduleData) {
+  const tbody = document.querySelector('#jadwalTable tbody');
+  const headers = Array.from(document.querySelectorAll('#jadwalTable th')).map(th => th.textContent);
 
-        // Ubah kegiatan jadi list jika array
-        const kegiatan = Array.isArray(item.kegiatan)
-          ? `<ul>${item.kegiatan.map(k => `<li>${k}</li>`).join('')}</ul>`
-          : item.kegiatan || '-';
+  if (!tbody) return;
 
-        // Ubah keterangan/penanggung jawab jadi list jika array
-        const keterangan = Array.isArray(item.keterangan)
-          ? `<ul>${item.keterangan.map(k => `<li>${k}</li>`).join('')}</ul>`
-          : item.keterangan || '-';
+  const fragment = document.createDocumentFragment();
+  scheduleData.forEach(item => {
+    const row = document.createElement('tr');
 
-        row.innerHTML = `
-          <td>${item.hari || '-'}</td>
-          <td>${item.waktu || '-'}</td>
-          <td>${kegiatan}</td>
-          <td>${keterangan}</td>
-        `;
-        tbody.appendChild(row);
-      });
-    }
-  })
-  .catch(err => console.error('Gagal memuat jadwal:', err));
+    const formatCell = (content) => {
+      if (Array.isArray(content)) {
+        return `<ul>${content.map(li => `<li>${li}</li>`).join('')}</ul>`;
+      }
+      return content || '-';
+    };
 
-// Hitung mundur ke 28 Juni 2025
-function mulaiHitungMundur() {
-  const targetDate = new Date('2025-06-28T00:00:00');
+    row.innerHTML = `
+      <td data-label="${headers[0]}">${item.hari || '-'}</td>
+      <td data-label="${headers[1]}">${item.waktu || '-'}</td>
+      <td data-label="${headers[2]}">${formatCell(item.kegiatan)}</td>
+      <td data-label="${headers[3]}">${formatCell(item.keterangan)}</td>
+    `;
+    fragment.appendChild(row);
+  });
+
+  tbody.appendChild(fragment);
+}
+
+/**
+ * Menginisialisasi dan memulai hitung mundur ke tanggal target.
+ * @param {string} targetDateString - String tanggal ISO (misal: '2025-06-28T00:00:00').
+ */
+function initializeCountdown(targetDateString) {
   const countdownEl = document.getElementById('countdown');
+  if (!countdownEl) return;
 
-  setInterval(() => {
-    const now = new Date();
-    const selisih = targetDate - now;
+  const targetDate = new Date(targetDateString).getTime();
 
-    // Format waktu sekarang
-    const hariIni    = now.toLocaleDateString('id-ID', { weekday: 'long' });
-    const tanggalIni = now.toLocaleDateString('id-ID');
-    const jam        = String(now.getHours()).padStart(2, '0');
-    const menit      = String(now.getMinutes()).padStart(2, '0');
-    const detik      = String(now.getSeconds()).padStart(2, '0');
+  const countdownInterval = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
 
-    if (selisih <= 0) {
-      countdownEl.innerHTML = `<a href="../../teater/teater.html" class="started-link">🎉 Acara telah dimulai! Klik di sini untuk masuk ke teater</a>`;
+    if (distance <= 0) {
+      clearInterval(countdownInterval);
+      countdownEl.innerHTML = `<a href="/gallery/gallery.html" class="started-link">🎉 Acara Telah Dimulai! Lihat Dokumentasinya</a>`;
       return;
     }
 
-    const days    = Math.floor(selisih / (1000 * 60 * 60 * 24));
-    const hours   = Math.floor((selisih % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((selisih % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((selisih % (1000 * 60)) / 1000);
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    countdownEl.innerHTML = `
-      Hari ini: ${hariIni}, ${tanggalIni} – ${jam}:${menit}:${detik}<br>
-      Hitung mundur: ${days} hari, ${hours} jam, ${minutes} menit, ${seconds} detik
-    `;
+    countdownEl.textContent = `${days}h ${hours}j ${minutes}m ${seconds}d menuju acara`;
   }, 1000);
-}
-
-mulaiHitungMundur();
-
-// Toggle hamburger menu untuk mobile
-const navToggle2 = document.querySelector('.nav-toggle');
-const navLinks2  = document.querySelector('.nav-links');
-if (navToggle2 && navLinks2) {
-  navToggle2.addEventListener('click', () => {
-    navLinks2.classList.toggle('active');
-  });
 }

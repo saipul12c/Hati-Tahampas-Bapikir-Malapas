@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jadwal | Pagelaran PGMI 2025</title>
+  <title>Visi & Misi | Pagelaran PGMI 2025</title>
   <link rel="stylesheet" href="/assets/css/style.css" />
-  <link rel="stylesheet" href="/schedule/css/schedule.css" />
+  <link rel="stylesheet" href="/vision-mission/css/vision-mission.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -26,39 +26,33 @@
         <li><a href="/index.html">Beranda</a></li>
         <li><a href="/about/about.html">Tentang</a></li>
         <li><a href="/gallery/gallery.html">Galeri</a></li>
-        <li><a href="/schedule/schedule.html" aria-current="page">Jadwal</a></li>
+        <li><a href="/schedule/schedule.html">Jadwal</a></li>
         <li><a href="/contact/contact.html">Kontak</a></li>
+        <li><a href="/vision-mission/vision-mission.html" aria-current="page">Visi & Misi</a></li>
       </ul>
     </div>
   </nav>
 
-  <main>
-    <h1 class="page-title">Jadwal Acara</h1>
+  <main class="vision-mission-container">
+    <!-- Visi dan Misi -->
+    <section class="visi-misi content-card" aria-label="Visi dan Misi">
+      <h1 class="page-title">Visi & Misi</h1>
+      <h2>Visi</h2>
+      <p id="visi">Memuat visi...</p>
 
-    <!-- Countdown Section -->
-    <section class="countdown-section content-card">
-      <h2>Hitung Mundur Menuju Pagelaran</h2>
-      <div id="countdown" class="countdown-display">
-        <!-- Diisi lewat JavaScript -->
-      </div>
+      <h2>Misi</h2>
+      <ul id="misiList" aria-label="Daftar Misi">
+        <!-- Misi dimuat dari JSON -->
+      </ul>
     </section>
 
-    <!-- Tabel Jadwal -->
-    <div class="content-card">
-      <table id="jadwalTable">
-        <thead>
-          <tr>
-            <th>Hari</th>
-            <th>Waktu</th>
-            <th>Kegiatan</th>
-            <th>Penanggung Jawab</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Diisi lewat JS -->
-        </tbody>
-      </table>
-    </div>
+    <!-- Nilai-nilai -->
+    <section class="nilai-nilai content-card" aria-label="Nilai Inti">
+      <h2>Nilai Inti</h2>
+      <ul id="nilaiList">
+        <!-- Nilai-nilai akan dimuat dari JSON -->
+      </ul>
+    </section>
   </main>
 
   <footer class="footer">
@@ -69,6 +63,7 @@
       <li><a href="/gallery/gallery.html">Galeri</a></li>
       <li><a href="/schedule/schedule.html">Jadwal</a></li>
       <li><a href="/contact/contact.html">Kontak</a></li>
+       <li><a href="/vision-mission/vision-mission.html">Visi & Misi</a></li>
     </ul>
     <div class="footer-bottom">
       <div class="footer-creator">
@@ -81,6 +76,6 @@
 </footer>
 
   <script src="/assets/js/main.js" defer></script>
-  <script src="/schedule/js/schedule.js" defer></script>
+  <script src="/vision-mission/js/vision-mission.js" defer></script>
 </body>
 </html>

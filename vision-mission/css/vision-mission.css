@@ -1,7 +1,7 @@
 /* === Styling Halaman Tentang === */
 
 /* Kontainer Utama */
-.about-container {
+.vision-mission-container {
   display: flex;
   flex-direction: column;
   gap: 2rem; /* Jarak antar kartu konten */

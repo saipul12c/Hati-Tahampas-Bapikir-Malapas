@@ -1,12 +1,5 @@
-/* --- Root Variables --- */
+/* --- Home Page Specific Variables --- */
 :root {
-  --bg-color: #f9fafb;
-  --text-color: #1a202c;
-  --navbar-bg: #ffffff;
-  --navbar-border: #e2e8f0;
-  --logo-color: #2b6cb0;
-  --nav-link-color: #2d3748;
-  --nav-link-hover-color: #2b6cb0;
   --hero-bg: linear-gradient(135deg, #c3dafe 0%, #ebf4ff 100%);
   --hero-title-color: #2c5282;
   --hero-text-color: #2d3748;
@@ -14,12 +7,12 @@
   --btn-bg: #2b6cb0;
   --btn-text: white;
   --btn-hover-bg: #2c5282;
-  --highlight-bg: #ffffff;
-  --highlight-card-bg: #f7fafc;
-  --highlight-card-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  --highlight-bg: var(--bg-color);
+  --highlight-card-bg: var(--card-bg);
+  --highlight-card-shadow: var(--card-shadow);
   --highlight-card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  --highlight-title-color: #2b6cb0;
-  --highlight-text-color: #4a5568;
+  --highlight-title-color: var(--logo-color);
+  --highlight-text-color: var(--text-color);
   --coming-soon-bg: linear-gradient(to right, #fefcbf, #faf089);
   --coming-soon-title-color: #744210;
   --coming-soon-text-color: #5a3410;
@@ -28,19 +21,9 @@
   --cta-btn-bg: #ffffff;
   --cta-btn-text: #2b6cb0;
   --cta-btn-hover-bg: #e2e8f0;
-  --cta-btn-hover-text: #2c5282;
-  --footer-bg: #edf2f7;
-  --footer-text-color: #4a5568;
 }
 
 [data-theme='dark'] {
-  --bg-color: #1a202c;
-  --text-color: #e2e8f0;
-  --navbar-bg: #2d3748;
-  --navbar-border: #4a5568;
-  --logo-color: #63b3ed;
-  --nav-link-color: #e2e8f0;
-  --nav-link-hover-color: #63b3ed;
   --hero-bg: linear-gradient(135deg, #2c5282 0%, #1a202c 100%);
   --hero-title-color: #90cdf4;
   --hero-text-color: #e2e8f0;
@@ -48,12 +31,7 @@
   --btn-bg: #4299e1;
   --btn-text: #1a202c;
   --btn-hover-bg: #63b3ed;
-  --highlight-bg: #1a202c;
-  --highlight-card-bg: #2d3748;
-  --highlight-card-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   --highlight-card-hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  --highlight-title-color: #63b3ed;
-  --highlight-text-color: #a0aec0;
   --coming-soon-bg: linear-gradient(to right, #4a5568, #2d3748);
   --coming-soon-title-color: #f6e05e;
   --coming-soon-text-color: #f6e05e;
@@ -62,153 +40,29 @@
   --cta-btn-bg: #1a202c;
   --cta-btn-text: #4299e1;
   --cta-btn-hover-bg: #2d3748;
-  --cta-btn-hover-text: #63b3ed;
-  --footer-bg: #2d3748;
-  --footer-text-color: #a0aec0;
-}
-
-/* Font dan Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.7;
-}
-
-/* --- Navbar --- */
-.navbar {
-  background-color: var(--navbar-bg);
-  padding: 1rem 2rem;
-  border-bottom: 1px solid var(--navbar-border);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--logo-color);
-  text-decoration: none;
-}
-
-.nav-controls {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.theme-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--text-color);
-  display: flex;
-  align-items: center;
-}
-
-.theme-toggle svg {
-  width: 20px;
-  height: 20px;
-}
-
-.moon-icon { display: none; }
-.sun-icon { display: block; }
-
-[data-theme='dark'] .moon-icon { display: block; }
-[data-theme='dark'] .sun-icon { display: none; }
-
-
-.nav-links {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--nav-link-color);
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover,
-.nav-links a[aria-current="page"] {
-  color: var(--nav-link-hover-color);
-}
-
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: block;
-    color: var(--logo-color);
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: var(--navbar-bg);
-    position: absolute;
-    top: 60px;
-    right: 2rem;
-    padding: 1rem;
-    border: 1px solid var(--navbar-border);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    z-index: 999;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
 }
 
 /* --- Hero Section --- */
 .hero {
   background: var(--hero-bg);
-  padding: 5rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
-  position: relative;
-  overflow: hidden;
 }
 
 .hero-content {
   max-width: 800px;
   margin: auto;
-  padding: 1rem;
 }
 
 .hero-content h1 {
-  font-size: 2.75rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--hero-title-color);
   margin-bottom: 1rem;
 }
 
 .hero-content p {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: var(--hero-text-color);
   margin-bottom: 0.5rem;
 }
@@ -217,7 +71,6 @@ body {
   font-style: italic;
   margin-top: 1.5rem;
   color: var(--quote-color);
-  font-size: 1rem;
 }
 
 #btnScroll {
@@ -225,39 +78,45 @@ body {
   background-color: var(--btn-bg);
   color: var(--btn-text);
   border: none;
-  padding: 0.85rem 1.75rem;
+  padding: 0.8rem 1.6rem;
   font-size: 1rem;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 #btnScroll:hover {
   background-color: var(--btn-hover-bg);
-  transform: scale(1.05);
+  transform: translateY(-2px);
 }
 
-/* --- Highlight Section --- */
-.highlight {
+/* --- Sections (Highlight, Coming Soon, CTA) --- */
+.highlight,
+.coming-soon,
+.cta {
   padding: 4rem 2rem;
-  background-color: var(--highlight-bg);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  margin: 0 auto;
   max-width: 1200px;
-  margin: auto;
+}
+
+.highlight {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  background-color: var(--highlight-bg);
 }
 
 .highlight-card {
   background-color: var(--highlight-card-bg);
   padding: 2rem;
-  border-radius: 16px;
+  border-radius: 12px;
   box-shadow: var(--highlight-card-shadow);
+  border: 1px solid var(--card-border);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .highlight-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   box-shadow: var(--highlight-card-hover-shadow);
 }
 
@@ -269,14 +128,14 @@ body {
 
 .highlight-card p {
   color: var(--highlight-text-color);
-  font-size: 1rem;
 }
 
-/* --- Coming Soon Section --- */
 .coming-soon {
-  padding: 3rem 2rem;
   background: var(--coming-soon-bg);
   text-align: center;
+  border-radius: 12px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .coming-soon h3 {
@@ -286,77 +145,76 @@ body {
 }
 
 .coming-soon p {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: var(--coming-soon-text-color);
   max-width: 700px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* --- CTA Section --- */
 .cta {
   background: var(--cta-bg);
   color: var(--cta-text-color);
   text-align: center;
-  padding: 4rem 2rem;
+  border-radius: 12px;
 }
 
 .cta h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
 .cta p {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   margin-bottom: 2rem;
 }
 
 .cta-button {
   background-color: var(--cta-btn-bg);
   color: var(--cta-btn-text);
-  padding: 0.85rem 1.75rem;
+  padding: 0.8rem 2rem;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+  border-radius: 8px;
+  transition: all 0.2s ease;
 }
 
 .cta-button:hover {
   background-color: var(--cta-btn-hover-bg);
-  color: var(--cta-btn-hover-text);
+  transform: scale(1.05);
 }
 
-/* --- Footer --- */
-.footer {
-  text-align: center;
-  padding: 1.5rem 1rem;
-  background-color: var(--footer-bg);
-  color: var(--footer-text-color);
-  font-size: 0.9rem;
-}
-
-/* --- Responsif Tambahan --- */
+/* --- Responsive Styles --- */
 @media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
   .hero-content h1 {
-    font-size: 2.2rem;
+    font-size: 2.25rem;
   }
 
-  .hero-content p,
-  .cta p {
+  .highlight, .coming-soon, .cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .cta h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
     font-size: 1rem;
   }
-
-  .highlight {
-    padding: 2rem 1rem;
+  #btnScroll {
+    width: 100%;
+    max-width: 320px;
   }
-
-  .highlight-card {
-    padding: 1.5rem;
-  }
-
   .cta-button {
     width: 100%;
-    max-width: 300px;
-    display: inline-block;
+    max-width: 320px;
   }
 }

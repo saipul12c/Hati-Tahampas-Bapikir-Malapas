@@ -1,0 +1,101 @@
+/* === Styling Halaman Blog === */
+
+/* Kontainer Utama */
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Jarak antar elemen */
+}
+
+/* Judul Halaman */
+.page-title {
+  color: var(--logo-color);
+  font-size: 2.8rem;
+  border-bottom: 2px solid var(--navbar-border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Kontainer untuk Postingan Blog */
+.blog-posts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Kartu Postingan Blog */
+.blog-post-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden; /* Memastikan gambar tidak keluar dari kartu */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Gambar Postingan */
+.blog-post-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Memastikan gambar terisi penuh */
+}
+
+/* Konten di Dalam Kartu */
+.blog-post-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post-title {
+  color: var(--logo-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post-meta {
+  color: var(--text-color-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.blog-post-excerpt {
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--logo-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #A52A2A; /* Warna lebih gelap saat hover */
+}
+
+/* === Penyesuaian Responsif === */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.2rem;
+  }
+
+  .blog-posts-container {
+    grid-template-columns: 1fr; /* Satu kolom di layar kecil */
+  }
+}

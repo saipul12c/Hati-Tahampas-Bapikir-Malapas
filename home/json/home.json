@@ -1,30 +1,35 @@
 {
-  "judul": "🎉 Selamat Datang di Pagelaran Nasional PGMI 2025! 🎉",
-  "deskripsi": "Ayo rayakan semangat kreativitas, warisan budaya, dan prestasi luar biasa mahasiswa PGMI dari UIN ANTASARI angkatan 2022 dalam satu perhelatan akbar yang tak terlupakan!",
-  "tanggal": "28 Juni 2025",
-  "lokasi": "Kampus UIN Antasari Banjarmasin",
-  "kutipan": "“Pendidikan bukan hanya di kelas, tapi juga di setiap langkah kita menginspirasi dan berbudaya.”",
-  "highlight": [
+  "hero": {
+    "title": "🎉 Selamat Datang di Pagelaran Nasional PGMI 2025! 🎉",
+    "description": "Ayo rayakan semangat kreativitas, warisan budaya, dan prestasi luar biasa mahasiswa PGMI dari UIN ANTASARI angkatan 2022 dalam satu perhelatan akbar yang tak terlupakan!",
+    "date": "28 Juni 2025",
+    "location": "Kampus UIN Antasari Banjarmasin",
+    "quote": "“Pendidikan bukan hanya di kelas, tapi juga di setiap langkah kita menginspirasi dan berbudaya.”"
+  },
+  "highlights": [
     {
-      "judul": "🎭 Seni Budaya",
-      "konten": "Saksikan karya seni rupa, tari daerah, drama edukatif, dan berbagai inovasi teknologi pendidikan yang mencerminkan keunikan tiap daerah. Siap-siap terpesona!"
+      "title": "🎭 Seni Budaya",
+      "description": "Saksikan karya seni rupa, tari daerah, drama edukatif, dan berbagai inovasi teknologi pendidikan yang mencerminkan keunikan tiap daerah. Siap-siap terpesona!",
+      "image": "/gallery/assets/poster/lokala.jpg"
     },
     {
-      "judul": "🎶 Seni Musik",
-      "konten": "Nikmati lantunan musik dari berbagai penjuru nusantara, termasuk penampilan spesial dari grup musik mahasiswa dan kolaborasi lintas kampus."
+      "title": "🎶 Seni Musik",
+      "description": "Nikmati lantunan musik dari berbagai penjuru nusantara, termasuk penampilan spesial dari grup musik mahasiswa dan kolaborasi lintas kampus.",
+      "image": "/gallery/assets/poster/lokalb.jpg"
     },
     {
-      "judul": "🖼️ Seni Rupa",
-      "konten": "Jelajahi stand budaya yang menyajikan pakaian adat, kerajinan tangan, serta galeri seni mahasiswa yang memukau."
+      "title": "🖼️ Seni Rupa",
+      "description": "Jelajahi stand budaya yang menyajikan pakaian adat, kerajinan tangan, serta galeri seni mahasiswa yang memukau.",
+      "image": "/gallery/assets/poster/lokalc.jpg"
     }
   ],
-  "call_to_action": {
-    "judul": "Beli Tiket Sekarang dan Jadilah Bagian dari Sejarah!",
-    "konten": "Beli tiket sekarang dan rasakan euforianya. Info lengkap dan Pembelian tiket ada di website resmi kami.",
-    "tautan": "../../contact/contact.html"
+  "cta": {
+    "title": "Beli Tiket Sekarang dan Jadilah Bagian dari Sejarah!",
+    "content": "Beli tiket sekarang dan rasakan euforianya. Info lengkap dan Pembelian tiket ada di website resmi kami.",
+    "link": "/contact/contact.html"
   },
-  "comingsoon": {
-    "judul": "✨ Segera Hadir!",
-    "konten": "Pantau terus untuk update terbaru dari Pagelaran PGMI 2025 dan kejutan lainnya yang akan meriahkan Tahun Ini!"
+  "comingSoon": {
+    "title": "✨ Segera Hadir!",
+    "description": "Pantau terus untuk update terbaru dari Pagelaran PGMI 2025 dan kejutan lainnya yang akan meriahkan Tahun Ini!"
   }
 }

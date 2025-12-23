@@ -5,12 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kontak | Pagelaran PGMI 2025</title>
   <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/skeleton.css" />
   <link rel="stylesheet" href="/contact/css/contact.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+<!-- Skeleton Loader -->
+<div class="skeleton-container" id="skeleton-loader">
+    <div class="skeleton-navbar">
+        <div class="skeleton-logo"></div>
+        <div class="skeleton-nav-links">
+            <div class="skeleton-link"></div>
+            <div class="skeleton-link"></div>
+            <div class="skeleton-link"></div>
+            <div class="skeleton-link"></div>
+        </div>
+    </div>
+    <div class="skeleton-contact">
+        <div class="skeleton-title"></div>
+        <div class="skeleton-text"></div>
+        <div class="skeleton-qr-code"></div>
+        <div class="skeleton-qr-code"></div>
+        <div class="skeleton-qr-code"></div>
+    </div>
+</div>
+
 <nav class="navbar" role="navigation" aria-label="Navigasi utama">
   <div class="navbar-container">
     <a href="https://pgmi.uin-antasari.ac.id/" class="logo" aria-label="Beranda PGMI 2025">PGMI 2025</a>
@@ -35,15 +56,42 @@
   <h1 class="page-title">Kontak Kami</h1>
   <p id="kontakDeskripsi">Memuat info...</p>
 
-  <!-- Formulir telah dihapus, hanya menampilkan barcode sosial -->
-  <div class="social-links" id="socialLinks" aria-label="Tautan media sosial"></div>
+  <div class="social-container" id="socialLinks">
+    <div class="social-card">
+      <img src="/assets/qrcode/instagram.png" alt="QR Code Instagram" class="qrcode-img">
+      <p>Instagram</p>
+    </div>
+    <div class="social-card">
+      <img src="/assets/qrcode/whatsapp.png" alt="QR Code WhatsApp" class="qrcode-img">
+      <p>WhatsApp</p>
+    </div>
+    <div class="social-card">
+      <img src="/assets/qrcode/youtube.png" alt="QR Code YouTube" class="qrcode-img">
+      <p>YouTube</p>
+    </div>
+  </div>
 </main>
 
 <footer class="footer">
-  <p>&copy; 2025 Pagelaran PGMI. Dibuat dengan ☕ dan semangat mahasiswa.</p>
+  <div class="footer-container">
+    <a href="/index.html" class="footer-logo">PGMI 2025</a>
+    <ul class="footer-links">
+      <li><a href="/about/about.html">Tentang</a></li>
+      <li><a href="/gallery/gallery.html">Galeri</a></li>
+      <li><a href="/schedule/schedule.html">Jadwal</a></li>
+      <li><a href="/contact/contact.html">Kontak</a></li>
+    </ul>
+    <div class="footer-bottom">
+      <div class="footer-creator">
+        <p>Dibuat oleh <a href="https://syaiful-mukmin.netlify.app/" target="_blank" rel="noopener noreferrer">Muhammad Syaiful Mukmin</a></p>
+        <p>Mahasiswa UIN Antasari Banjarmasin</p>
+      </div>
+      <p>&copy; 2025 Pagelaran PGMI. Hak cipta dilindungi.</p>
+    </div>
+  </div>
 </footer>
 
-<script src="/assets/js/main.js"></script>
-<script src="/contact/js/contact.js"></script>
+<script src="/assets/js/main.js" defer></script>
+<script src="/contact/js/contact.js" defer></script>
 </body>
 </html>
